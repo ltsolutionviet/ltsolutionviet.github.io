@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        
+        <p>Here you can find <strong>IELTS Listening test</strong>. Use it for IELTS Listening practice: listen to the audio and answer the questions online. After you complete this section, press "check" and you'll see which questions you answered correctly and which you got wrong. Then, you can proceed to the next section. After you complete all four sections, your <strong>score for IELTS Listening test will be automatically calculated</strong>.</p>
+        	<p>This module is the same for Academic and General IELTS.</p>
+            <p>The Listening module takes 40 minutes: 30 min for testing and 10 min for transferring your answers to the answer sheet.</p><br>
+            
+            <center><audio controls="" controlslist="nodownload">
+              <source src="../audio_listening/l1.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          
+          <p><strong>SECTION 1. QUESTIONS 1-10</strong></p>
+          <p><strong>Questions 1-5</strong></p>
+		<p>Complete the information below. Write <strong>NO MORE THAN TWO WORDS OR A NUMBER</strong> for each answer.</p>
+          <table border="1" cellspacing="0" cellpadding="3" width="80%" align="center">
+            <tbody><tr>
+              <td colspan="2" valign="top"><p align="center"><strong>Tour information</strong></p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>Destination</p></td>
+              <td valign="top"><p><u>Sydney</u></p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>Tour type</p></td>
+              <td valign="top"><p>(1) <input type="text" class="ex-input" style="width:120px" id="ex1"> <span id="s1"></span></p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>Tourist attractions</p></td>
+              <td valign="top"><p>The Harbour Bridge</p>
+                <p>The Opera House </p>
+                <p>The Queen Victoria (2) <input type="text" class="ex-input" style="width:120px" id="ex2"> <span id="s2"></span></p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>Timetable</p></td>
+              <td valign="top"><p>From 7 am to (3) <input type="text" class="ex-input" style="width:120px" id="ex3"> <span id="s3"></span> pm</p></td>
+            </tr>
+            <tr>
+              <td valign="top"><p>Closest stop</p></td>
+              <td valign="top"><p>(4) <input type="text" class="ex-input" style="width:120px" id="ex4"> <span id="s4"></span> metres out from here, <br>
+                at the front of the (5) <input type="text" class="ex-input" style="width:120px" id="ex5"> <span id="s5"></span></p></td>
+            </tr>
+          </tbody></table>
+          <p>&nbsp;</p>
+          <p><strong>Questions 6-10</strong></p>
+          <p>Complete the booklet of ticket types below. Write <strong>ONE WORD OR A NUMBER</strong> for each answer.</p>
+          <table border="1" cellspacing="0" cellpadding="3" width="90%" align="center">
+            <tbody><tr>
+              <td colspan="3" valign="middle"><p align="center">Ticket types</p></td>
+            </tr>
+            <tr>
+              <td valign="middle"><p>minimal</p></td>
+              <td valign="middle"><p>(6)  <input type="text" class="ex-input" style="width:100px" id="ex6"> <span id="s6"></span> $</p></td>
+              <td valign="middle"><p>Valid during (7) <input type="text" class="ex-input" style="width:120px" id="ex7"> <span id="s7"></span> hours</p></td>
+            </tr>
+            <tr>
+              <td valign="middle"><p>(8) <input type="text" class="ex-input" style="width:120px" id="ex8"> <span id="s8"></span></p></td>
+              <td valign="middle"><p>30$</p></td>
+              <td valign="middle"><p>Lasts all day</p></td>
+            </tr>
+            <tr>
+              <td valign="middle"><p>premium</p></td>
+              <td valign="middle"><p>(9) <input type="text" class="ex-input" style="width:100px" id="ex9"> <span id="s9"></span> $</p></td>
+              <td valign="middle"><p>Lasts all day<br>
+                free drinks and snacks<br>
+                (10) <input type="text" class="ex-input" style="width:120px" id="ex10"> <span id="s10"></span> </p></td>
+            </tr>
+          </tbody></table>
+<br>
+		<div id="result" align="center"> </div>
+
+<button id="b2" class="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 1</strong></p>
+  <ol>
+    <li>bus tour</li>
+    <li>Building</li>
+    <li>9 / nine</li>
+    <li>20 / twenty</li>
+    <li>hotel</li>
+    <li>15 / fifteen</li>
+    <li>2 / two</li>
+    <li>standard</li>
+    <li>55 / fifty-five</li>
+    <li>audioguide / audio-guide</li>
+  </ol>
+  <ol>
+   
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+</div>
+<br>
+
+
+
+
+
+		  <script>
+			function check()
+			{
+				
+				var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, score, result;
+				result=true; score=0;
+				ex1=document.getElementById("ex1").value;
+				if (ex1.trim().toLowerCase()!="bus tour")
+				{ result=false; document.getElementById("s1").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else { document.getElementById("s1").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				ex2=document.getElementById("ex2").value;
+				if (ex2.trim().toLowerCase()!="building")
+				{ result=false; document.getElementById("s2").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s2").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex3=document.getElementById("ex3").value;
+				if ((ex3.trim().toLowerCase()!="9")&&(ex3.trim().toLowerCase()!="nine"))
+				{ result=false; document.getElementById("s3").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s3").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				ex4=document.getElementById("ex4").value;
+				if ((ex4.trim().toLowerCase()!="20")&&(ex4.trim().toLowerCase()!="twenty"))
+				{ result=false; document.getElementById("s4").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s4").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				ex5=document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase()!="hotel")
+				{ result=false; document.getElementById("s5").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s5").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex6=document.getElementById("ex6").value;
+				if ((ex6.trim().toLowerCase()!="15")&&(ex6.trim().toLowerCase()!="fifteen"))
+				{ result=false; document.getElementById("s6").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s6").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				ex7=document.getElementById("ex7").value;
+				if ((ex7.trim().toLowerCase()!="2")&&(ex7.trim().toLowerCase()!="two"))
+				{ result=false; document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex8=document.getElementById("ex8").value;
+				if (ex8.trim().toLowerCase()!="standard")
+				{ result=false; document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex9=document.getElementById("ex9").value;
+				if ((ex9.trim().toLowerCase()!="55")&&(ex9.trim().toLowerCase()!="fifty-five"))
+				{ result=false; document.getElementById("s9").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s9").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex10=document.getElementById("ex10").value;
+				if ((ex10.trim().toLowerCase()!="audioguide")&&(ex10.trim().toLowerCase()!="audio-guide"))
+				{ result=false; document.getElementById("s10").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s10").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+				score++;}
+				
+			
+				
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 1 is "+score+"/10 </div>";
+			}
+			
+		
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        
+        <p>Section 2 of IELTS Listening test. Listen to the audio and complete all the questions. After you finish, press 'check' and move on to the next section.</p>
+        	<br> 
+            
+            <center><audio controls="" controlslist="nodownload">
+              <source src="../audio_listening/l2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            
+            <br> <br> 
+            
+            <p><strong>SECTION 2. QUESTIONS 11-20</strong> </p>
+              <p><strong>Questions 11-15</strong></p>
+<p>Choose <strong>FIVE</strong> letters, A—I. Which <strong>FIVE</strong> group fitness programs are available at Fitness Land?</p>
+
+<table border="0" cellspacing="0" cellpadding="20">
+            <tbody><tr>
+              <td>
+              <p><input type="checkbox" id="ch1" value="1"> <strong>A</strong> yoga 
+              <span id="s1"> </span></p>
+              <p>  <input type="checkbox" id="ch2"> <strong>В</strong> pilates 
+                <span id="s2"> </span></p>
+                <p><input type="checkbox" id="ch3" value="1"> <strong>С</strong> step dance 
+                <span id="s3"> </span></p>
+                <p><input type="checkbox" id="ch4"> <strong>D</strong> aerobics 
+                <span id="s4"> </span></p>
+                <p><input type="checkbox" id="ch5"> <strong>E</strong> belly dance 
+              <span id="s5"> </span></p></td>
+              <td>
+              <p><input type="checkbox" id="ch6" value="1"> <strong>F</strong> barbell classes 
+              <span id="s6"> </span></p>
+                <p><input type="checkbox" id="ch7"> <strong>G</strong> kickboxing
+                <span id="s7"> </span></p>
+                <p><input type="checkbox" id="ch8" value="1"> <strong>H</strong> zumba 
+                <span id="s8"> </span></p>
+                <p><input type="checkbox" id="ch9" value="1"> <strong>I</strong> stretching
+              <span id="s9"> </span></p></td>
+            </tr>
+          </tbody></table>
+
+<br>
+            <p><strong>Questions 16-20</strong> </p>
+            <p>Complete the timetable of group activities below. Write <strong>NO MORE THAN TWO WORDS</strong>&nbsp;for each<br>
+              answer.</p>
+            <table border="1" cellspacing="0" cellpadding="3" align="center" width="60%">
+              <tbody><tr>
+                <td valign="top">
+                  <p align="center"><strong>Day</strong></p></td>
+                <td valign="top"><p align="center"><strong>Activity name</strong></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Monday</p></td>
+                <td valign="top"><p><strong>(16)</strong> <input type="text" class="ex-input" style="width:100px" id="ex16"> <span id="s16"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Tuesday</p></td>
+                <td valign="top"><p><strong>(17)</strong> <input type="text" class="ex-input" style="width:100px" id="ex17"> <span id="s17"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Wednesday </p></td>
+                <td valign="top"><p><strong>(18)</strong> <input type="text" class="ex-input" style="width:100px" id="ex18"> <span id="s18"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Thursday </p></td>
+                <td valign="top"><p><strong>(19)</strong> <input type="text" class="ex-input" style="width:100px" id="ex19"> <span id="s19"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Friday</p></td>
+                <td valign="top"><p><strong>(20)</strong> <input type="text" class="ex-input" style="width:100px" id="ex20"> <span id="s20"></span></p></td>
+              </tr>
+            </tbody></table><br>
+<div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>A</li>
+    <li>C</li>
+    <li>F</li>
+    <li>H</li>
+    <li>I</li>
+    <li>muscle building</li>
+    <li>fat loss</li>
+    <li>healthy body</li>
+    <li>relaxation</li>
+    <li>interval trainings</li>
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+</div>
+
+		<br>
+        
+
+
+
+            
+		  <script>
+			function check()
+			{
+				var text, score;
+				 score=0;
+				for (var i=1; i<10; i++)
+				{
+					text='ch'+i;
+					if (document.getElementById(text).checked==true){
+						if (document.getElementById(text).value==1) 
+						{document.getElementById('s'+i).innerHTML='<img height=20px align="absmiddle"src="../images/ok.png" />'; score++;}
+						else document.getElementById('s'+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+						
+						
+				}
+				
+				
+				
+				var ex, result; ex=["muscle building", "fat loss", "healthy body", "relaxation", "interval trainings"];
+				result=true;
+				
+				for (var i=16; i<21; i++)
+				{
+					ex16=document.getElementById("ex"+i).value;
+					if (document.getElementById("ex"+i).value.trim().toLowerCase()!=ex[i-16]) 
+					{ result=false; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+					else {document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				}
+				
+	
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+			
+		
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

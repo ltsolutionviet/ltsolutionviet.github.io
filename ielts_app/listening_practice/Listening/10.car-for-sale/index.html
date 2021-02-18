@@ -1,0 +1,187 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+</head>
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em><span style="font-weight: 400;">You will hear a woman talking on the telephone to a man about a car he is
+              selling.</span></em></p>
+        <p><em><span style="font-weight: 400;">Complete the notes below.</span></em></p>
+        <p><em><span style="font-weight: 400;">Write <span style="color: #ff0000;"><strong>NO MORE THAN ONE WORD OR A
+                  NUMBER</strong></span> for each answer</span></em></p>
+        <table border="1" cellspacing="0" cellpadding="2">
+          <tbody>
+            <tr>
+              <td style="text-align: center;">
+                <h2><strong>&nbsp;Car for sale (Mini)</strong></h2>
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: #dddddd;">
+                <p><em><strong>Example</strong></em></p>
+                <p>Age of car:&nbsp;just under <strong>13</strong> years old</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Colour</strong>: <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"></p>
+                <p><strong>Mileage</strong>: <b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)"></p>
+                <p>Previous owner was a <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)"></p>
+                <p>Current owner has used car mainly for <b>4 </b><input type="text" required="" id="q4"
+                    onkeyup="gtb(this)"></p>
+                <p><strong>Price</strong>: may accept offers from&nbsp;5 £<b></b><input type="text" required="" id="q5"
+                    onkeyup="gtb(this)">&nbsp;</p>
+                <p>(Note: <b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"> not due for 5 months)
+                </p>
+                <p><strong>Condition</strong>: good (recently serviced)</p>
+                <p>Will need a new <b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"> soon</p>
+                <p>Minor problem with a <b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)"></p>
+                <p><strong>Viewing</strong></p>
+                <p>Agreed to view the car on <b>9 </b><input type="text" required="" id="q9" onkeyup="gtb(this)">.</p>
+                <p><strong>Address</strong>:&nbsp;238, <b>10 </b><input type="text" required="" id="q10"
+                    onkeyup="gtb(this)"> Road.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="exam-section panel text-center">
+  <p></p>
+  <h4>---End of the Test---</h4>
+  <p></p>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Car for sale
+      </h3>
+      <div class="upper-stats">
+        <h1>Your Band Score: <b><b id="scoreValue"></b> / 10</b></h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> grey/gray 
+            </td>
+            <td style="width: 10%"><b>6.</b> tax 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> 62,000 
+            </td>
+            <td style="width: 10%"><b>7.</b> tyre
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> teacher 
+            </td>
+            <td style="width: 10%"><b>8.</b> headlight
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> shopping 
+            </td>
+            <td style="width: 10%"><b>9.</b> Thursday 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> 1,100 
+            </td>
+            <td style="width: 10%"><b>10.</b> London 
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+</div>
+
+<script>
+  function submit() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    var count = 0;
+    var arrA = [
+      ["grey","gray"],
+      ["62,000","62000"],
+      "teacher",
+      "shopping",
+      ["1,100", "1100"],
+      "tax",
+      "tyre",
+      "headlight",
+      "Thursday",
+      "London"
+    ]
+    for (var i = 1; i <= 10; i++) {
+      var role = arrA[i - 1];
+      var content = document.getElementById("q" + i).value;
+      if (i == 2 || i == 5) {
+        str = content.replace(/\s/g, '');
+        for (var j = 0; j < role.length ;j ++ ) {
+          if (role[j].trim() == str.trim()) {
+            count += 1;
+            break;
+          }
+        }
+      } else if(i == 1){
+        for (var j = 0; j < role.length ;j ++) {
+          if (role[j].trim().toUpperCase() == content.trim().toUpperCase()) {
+            count += 1;
+            break;
+          }
+        }
+      } else {
+        if (role.trim().toUpperCase() == content.trim().toUpperCase()) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == "none") {
+      x.style.display = "block";
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = "block";
+      z.style.display = "none";
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+
+  function gtb() {};
+</script>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <h2>Exercise 2</h2>
+
+    <p>Read the text and answer the questions below.</p>
+
+    <div class="exam-text">
+        <p align="center" style="font-weight:bold;"> The hottest month </p>
+        <p>&emsp; According to the Met Office, the UK had its warmest July day ever on July 1, when
+            temperatures hit 36.7 C near London. There were record heat waves in many countries
+            including Spain, while the African continent had the second-warmest July on record. </p>
+        <p>&emsp; While the impact of increased levels of carbon dioxide in the atmosphere is a key
+            driver of rising temperatures, another important factor is El Nino. This natural
+            phenomenon, which appears as a large swathe of warm water in the Pacific every few
+            years, is known to push up global temperatures. </p>
+        <p>&emsp; In recent days there have been reports that this year's El Nino will be
+            particularly intense. As a result, many experts believe that 2015 will be the warmest
+            year on record by some margin.</p>
+        <p>&emsp; The seas have also been soaking up a large amount of heat, the NOAA said, with
+            record warming in large expanses of the Pacific and Indian Oceans </p>
+        <p>&emsp; Peter Stott, head of climate monitoring and attribution at the UK Met Office,
+            said: "A strong El Nino is under way in the tropical Pacific and this, combined with the
+            long-term global warming trend, means there is the potential to see some very warm
+            months throughout this year - as the new figures for July appear to show. </p>
+
+
+    </div>
+
+    <br>
+
+
+    <br>
+    <p>Do the following statements agree with the information given in Reading Passage?</p>
+    <p>In boxes <strong>1-5</strong>, chose</p>
+    <p><strong>TRUE</strong> if the statement agrees with the information</p>
+    <p><strong>FALSE</strong> if the statement contradicts the information</p>
+    <p><strong>NOT GIVEN</strong> if there is no information on this</p>
+    <p class="exercises">&nbsp;</p>
+    <form>
+
+        <ol>
+            <li> Africa had the warmest July day ever on July 1.
+                <select id="select1">
+                    <option>TRUE</option>
+                    <option value="1">FALSE</option>
+                    <option>NOT GIVEN</option>
+                </select> <span id="s1"> </span>
+
+                <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
+                    hint
+                </button>
+            </li>
+
+
+            <div id="hint1" style="display:none;"><p class="hint"> The first paragraph tells us that
+                the July 1 was the hottest day in UK and some other countries. Africa had the
+                second-warmest July. </p></div>
+            <br>
+
+
+            <li> The temperature is rising due to the increased level of carbon dioxide in the
+                atmosphere.
+                <select id="select2">
+                    <option value="1">TRUE</option>
+                    <option>FALSE</option>
+                    <option>NOT GIVEN</option>
+                </select> <span id="s2"> </span>
+
+                <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show
+                    hint
+                </button>
+            </li>
+
+
+            <div id="hint2" style="display:none;"><p class="hint"> It the second paragraph we can
+                read that "...the impact of increased levels of carbon dioxide in the atmosphere is
+                a key driver of rising temperatures...", so statement is true. </p></div>
+            <br>
+
+
+            <li> 2015 might be the hottest year in the history.
+                <select id="select3">
+                    <option value="1">TRUE</option>
+                    <option>FALSE</option>
+                    <option>NOT GIVEN</option>
+                </select> <span id="s3"> </span>
+
+                <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show
+                    hint
+                </button>
+            </li>
+
+
+            <div id="hint3" style="display:none;"><p class="hint">It is said in the third paragraph:
+                "...experts believe that 2015 will be the warmest year...". So, 2015 may be the
+                hottest year ever. </p></div>
+            <br>
+
+
+            <li> Record warming was recorded in various seas, such as Black and Azov Sea.
+                <select id="select4">
+                    <option>TRUE</option>
+                    <option>FALSE</option>
+                    <option value="1">NOT GIVEN</option>
+                </select> <span id="s4"> </span>
+
+                <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show
+                    hint
+                </button>
+            </li>
+
+
+            <div id="hint4" style="display:none;"><p class="hint"> There is no information about
+                these seas in the text.</p></div>
+            <br>
+
+            <li> The year 2015 might very well consist of a number of very warm months.
+                <select id="select5">
+                    <option value="1">TRUE</option>
+                    <option>FALSE</option>
+                    <option>NOT GIVEN</option>
+                </select> <span id="s5"> </span>
+
+                <button class="b2" id="buttonhint5" type="button" onclick="toggle('hint5')">Show
+                    hint
+                </button>
+            </li>
+
+
+            <div id="hint5" style="display:none;"><p class="hint"> In the final paragraph Peter
+                Stott said that "there is the potential to see some very warm months throughout this
+                year", which means that there will probably be many hot months in 2015 .</p></div>
+        </ol>
+        <br>
+
+        <p id="result" class="exercises"></p>
+
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+
+        <!--<input type="submit"  onclick="check()" />-->
+    </form>
+    <br>
+
+
+    <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+					var text, text2, score, total;
+					total=0; score=0;
+					
+					for (var i=1; i<6; i++) 
+					{
+						total++;
+						text="select"+i; text2="s"+i;
+					if (document.getElementById(text).value=="1")	{
+				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />'; score++;}
+					else document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
+					}
+					score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+
+    </script>
+
+
+</div>
+</body>
+</html>

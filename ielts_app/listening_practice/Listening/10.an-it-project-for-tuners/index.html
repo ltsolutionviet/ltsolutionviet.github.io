@@ -1,0 +1,309 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-6</h2>
+        <p><span style="font-weight: 400;">What is the tutor’s opinion of the following company projects?</span></p>
+        <p><em><span style="font-weight: 400;">Choose <span style="color: #ff0000;"><strong>FIVE</strong></span> answers
+              from the box, and write the correct letter, <strong>A-H</strong>, next to questions
+              <strong>1-6</strong>.</span></em>&nbsp;</p>
+        <div style="padding: 10px; border: 1px solid black; background-color: #dddddd;">
+          <p><strong>Tutor’s opinion</strong></p>
+          <p><strong>A</strong> It would be very rewarding for the student.</p>
+          <p><strong>B</strong> It is too ambitious.</p>
+          <p><strong>C</strong> It would be difficult to evaluate.</p>
+          <p><strong>D</strong> It wouldn’t be sufficiently challenging.</p>
+          <p><strong>E</strong> It would involve extra costs.</p>
+          <p><strong>F</strong> It is beyond the student’s current ability.</p>
+          <p><strong>G</strong> It is already being done by another student.</p>
+          <p><strong>H</strong> It would probably have the greatest impact on the company.</p>
+        </div>
+        <p><strong>Company projects</strong></p>
+        <p><strong>1</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span
+            style="font-weight: 400;">Customer database&nbsp;<b> </b><select id="q1" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select></span></p>
+        <p><strong>2</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span style="font-weight: 400;">Online
+            sales catalogue&nbsp;<b> </b><select id="q2" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select></span></p>
+        <p><strong>3</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span style="font-weight: 400;">Payroll
+            <b> </b><select id="q3" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></p>
+        <p><strong>4</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span style="font-weight: 400;">Stock
+            inventory <b> </b><select id="q4" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+        <p><strong>5</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span
+            style="font-weight: 400;">Internal security <b> </b><select id="q5" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p>
+        <p><strong>6</strong><span style="font-weight: 400;"> &nbsp;&nbsp;</span><span
+            style="font-weight: 400;">Customer services&nbsp;<b> </b><select id="q6" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+            </select></span></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 7-8</h2>
+        <p><em><span style="font-weight: 400;">Choose <span style="color: #ff0000;"><strong>TWO</strong></span> letters,
+              <strong>A-E</strong>.</span></em></p>
+        <p><span style="font-weight: 400;">Which <span style="color: #ff0000;"><strong>TWO</strong></span> problems do
+            Sam and the tutor identify concerning group assignments?</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>A</b></span> <input type="checkbox"
+              name="q7" value="A" onchange="gcb(this,2,4)"> Personal relationships.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>B</b></span> <input type="checkbox"
+              name="q7" value="B" onchange="gcb(this,2,4)"> Cultural differences.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>C</b></span> <input type="checkbox"
+              name="q7" value="C" onchange="gcb(this,2,4)"> Division of labour.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>D</b></span> <input type="checkbox"
+              name="q7" value="D" onchange="gcb(this,2,4)"> Group leadership.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>E</b></span> <input type="checkbox"
+              name="q7" value="E" onchange="gcb(this,2,4)"> Group size.</span></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 9-10</h2>
+        <p><em><span style="font-weight: 400;">Choose <span style="color: #ff0000;"><strong>TWO</strong></span> letters,
+              <strong>A-E</strong>.</span></em></p>
+        <p><span style="font-weight: 400;">Which <span style="color: #ff0000;"><strong>TWO</strong></span> problems does
+            Sam identify concerning the lecturers? </span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>A</b></span> <input type="checkbox"
+              name="q9" value="A" onchange="gcb(this,2,4)"> Punctuality.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>B</b></span> <input type="checkbox"
+              name="q9" value="B" onchange="gcb(this,2,4)"> Organisation.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>C</b></span> <input type="checkbox"
+              name="q9" value="C" onchange="gcb(this,2,4)"> Accessibility.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>D</b></span> <input type="checkbox"
+              name="q9" value="D" onchange="gcb(this,2,4)"> Helpfulness.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><span><b>E</b></span> <input type="checkbox"
+              name="q9" value="E" onchange="gcb(this,2,4)"> Teaching materials.</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: An IT project for Tuners
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> D 
+            </td>
+            <td style="width: 10%"><b>6.</b> E 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> B 
+            </td>
+            <td style="width: 10%"><b>7.</b> B OR E IN EITHER ORDER 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> A 
+            </td>
+            <td style="width: 10%"><b>8.</b> B OR E IN EITHER ORDER 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> H 
+            </td>
+            <td style="width: 10%"><b>9.</b> A OR C IN EITHER ORDER 
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> F 
+            </td>
+            <td style="width: 10%"><b>10.</b> A OR C IN EITHER ORDER 
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['D'],
+      ['B'],
+      ['A'],
+      ['H'],
+      ['F'],
+      ['E'],
+      ['B', 'E'],
+      ['B', 'E'],
+      ['A', 'C'],
+      ['A', 'C']
+    ];
+    var numCh = 7;
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      if (i >= numCh) {
+        if (i % 2 != 0) {
+          var content = this.getValueCheckBox(id);
+          for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+            for (var k = 0; k < content.length; k++) {
+              if (resultBoard[i - 1][j].trim().toUpperCase() == content[k].trim().toUpperCase()) count += 1;
+            }
+          }
+        }
+      } else {
+        var selectedVal = document.getElementById(id);
+        var checkedValueSe = selectedVal.options[selectedVal.selectedIndex].value;
+        if (resultBoard[i - 1] == checkedValueSe) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+  function grd(n) {}
+
+  function getValueCheckBox(value) {
+    var cCoxes = document.getElementsByName(value);
+    var len = cCoxes.length;
+    var arrayReturn = []
+    for (var i = 0; i < len; i++) {
+      if (cCoxes[i].checked) {
+        arrayReturn.push(cCoxes[i].value);
+      }
+    }
+    return arrayReturn;
+  }
+
+  function gcb(n, va2, va3) {
+    var inputTags = document.getElementsByName(n.name);
+    var total = 0;
+    // limit checkbox
+    var limit = 2;
+    for (var i = 0; i < inputTags.length; i++) {
+      if (inputTags[i].checked) {
+        total = total + 1;
+      }
+      if (total > limit) {
+        inputTags[i].checked = false;
+        return;
+      }
+    }
+  }
+</script>

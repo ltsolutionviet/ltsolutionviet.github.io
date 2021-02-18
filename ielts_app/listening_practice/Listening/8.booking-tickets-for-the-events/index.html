@@ -1,0 +1,264 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-7</h2>
+        <p><em> Complete the table below.</em></p>
+        <p><em>Write <span style="color: #ff0000;"><strong>ONE WORD AND/OR A NUMBER</strong></span> for each answer</em>
+        </p>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td style="background-color: #dddddd;">
+                <p style="text-align: center;"><strong>Event</strong></p>
+              </td>
+              <td style="text-align: center; background-color: #dddddd;">
+                <p><strong>Cost</strong></p>
+              </td>
+              <td style="text-align: center; background-color: #dddddd;">
+                <p><strong>Venue</strong></p>
+              </td>
+              <td style="background-color: #dddddd;">
+                <p style="text-align: center;"><strong>Notes</strong></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Jazz</strong></p>
+                <p><strong>band</strong></p>
+              </td>
+              <td>
+                <p><em><span style="text-decoration: underline;"><strong>Example </strong></span></em></p>
+                <p>Tickets available</p>
+                <p>for £<em><span style="text-decoration: underline;"><strong>15</strong></span></em></p>
+              </td>
+              <td>
+                <p>The <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"></p>
+                <p>school</p>
+              </td>
+              <td>
+                <p>Also appearing:</p>
+                <p>Carolyn Hart (plays the <b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)">)</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Duck</strong></p>
+                <p><strong>races</strong></p>
+              </td>
+              <td>
+                <p>£1 per duck</p>
+              </td>
+              <td>
+                <p>Start behind</p>
+                <p>the <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)"></p>
+              </td>
+              <td>
+                <p>Prize: tickets for <b>4 </b><input type="text" required="" id="q4" onkeyup="gtb(this)"></p>
+                <p>held at the end of the festival.</p>
+                <p>Ducks can be bought in&nbsp;the <b>5 </b><input type="text" required="" id="q5" onkeyup="gtb(this)">
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p><strong>Flower</strong></p>
+                <p><strong>show</strong></p>
+              </td>
+              <td>
+                <p>Free</p>
+              </td>
+              <td>
+                <p><b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"> Hall</p>
+              </td>
+              <td>
+                <p>Prizes presented at 5 pm</p>
+                <p>by a well-known <b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 8-10</h2>
+        <p><em>Who is each play suitable for?</em></p>
+        <p><em>Write the correct letter, <strong>A, B or C,</strong> next to Questions <strong>8-10</strong>.</em></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <p style="padding-left: 30px;"><strong>A &nbsp;&nbsp;&nbsp;</strong>mainly for children</p>
+          <p style="padding-left: 30px;"><strong>B &nbsp;&nbsp;&nbsp;</strong>mainly for adults</p>
+          <p style="padding-left: 30px;"><strong>C &nbsp;&nbsp;&nbsp;</strong>suitable for people of all ages</p>
+        </div>
+        <p>&nbsp;&nbsp;</p>
+        <p><strong>Plays</strong></p>
+        <p><strong>8</strong> &nbsp;&nbsp;&nbsp;The Mystery of Muldoon&nbsp;<b> </b><select id="q8"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select></p>
+        <p><strong>9 &nbsp;&nbsp;&nbsp;</strong>Fire and Flood <b> </b><select id="q9" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select></p>
+        <p><strong>10 &nbsp;&nbsp;&nbsp;</strong>Silly Sailor <b> </b><select id="q10" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Booking tickets for the events
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> secondary</td>
+            <td style="width: 10%"><b>6.</b> Bythwaite</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> flute</td>
+            <td style="width: 10%"><b>7.</b> actor</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> cinema</td>
+            <td style="width: 10%"><b>8.</b> A</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> concert</td>
+            <td style="width: 10%"><b>9.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> market</td>
+            <td style="width: 10%"><b>10.</b> C</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'secondary',
+      'flute',
+      'cinema',
+      'concert',
+      'market',
+      'Bythwaite',
+      'actor',
+      'A',
+      'B',
+      'C',
+    ];
+    var numInp = 7;
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      var content = document.getElementById(id);
+      if (i <= numInp) {
+        if (resultBoard[i - 1].trim().toUpperCase() == content.value.trim().toUpperCase()) {
+          count += 1;
+        }
+      } else {
+        var selectedVal = document.getElementById(id);
+        var checkedValueSe = content.options[content.selectedIndex].value;
+        if (resultBoard[i - 1] == checkedValueSe) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+  function grd(n) {}
+
+  function toggleNav(n, t) {}
+
+  function storeAnswer(n, t, r, u) {}
+  function gtb(){}
+  function getValueCheckBox(value) {
+    var cCoxes = document.getElementsByName(value);
+    var len = cCoxes.length;
+    var arrayReturn = []
+    for (var i = 0; i < len; i++) {
+      if (cCoxes[i].checked) {
+        arrayReturn.push(cCoxes[i].value);
+      }
+    }
+    return arrayReturn;
+  }
+</script>

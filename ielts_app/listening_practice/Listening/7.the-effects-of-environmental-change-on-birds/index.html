@@ -1,0 +1,165 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em>Complete the notes below.</em></p>
+        <p><em>Write <span style="color: #ff0000;"><strong>ONE WORD ONLY</strong></span> for each answer.</em></p>
+        <div style="padding: 10px; border: 1px solid black;">&nbsp;
+          <h3>The effects of environmental change on birds</h3>
+          <p><strong>Mercury (Hg)</strong></p>
+          <p>• Highly toxic</p>
+          <p>• Released into the atmosphere from coal</p>
+          <p>• In water it may be consumed by fish</p>
+          <p>• It has also recently been found to affect birds which feed on <b>1 </b><input type="text" required=""
+              id="q1" onkeyup="gtb(this)"> </p>
+          <p><strong>Research on effects of mercury or&nbsp;binds</strong></p>
+          <p>• Claire Varian-Ramos is investigating</p>
+          <p>- &nbsp;&nbsp;&nbsp;the effects on birds’ <b>2 </b><input type="text" required="" id="q2"
+              onkeyup="gtb(this)">&nbsp;or mental processes, e.g. memory</p>
+          <p>- &nbsp;&nbsp;&nbsp;the effects on bird song (usually learned from a bird’s <b>3 </b><input type="text"
+              required="" id="q3" onkeyup="gtb(this)">&nbsp;)</p>
+          <p>• Findings:</p>
+          <p>- &nbsp;&nbsp;&nbsp;songs learned by birds exposed to mercury are less <b>4 </b><input type="text"
+              required="" id="q4" onkeyup="gtb(this)"> </p>
+          <p>- &nbsp;&nbsp;&nbsp;this may have a negative effect on birds’ <b>5 </b><input type="text" required=""
+              id="q5" onkeyup="gtb(this)"> </p>
+          <p>• Lab-based studies:</p>
+          <p>- &nbsp;&nbsp;&nbsp;allow more <b>6 </b><input type="text" required="" id="q6"
+              onkeyup="gtb(this)">&nbsp;for the experimenter</p>
+          <p><strong>Implications for humans</strong></p>
+          <p>• Migrating birds such as <b>7 </b><input type="text" required="" id="q7"
+              onkeyup="gtb(this)">&nbsp;containing mercury may be eaten by humans</p>
+          <p>• Mercury also causes problems in learning <b>8 </b><input type="text" required="" id="q8"
+              onkeyup="gtb(this)"> </p>
+          <p>• Mercury in a mother’s body from <b>9 </b><input type="text" required="" id="q9"
+              onkeyup="gtb(this)">&nbsp;may affect the unborn child</p>
+          <p>• New regulations for mercury emissions will affect everyone’s energy <b>10 </b><input type="text"
+              required="" id="q10" onkeyup="gtb(this)"> </p>
+        </div>
+        <h3 style="text-align: center;">&nbsp;</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: The effects of environmental change on birds
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> insects</td>
+            <td style="width: 10%"><b>6.</b> control</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> behaviour/behavior</td>
+            <td style="width: 10%"><b>7.</b> duck(s)</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> father</td>
+            <td style="width: 10%"><b>8.</b> language</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> complex/complicated</td>
+            <td style="width: 10%"><b>9.</b> food</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> reproduction/breeding</td>
+            <td style="width: 10%"><b>10.</b> cost(s)/price(s)/bill(s)</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['insects'],
+      ['behaviour', 'behavior'],
+      ['father'],
+      ['complex', 'complicated'],
+      ['reproduction', 'breeding'],
+      ['control'],
+      ['ducks', 'duck'],
+      ['language'],
+      ['food'],
+      ['costs', 'cost', 'prices','price' , 'bills', 'bill']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+       for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

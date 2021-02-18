@@ -1,0 +1,192 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em><span style="font-weight: 400;">You will hear a man called Tim and a woman called Laura discussing
+              preparations for their holiday.</span></em></p>
+        <p><em><span style="font-weight: 400;">Complete the notes below.</span></em></p>
+        <p><em><span style="font-weight: 400;">Write <span style="color: #ff0000;"><strong>ONE WORD AND/OR A
+                  NUMBER</strong></span> for each answer.</span></em></p>
+        <table border="1" cellspacing="0" cellpadding="2">
+          <tbody>
+            <tr>
+              <td>
+                <h2><strong>Things to do before we go</strong></h2>
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: #dddddd;">
+                <p><em><strong>Example</strong></em></p>
+                <p>Collect the <span style="text-decoration: underline;">currency</span>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>Cancel appointment with the <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)">
+                    &nbsp;(Monday)</li>
+                  <li>Begin taking the <b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)"> (Tuesday)
+                  </li>
+                  <li>Buy <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)">, a small bag, a spare
+                    <b>4 </b><input type="text" required="" id="q4" onkeyup="gtb(this)">, an electrical <b>5 </b><input
+                      type="text" required="" id="q5" onkeyup="gtb(this)"></li>
+                  <li>book a <b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"></li>
+                </ul>
+                <p><strong>Instructions for Laura's mum</strong></p>
+                <ul>
+                  <li>Feed the cat</li>
+                </ul>
+                <p style="padding-left: 30px;">Vet's details:</p>
+                <p style="padding-left: 60px;">Name: Colin <b>7 </b><input type="text" required="" id="q7"
+                    onkeyup="gtb(this)">&nbsp;</p>
+                <p style="padding-left: 60px;">Tel: <b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)">
+                </p>
+                <p style="padding-left: 60px;">Address: Fore Street (opposite the <b>9 </b><input type="text"
+                    required="" id="q9" onkeyup="gtb(this)">)</p>
+                <ul>
+                  <li>Water the plants</li>
+                  <li>Meet the heating engineer on <b>10 </b><input type="text" required="" id="q10"
+                      onkeyup="gtb(this)"></li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Things to do before we go
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> hairdresser</td>
+            <td style="width: 10%"><b>6.</b> taxi</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> tablets</td>
+            <td style="width: 10%"><b>7.</b> Jefferey</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> sunglasses</td>
+            <td style="width: 10%"><b>8.</b> 0777594128</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> lock</td>
+            <td style="width: 10%"><b>9.</b> church</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> adaptor/adapter</td>
+            <td style="width: 10%"><b>10.</b> 30th April</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['hairdresser'],
+      ['tablets'],
+      ['sunglasses'],
+      ['lock'],
+      ['adaptor', 'adapter'],
+      ['taxi'],
+      ['Jefferey'],
+      ['0777594128'],
+      ['church'],
+      ['30th April']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+      if(i == 8) {
+        str = content.replace(/\s/g,'');
+        for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+          if (resultBoard[i - 1][j].trim() === str.trim()) {
+            count += 1;
+          }
+        }
+      }else{
+        for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+          if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+        }
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

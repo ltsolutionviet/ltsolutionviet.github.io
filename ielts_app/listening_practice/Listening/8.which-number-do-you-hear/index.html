@@ -1,0 +1,157 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-7</h2>
+        <p><em>You will hear seven numbers. Circle the numbers you hear.</em></p>
+        <p><em>Choose the correct answer, <strong>A, B</strong> or <strong>C</strong>. </em></p>
+        <p>1. What is the number 1?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q1" value="A" onclick="grd(this)"> 12</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q1" value="B" onclick="grd(this)"> 20</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q1" value="C" onclick="grd(this)"> 22 </p>
+        <p>2. What is the number 2?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q2" value="A" onclick="grd(this)"> 109</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q2" value="B" onclick="grd(this)"> 119</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q2" value="C" onclick="grd(this)"> 190 </p>
+        <p>3. What is the number 3?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A" onclick="grd(this)"> 33</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)"> 13</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)">3 </p>
+        <p>4. What is the number 4?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)"> 1001</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)"> 1010</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q4" value="C" onclick="grd(this)"> 1100 </p>
+        <p>5. What is the number 5?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q5" value="A" onclick="grd(this)"> 70</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q5" value="B" onclick="grd(this)"> 7</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q5" value="C" onclick="grd(this)"> 17 </p>
+        <p>6. What is the number 6?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q6" value="A" onclick="grd(this)"> 150</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q6" value="B" onclick="grd(this)"> 115</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q6" value="C" onclick="grd(this)"> 151 </p>
+        <p>7. What is the number 7?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q7" value="A" onclick="grd(this)"> 1509</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q7" value="B" onclick="grd(this)"> 1559</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q7" value="C" onclick="grd(this)"> 1590 </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Which number do you hear
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 7</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> C</td>
+            <td style="width: 10%"><b>5.</b> A</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> C</td>
+            <td style="width: 10%"><b>6.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> B</td>
+            <td style="width: 10%"><b>7.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> B</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'C',
+      'C',
+      'B',
+      'B',
+      'A',
+      'C',
+      'B'
+    ];
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      var value = '';
+      var radios = document.getElementsByName(id);
+      for (var j = 0; j < radios.length; j++) {
+        if (radios[j].checked) {
+          value = radios[j].value;
+          break;
+        }
+      }
+      if (resultBoard[i - 1] == value) {
+        count += 1;
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function grd() {}
+</script>

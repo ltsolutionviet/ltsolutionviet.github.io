@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <p>Let's see how well you know <strong>4 marking criteria of IELTS Speaking test</strong>. Your
+        IELTS Speaking test is graded using 4 grading criteria. A good knowledge of these criteria
+        guarantees better preparation, as you know how to improve your performance on Speaking test.
+    </p>
+
+    <form>
+        <p><strong>Fluency and coherence</strong>
+        </p>
+        <ol>
+            <li>It is better to
+                <span id="s1"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q1"> avoid cohesive devices not to sound academic
+                    </li>
+                    <li><input type="radio" name="q1" id="a1"> connect sentences with linking words
+                        (such as 'firstly', 'next', 'in general')
+                    </li>
+                </ol>
+            </li>
+            <br>
+            <li>To improve your Fluency and Coherence, you should
+                <span id="s2"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q2" id="a2"> speak at your natural pace</li>
+                    <li><input type="radio" name="q2"> speak quickly to impress the examiner</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p></p><br>
+
+
+        <p><strong>Lexical Resource</strong>
+        </p>
+        <ol>
+            <li>To improve your Lexical Resource, you should
+                <span id="s3"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q3"> learn the whole answers by heart</li>
+                    <li><input type="radio" name="q3" id="a3"> learn advanced vocabulary and know
+                        how to use it in your speech
+                    </li>
+                </ol>
+            </li>
+            <br>
+            <li> Your aim is to
+                <span id="s4"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q4"> repeat the same words or phrases to show you
+                        know them
+                    </li>
+                    <li><input type="radio" name="q4" id="a4"> use words of similar meaning, if you
+                        cannot think of a specific word in English
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p></p><br>
+
+
+        <p><strong>Grammatical Range and Accuracy</strong>
+        </p>
+        <ol>
+            <li> You should
+                <span id="s5"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q5" id="a5"> be as accurate as possible</li>
+                    <li><input type="radio" name="q5"> be as quick as possible; fluency is more
+                        important than accuracy.
+                    </li>
+                </ol>
+            </li>
+            <br>
+            <li> It is better to
+                <span id="s6"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q6"> use only simple sentence structures to make
+                        sure you won't make any mistakes
+                    </li>
+                    <li><input type="radio" name="q6" id="a6"> try to use a variety of grammatical
+                        structures
+                    </li>
+                </ol>
+            </li>
+        </ol>
+
+        <p></p><br>
+
+
+        <p><strong>Pronunciation</strong>
+        </p>
+        <ol>
+            <li> Your goal is to
+                <span id="s7"></span>
+                <ol type="A">
+                    <li><input type="radio" name="q7" id="a7"> speak with clear English intonation
+                        and pronunciation
+                    </li>
+                    <li><input type="radio" name="q7"> speak very loudly</li>
+                </ol>
+            </li>
+        </ol>
+
+        <p></p><br>
+
+
+        <p id="result" class="exercises"></p>
+
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+    </form>
+
+    <script>
+		  		
+				 
+				
+				function check() {
+					var score=0; total=7;
+					
+					for (var i=1; i<8; i++) 
+					{
+					if (document.getElementById("a"+i).checked == true)	
+				{document.getElementById("s"+i).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/ok.png"  />'; score++;}
+					else document.getElementById("s"+i).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/cross.png"  />';
+					}
+
+					score=score/total*100;
+					if (!(score % 1 === 0)) score=score.toFixed(2);
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+
+    </script>
+
+
+</div>
+</body>
+</html>

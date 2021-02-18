@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+        
+        <h2>Exercise 4</h2>
+        <p>Read the text and answer the questions below.</p>
+        <div class="exam-text"> 
+        <p align="center" style="font-weight:bold;">Return to the Trail of Tears</p>
+        <p>It’s easy to miss this subtle groove, covered in pine straw and vines, worn in the ground of eastern Tennessee. In the summer of 1838, about 13,000 Cherokee walked this path from their homes in the Appalachian Mountains to a new, government-mandated homeland in Oklahoma. They traveled over land and water and were held in military camps along the way. Unlike other settlers heading west, who saw in America’s open expanses the hope of a new life, the Cherokee traveled with a military escort. They left behind highly coveted land that was, even as they walked, being divided up among white land speculators. </p>
+        <p>The Trail of Tears was a journey of some 900 miles that took approximately nine months to complete. After they were rounded up from their villages and homes, the Cherokee were assembled in large internment camps, where some waited for weeks before heading out in waves of approximately 1,000, following different paths, depending on the season. </p>
+
+<p>As many as 4,000 died along the way from dehydration, tuberculosis, whooping cough, and other hardships— by some accounts, a dozen or more were buried at each stop. Some escaped along the way and were caught and returned to the march like criminals. Still others refused to leave, hiding out in the mountains, joining others on small farms where, stripped of tribal connections and burdened with unclear legal status, they faced an uncertain future.</p>
+
+<p>Despite all our historical knowledge of the forced removal, there has been little study of the archaeology of the trail, the internment camps along the way, and the farms that sheltered those who stayed behind. The military forts that held the Cherokee in crowded, unsanitary conditions have been largely consumed by development or otherwise lost. The homesteads back East, where resistors lived under constant threat of arrest, went undocumented. Buildings, roads, farms, and floods have claimed almost all of these sites. In addition to a lack of material evidence, there has long been an uneasy, even contentious, relationship between Native Americans and archaeologists. Through neglect and distrust, this sad chapter has been at risk of fading from collective memory, taking with it any chance to understand the relationships between refugees and soldiers, and cultural information about the Cherokee themselves—what they carried, how they traveled, why they died. </p>
+
+<p>That now stands to change. In eastern Tennessee, archaeologists are excavating the site of Fort Armistead, a U.S. Army encampment that served as a holding area and one of the first stops for North Carolina Cherokee on their forced journey west. Hidden deep in Cherokee National Forest, the site has managed to escape the damage or destruction that has visited nearly every other significant trace of the trail and camps. </p>
+        </div>
+        
+        <br> 
+       
+        
+        <br>
+        <p>Complete the sentences below. </p>
+
+		<p> Write <strong>ONLY ONE WORD</strong> from the passage for each answer.</p>
+        <br>
+        <form>
+        
+        <ol>
+        <li>Cherokee left the land that was being
+          <input type="text" class="ex-input" style="width:210px" id="ex1" required="">
+          up among white land speculators.
+         <span id="s1"> </span> 
+         
+        <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show hint</button></li>
+        
+        <div id="hint1" style="display:none;"> <p class="hint"> It is written in end of the first paragraph: "They left behind highly coveted land that was, even as they walked, being <em>divided</em> up among white land speculators" </p></div> <br> 
+        
+        
+        
+        
+        
+        <li> Caught Cherokee were returned like
+          <input type="text" class="ex-input" style="width:210px" id="ex2" required="">
+          .
+         <span id="s2"> </span> 
+         
+        <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show hint</button></li>
+           
+        <div id="hint2" style="display:none;"> <p class="hint"> The second sentence of the third paragraph says that "Some escaped along the way and were caught and returned to the march like <em>criminals</em>." </p></div> <br> 
+        
+        
+        
+        
+        <li> The relations between Native Americans and
+          <input type="text" class="ex-input" style="width:210px" id="ex3" required=""> 
+          were uneasy.
+         <span id="s3"> </span> 
+         
+         <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show hint</button></li>
+        
+        <div id="hint3" style="display:none;"> <p class="hint"> In the fourth paragraph we can read that "...there has long been an uneasy, even contentious, relationship between Native Americans and <em>archaeologists</em>." </p></div> <br> 
+        
+        
+        
+        
+        <li>The archaeologists are now 
+          <input type="text" class="ex-input" style="width:210px" id="ex4" required="">
+          the site of Fort Armistead in eastern Tennessee.
+         <span id="s4"> </span> 
+         
+         <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show hint</button></li>
+        
+        <div id="hint4" style="display:none;"> <p class="hint"> In the beginning of the last paragraph we see that "In eastern Tennessee, archaeologists are <em>excavating</em> the site of Fort Armistead..." </p></div> <br> 
+        </ol>
+        
+        <p id="result" class="exercises"> </p>
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
+        
+        
+        <!--<input type="submit"  onclick="check()" />-->
+        </form><br>
+        
+          
+          <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+				var ex1, ex, score, total;
+				score=0; total=0; ex=['divided', 'criminals', 'archaeologists', 'excavating'];
+				for (var i=1; i<5;i ++) {
+					total++;
+					ex1=document.getElementById("ex"+i).value;
+					if (ex1.trim().toLowerCase()!=ex[i-1])
+					document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
+					else { score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />';}
+				}
+				
+				score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+          </script>
+          
+          
+ 
+             
+        
+     
+        </div>
+</body>
+</html>

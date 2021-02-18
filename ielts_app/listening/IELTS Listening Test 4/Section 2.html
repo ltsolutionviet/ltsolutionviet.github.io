@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        	<p>Listen to the audio and answer the questions. When you finish , click 'check' and proceed to the next section.</p>
+            <p style="opacity:0;"> The Listening module takes 40 minutes: 30 min for testing and 10 min for transferring your answers to.</p>
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/4.2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+          <p><strong>SECTION 2. QUESTIONS 11-20</strong></p>
+          <br>
+          <p><strong>Questions 11-14</strong></p>
+          
+          <p>Answer the questions below. Choose the  correct letter, <strong>A</strong>, <strong>B</strong>, or <strong>C</strong>.</p>
+
+<p><strong>11.</strong> The fair will take place at the <span id="s1"></span>
+
+</p><ol type="A"> 
+             <li><input type="radio" name="q1"> Fairgrounds.</li>
+             <li><input type="radio" name="q1" id="a1"> Park.</li>
+             <li><input type="radio" name="q1"> School.</li>
+            </ol><p></p><br>
+          
+          
+          <p><strong>12.</strong> The fair will begin on Friday <span id="s2"></span>
+
+</p><ol type="A"> 
+             <li><input type="radio" name="q2"> Morning.</li>
+             <li><input type="radio" name="q2"> Afternoon.</li>
+             <li><input type="radio" name="q2" id="a2"> Evening.</li>
+            </ol><p></p><br>
+            
+            
+            <p><strong>13.</strong> The fair will begin with a <span id="s3"></span>
+
+</p><ol type="A"> 
+             <li><input type="radio" name="q3"> Parade.</li>
+             <li><input type="radio" name="q3" id="a3"> Dance performance.</li>
+             <li><input type="radio" name="q3"> Speech by the major.</li>
+            </ol><p></p><br>
+            
+             <p><strong>14.</strong> There will be free admission on <span id="s4"></span>
+
+</p><ol type="A"> 
+             <li><input type="radio" name="q4" id="a4"> Friday.</li>
+             <li><input type="radio" name="q4"> Saturday.</li>
+             <li><input type="radio" name="q4"> Sunday.</li>
+             </ol><p></p><br>
+             
+
+            <p><strong>Questions 15-20</strong></p>
+<p>Complete the chart below.</p>
+  <p>Write <strong>NO MORE THAN ONE WORD</strong> for each answer.</p>
+<table border="1" width="85%" cellspacing="0" cellpadding="5" align="center">
+  <tbody><tr>
+    <td valign="top"><p>Day/Time</p></td>
+    <td valign="top"><p>Event<u></u></p></td>
+  </tr>
+  <tr>
+    <td valign="top"><p>Saturday afternoon</p>
+    <p>Saturday evening</p>      
+    <p>Sunday afternoon</p>
+    <p>All weekend</p>
+    </td>
+    
+    <td valign="top">
+    <p><strong>(15)</strong> <input type="text" class="ex-input" style="width:120px" id="ex6">
+      <span id="s6"></span> show</p>      
+    
+    <p><strong>(16)</strong> <input type="text" class="ex-input" style="width:120px" id="ex7">
+    <span id="s7"></span> by the lake</p>    
+     
+    <p><strong>(17)</strong> <input type="text" class="ex-input" style="width:120px" id="ex8">
+     <span id="s8"></span> contest</p>
+        
+     <p><strong>(18)</strong> <input type="text" class="ex-input" style="width:120px" id="ex9">
+     <span id="s9"></span> food</p>    
+     
+      <p><strong>(19)</strong> <input type="text" class="ex-input" style="width:120px" id="ex10">
+      <span id="s10"></span> for children</p>    
+      
+      <p><strong>(20)</strong> <input type="text" class="ex-input" style="width:120px" id="ex11">
+      <span id="s11"></span> for sale</p>
+     </td>
+  </tr>
+</tbody></table>  
+        
+
+
+  <br>
+          
+            </div>
+          
+           
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>B</li>
+    <li>C</li>
+    <li>B</li>
+    <li>A</li>
+    <li>Clown</li>
+    <li>Concert</li>
+    <li>Singing</li>
+    <li>International</li>
+    <li>Games</li>
+    <li>Crafts</li>
+  </ol>
+  
+</div> <br> <br>
+
+<div align="center">
+ &emsp;
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+ 
+</div>
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+				
+				for (var i=1; i<5; i++) 
+					{
+						text="a"+i; text2="s"+i;
+					if (document.getElementById(text).checked == true)	{
+				document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png"  />';
+				score++;}
+					else { result=false; document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png"  />';}
+					}
+				
+				
+				var ex = ["clown","concert","singing","international","games","crafts"];
+				
+				
+				for (var i=6; i<12; i++) 
+					{
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-6]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+					}
+						
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+    
+        
+     
+        </div>
+</body>
+</html>

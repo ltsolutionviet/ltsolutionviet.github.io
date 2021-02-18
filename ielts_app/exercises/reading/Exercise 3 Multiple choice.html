@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+        
+        <h2>Exercise 3</h2>
+        <p>Read the text and answer the questions below.</p>
+        <div class="exam-text"> 
+        <p align="center" style="font-weight:bold;"> Why does coffee shoot out of the lid of your cup? </p>
+        <p> You're running late for work and you've purchased your coffee in a hurry. Just as you arrive at the office, a jet of hot liquid escapes from the tiny hole in the lid, leaving you with hot beverage residue on your clothes before the day has really started. </p>
+        <p>TThis is exactly what happened to Rob Kaczmarek after buying a cup of his favourite caffeinated drink. The marketing director at Convergent Science was intrigued by why the coffee shoots out so far and therefore set about modelling this, initially as a joke for those who enjoy a bit of computational fluid dynamics. It's the design of the lid that's the problem, he explains.</p>
+        <p>"It happens because of the sloshing of the coffee against the lid, which is kind of unique. At the end of the lid, the hole is right up above that. As the coffee sloshes against the end of the lid, that velocity is amplified and it splashes up through the actual hole."</p>
+        <p> Not all coffee cups are designed with a hole, of course. Some have lids with a tiny hole and others peel back to reveal a much larger gap, which offsets the shooting jets of hot liquid. </p>
+       <p> </p>
+        </div>
+        
+        <br> 
+        
+        <br>
+        <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>,<strong> C</strong> or <strong>D</strong>.</p>
+        
+        <form> <ol>
+         <li> What accident might occur at work in the morning, after you bought coffee?
+         <span id="s1"> </span>
+         <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show hint</button> 
+                 
+        <div id="hint1" style="display:none;"> <p class="hint"> Answer A is incorrect because there is no information about spilling coffee all over the place. Also, there is nothing sais about burning yourself. <br> </p> </div> 
+         <ol type="A">
+          	<li> <input type="radio" name="q1"> You spill it all over the place accidently. </li>
+          	<li> <input type="radio" name="q1"> You get burns from the hot coffee. </li>
+            <li> <input type="radio" name="q1" id="a1"> You contaminate your clothes with it. </li>
+            <li> <input type="radio" name="q1"> Nothing out of ordinary. </li>
+            </ol>
+ 		</li> <br>
+        
+        <br> 
+        <li> Rob Kaczmarek explains to us that:
+        <span id="s2"> </span>
+        <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show hint</button> 
+                 
+        <div id="hint2" style="display:none;"> <p class="hint"> Although all 4 answers are present in the second paragraph, answers A, B and C are not important and they are not really explained to us, unlike answer D. <br> </p> </div> 
+         <ol type="A">
+          	<li> <input type="radio" name="q2"> The coffee shoots out very far. </li>
+          	<li> <input type="radio" name="q2"> He sat his  experiment as a joke. </li>
+            <li> <input type="radio" name="q2"> He was really intrigued by spilling the coffee. </li>
+            <li> <input type="radio" name="q2" id="a2"> Coffee spils because of the design of the lid. </li> </ol>
+ 		</li> <br>
+       
+        <br>
+        <li> The main reason coffee spils is:
+        <span id="s3"> </span>
+        <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show hint</button> 
+                 
+        <div id="hint3" style="display:none;"> <p class="hint"> The answers C and D aren't in the third paragraph. And the answer A is not the reason coffee is spilling. <br> </p> </div> 
+        
+         <ol type="A">
+          	<li> <input type="radio" name="q3"> Velocity. </li>
+          	<li> <input type="radio" name="q3" id="a3"> Sloshing. </li>
+            <li> <input type="radio" name="q3"> Design of the cup. </li>
+            <li> <input type="radio" name="q3"> It is not stated. </li> </ol>
+ 		</li> <br>
+        
+        
+        <br>
+        <li> This text might be classified as: 
+        <span id="s4"> </span>
+        <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show hint</button>          
+        <div id="hint4" style="display:none;"> <p class="hint"> All answers, exept for A, are invalid. this text has no humour in it, and no romance. And it is not a fictional text.  <br> </p> </div> 
+        
+         <ol type="A">
+          	<li> <input type="radio" name="q4" id="a4"> Scientific. </li>
+          	<li> <input type="radio" name="q4"> Humorous. </li>
+            <li> <input type="radio" name="q4"> Fictional. </li>
+            <li> <input type="radio" name="q4"> Romantic. </li> </ol>
+ 		</li> <br>
+         
+        
+        
+        </ol>
+        
+        <p id="result" class="exercises"> </p>
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
+        
+        
+        <!--<input type="submit"  onclick="check()" />-->
+        </form><br>
+        
+          
+          <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+					var text, text2, score, total; score=0; total=0;
+					
+					for (var i=1; i<5; i++) 
+					{
+						text="a"+i; text2="s"+i; total++;
+					if (document.getElementById(text).checked == true) {
+				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  style="vertical-align:middle;" />'; score++;}
+					else document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
+					}
+
+					score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+          </script>
+          
+          
+
+            
+    
+             
+        
+     
+        </div>
+</body>
+</html>

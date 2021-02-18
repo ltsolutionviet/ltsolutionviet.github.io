@@ -1,0 +1,152 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-3</h2>
+        <p><em>Look at the camplus plan below and listen to three people giving directions.</em></p>
+        <p><em>In each case, which block do the directions lead to?</em></p>
+        <p><em>Choose the correct letter, <strong>A-E</strong>.</em></p>
+        <p><em><img src="map.jpg" alt="" width="571" height="307"></em></p>
+        <p><strong>1</strong>. Speaker 1 is giving directions to Block <b> </b><select id="q1" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select></p>
+        <p><strong>2</strong>. Speaker 2&nbsp;is giving directions to Block <b> </b><select id="q2"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select></p>
+        <p><strong>3</strong>. Speaker 3&nbsp;is giving directions to Block <b> </b><select id="q3"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Directions on a map
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 3</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> A</td>
+            <td style="width: 10%"><b>3.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> C</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'A',
+      'C',
+      'B'
+      
+    ];
+    for (var i = 1; i <= 3; i++) {
+      var id = 'q' + i;
+      var content = document.getElementById(id);
+      var checkedValueSe = content.options[content.selectedIndex].value;
+      if (resultBoard[i - 1] == checkedValueSe) {
+        count += 1;
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+  function getValueCheckBox(value) {
+    var cCoxes = document.getElementsByName(value);
+    var len = cCoxes.length;
+    var arrayReturn = []
+    for (var i = 0; i < len; i++) {
+      if (cCoxes[i].checked) {
+        arrayReturn.push(cCoxes[i].value);
+      }
+    }
+    return arrayReturn;
+  }
+</script>

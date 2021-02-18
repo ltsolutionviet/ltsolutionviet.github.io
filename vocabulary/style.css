@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+    position: relative;
+    min-height: 100%;
+	max-width:98%;
+	overflow-x: hidden;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url("../../fonts/Lato.ttf");
+}
+body 
+{
+	font-family: MyFont;
+    font-size: medium;
+}
+
+table {
+	line-height:100%;
+	width: 90%;
+}
+
+.example{
+	display:block;
+	width:90%;
+	font-style:italic;
+	margin-left:1.3em;
+	margin-bottom:1.2em;
+	padding: 0.2em 0.4em 0.2em 0.4em;
+	border-radius:7px;
+	border-left:4px solid green;
+	color:#2F4F4F;
+}
+
+ul { padding-left: 1.2em; }

@@ -1,0 +1,231 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-4</h2>
+        <p><em>Circle the appropriate letter.</em></p>
+        <div style="padding: 10px; border: 1px solid black; background-color: #dddddd;">
+          <p><strong><em>Example</em></strong></p>
+          <p>The student is looking for the School of</p>
+          <p style="padding-left: 30px;">A Fine Arts.</p>
+          <p style="padding-left: 30px;">B Economic History.</p>
+          <p style="padding-left: 30px;"><strong><em><span
+                  style="text-decoration: underline;">C</span></em></strong>&nbsp;Economics.</p>
+          <p style="padding-left: 30px;">D Accountancy.</p>
+        </div>
+        <p><strong>1</strong>&nbsp; &nbsp; The orientation meeting</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q1" value="A" onclick="grd(this)"> &nbsp;
+          &nbsp;took place recently.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q1" value="B" onclick="grd(this)"> &nbsp;
+          &nbsp;took place last term.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q1" value="C" onclick="grd(this)"> &nbsp;
+          &nbsp;will take place tomorrow.</p>
+        <p style="padding-left: 30px;"><b>D</b> <input type="radio" name="q1" value="D" onclick="grd(this)"> &nbsp;
+          &nbsp;will take place next week.</p>
+        <p style="padding-left: 30px;">&nbsp;</p>
+        <p><strong>2 &nbsp; &nbsp;</strong>Attendance at lectures is</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q2" value="A" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;optional after 4 pm.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q2" value="B" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;closely monitored.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q2" value="C" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;difficult to enforce.</p>
+        <p style="padding-left: 30px;"><b>D</b> <input type="radio" name="q2" value="D" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;sometimes unnecessary.</p>
+        <p style="padding-left: 30px;">&nbsp;</p>
+        <p><strong>3 &nbsp; &nbsp;</strong>Tutorials take place</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;every morning.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;twice a week.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;three mornings a week.</p>
+        <p style="padding-left: 30px;"><b>D</b> <input type="radio" name="q3" value="D" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;three afternoons a week.</p>
+        <p style="padding-left: 30px;">&nbsp;</p>
+        <p><strong>4 &nbsp; &nbsp;</strong>The lecturer’s name is</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;Roberts.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;Rawson.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q4" value="C" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;Rogers.</p>
+        <p style="padding-left: 30px;"><b>D</b> <input type="radio" name="q4" value="D" onclick="grd(this)">
+          &nbsp;&nbsp;&nbsp;Robertson.</p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 5-10</h2>
+        <p><em>Complete the notes below using <strong><span style="color: #ff0000;">NO MORE THAN THREE
+                WORDS</span></strong></em></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <h2><strong>Course requirements</strong></h2>
+          <p><strong>Tutorial paper:</strong></p>
+          <ul>
+            <li>A piece of work on a given topic. Students must:</li>
+            <li><b>5 </b><input type="text" required="" id="q5" onkeyup="gtb(this)"> for 25 minutes</li>
+            <li><b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"></li>
+            <li>give to lecturer for marking</li>
+          </ul>
+          <p><strong>Essay topic:</strong></p>
+          <ul>
+            <li>Ussually <b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"></li>
+          </ul>
+          <p><strong>Type of exams:</strong></p>
+          <ul>
+            <li><b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)"></li>
+          </ul>
+          <p><strong>Library:</strong></p>
+          <ul>
+            <li>Important books are in <b>9 </b><input type="text" required="" id="q9" onkeyup="gtb(this)"></li>
+          </ul>
+          <p><strong>Focus of course: </strong></p>
+          <ul>
+            <li>Focus on <b>10 </b><input type="text" required="" id="q10" onkeyup="gtb(this)"></li>
+          </ul>
+        </div>
+        <h2>&nbsp;</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Course requirements
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> A</td>
+            <td style="width: 10%"><b>6.</b> write up work</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> B</td>
+            <td style="width: 10%"><b>7.</b> can choose</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> C</td>
+            <td style="width: 10%"><b>8.</b> open book</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> A</td>
+            <td style="width: 10%"><b>9.</b> closed reserve</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> talk//give a talk</td>
+            <td style="width: 10%"><b>10.</b> vocational (subjects)//(preparing for) work/employment</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'A',
+      'B',
+      'C',
+      'A',
+      ['talk', 'give a talk'],
+      ['write up work'],
+      ['can choose'],
+      ['open book'],
+      ['closed reserve'],
+      ['vocational', 'vocational subjects','preparing for work', 'work', 'employment']
+    ];
+    var numInp = 5;
+    for (var i = 1; i <= 10; i++) {
+      var qi = 'q' + i;
+      if (i >= numInp) {
+        var content = document.getElementById(qi).value;
+           for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+          if (resultBoard[i - 1][j].trim().toUpperCase() === content.trim().toUpperCase()) {
+            count += 1;
+          }
+        }
+        
+      } else {
+        var value = '';
+        var radios = document.getElementsByName(qi);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            value = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == value) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function grd() {}
+
+  function gtb() {}
+</script>

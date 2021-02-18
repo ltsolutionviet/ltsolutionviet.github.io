@@ -1,0 +1,176 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-4</h2>
+        <p><em>Which bank provides the following?</em></p>
+        <p><em>Choose <span style="color: #000000;"><strong>FOUR</strong></span> answers from the box and write the
+            correct letter,<strong> A-F</strong>, next to questions <strong>1-4</strong>.</em></p>
+        <p><strong>1&nbsp; &nbsp; &nbsp;</strong>a branch on the campus &nbsp;&nbsp;<b> </b><select id="q1"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+          </select></p>
+        <p><strong>2&nbsp; &nbsp; &nbsp;</strong>a free gift for new customers &nbsp;&nbsp;<b> </b><select id="q2"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+          </select></p>
+        <p><strong>3&nbsp; &nbsp; &nbsp;</strong>special interest rates for students&nbsp;<b> </b><select id="q3"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+          </select></p>
+        <p><strong>4&nbsp; &nbsp; &nbsp;</strong>no bank charges for certain customers <b> </b><select id="q4"
+            onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+          </select></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <p><strong>A</strong> Evergreen</p>
+          <p><strong>B</strong> Finley’s</p>
+          <p><strong>C</strong> Great Western</p>
+          <p><strong>D</strong> International Union</p>
+          <p><strong>E</strong> Moneysafe</p>
+          <p><strong>F</strong> Northern Star</p>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Open a bank account
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 4</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> B</td>
+            <td style="width: 10%"><b>3.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> D</td>
+            <td style="width: 10%"><b>4.</b> E</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'B',
+      'D',
+      'C',
+      'E',
+
+    ];
+    for (var i = 1; i <= 4; i++) {
+      var id = 'q' + i;
+      var content = document.getElementById(id);
+      var checkedValueSe = content.options[content.selectedIndex].value;
+      if (resultBoard[i - 1] == checkedValueSe) {
+        count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+  function getValueCheckBox(value) {
+    var cCoxes = document.getElementsByName(value);
+    var len = cCoxes.length;
+    var arrayReturn = []
+    for (var i = 0; i < len; i++) {
+      if (cCoxes[i].checked) {
+        arrayReturn.push(cCoxes[i].value);
+      }
+    }
+    return arrayReturn;
+  }
+</script>

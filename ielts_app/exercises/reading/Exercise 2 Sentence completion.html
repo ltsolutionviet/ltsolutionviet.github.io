@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <h2>Exercise 2</h2>
+    <p>Read the text and answer the questions below.</p>
+    <div class="exam-text">
+        <h3 align="center"> Worms </h3>
+        <p>&emsp; About a quarter of the world's population could have worms living in their guts.
+            For many years experts have recommended treating large groups at risk of infection - but
+            is this mass approach worthwhile? </p>
+        <p>&emsp; Evidence showing the benefits of large-scale deworming projects has come under
+            scrutiny in recent weeks - the debate has even been dubbed "worm wars". Parasites, such
+            as roundworm, hookworm and whipworm could be living inside more than 1.5 billion people
+            according to the World Health Organization (WHO). </p>
+
+        <p>&emsp; "People are usually infected through contaminated food but hookworm larvae can
+            also burrow into feet, get into blood vessels and make their way to the heart and lungs.
+            From there they can climb up to the oesophagus* and be swallowed, ending up in the gut
+            where they grow.</p>
+
+        <p>&emsp; Worms are not usually fatal but in serious cases they can cause abdominal pain,
+            diarrhoea, loss of appetite, weight loss, fatigue and anaemia. In children, they can
+            also contribute to malnutrition, stunted growth, and absences from school.
+            A nurse gives deworming treatment to a boy in India </p>
+        <p>*oesophagus - throat</p>
+    </div>
+
+    <br>
+
+
+    <br>
+    <p>Complete the sentences below. </p>
+
+    <p> Write <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
+    <br>
+    <form>
+
+        <ol>
+            <li> Now scientists doubt whether it is <input type="text" class="ex-input"
+                                                           style="width:210px" id="ex1" required="">
+                to treat large groups of possibly infected people.
+                <span id="s1"> </span>
+
+                <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint1" style="display:none;"><p class="hint"> It is written in the first
+                paragraph: "<em>For many years experts have recommended treating large groups at
+                    risk of infection - but is this mass approach <u>worthwhile</u> ?</em>". </p>
+            </div>
+            <br>
+
+
+            <li> The expers called the debate
+                <input type="text" class="ex-input" style="width:210px" id="ex2" required="">.
+                <span id="s2"> </span>
+
+                <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint2" style="display:none;"><p class="hint">The second paragraph says that
+                "<em>the debate has even been dubbed "<u>worm wars</u></em>". </p></div>
+            <br>
+
+            <li> Hookworm larvae might make his way to the
+                <input type="text" class="ex-input" style="width:210px" id="ex3" required=""> and
+                then be swallowed.
+                <span id="s3"> </span>
+
+                <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint3" style="display:none;"><p class="hint"> In the third paragraph we see
+                that hookworm larvae "<em>can climb up to the <u>oesophagus</u> and be
+                    swallowed.</em>" </p></div>
+            <br>
+
+
+            <li> Although dangerous, worms are rarely
+                <input type="text" class="ex-input" style="width:210px" id="ex4" required="">.
+                <span id="s4"> </span>
+
+                <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint4" style="display:none;"><p class="hint"> It is written in the last
+                paragraph: "<em>Worms are not usually <u>fatal</u>.</em>" </p></div>
+            <br>
+
+        </ol>
+
+        <p id="result" class="exercises"></p>
+
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+
+        <!--<input type="submit"  onclick="check()" />-->
+    </form>
+    <br>
+
+
+    <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+				var ex1, ex, score, total;
+				score=0; total=0; ex=['worthwhile', 'worm wars', 'oesophagus','fatal'];
+				
+				for (var i=1; i<5;i ++) {
+					total++;
+					ex1=document.getElementById("ex"+i).value;
+					if (ex1.trim().toLowerCase()!=ex[i-1])
+					document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
+					else { score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />';}
+				}
+				
+					score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+
+    </script>
+
+
+</div>
+</body>
+</html>

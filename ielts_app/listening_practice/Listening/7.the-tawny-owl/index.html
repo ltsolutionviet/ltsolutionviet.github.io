@@ -1,0 +1,164 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em><span style="font-weight: 400;">Complete the notes below.</span></em></p>
+        <p><em><span style="font-weight: 400;">Write <span style="color: #ff0000;"><strong>ONE WORD ONLY</strong></span>
+              for each answer.</span></em></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <h2><strong>The Tawny Owl</strong></h2>
+          <p>Most <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"> owl species in UK </p>
+          <p>Strongly nocturnal</p>
+          <p><strong>Habitat</strong></p>
+          <p>Mainly lives in <b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)">, but can also be seen
+            in urban areas, e.g. parks.</p>
+          <p><strong>Adaptations:</strong></p>
+          <ul>
+            <li>&nbsp;&nbsp;Short wings and <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)">, for
+              navigation</li>
+            <li>&nbsp; Brown and <b>4 </b><input type="text" required="" id="q4" onkeyup="gtb(this)"> feathers, for
+              camouflage</li>
+            <li>&nbsp;&nbsp;Large eyes (more effective than those of <b>5 </b><input type="text" required="" id="q5"
+                onkeyup="gtb(this)">), for good night&nbsp;vision</li>
+            <li>&nbsp;&nbsp;Very good spatial <b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"> for
+              predicting where prey might be found</li>
+            <li>&nbsp;&nbsp;Excellent <b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)">, for locating
+              prey from a perch</li>
+          </ul>
+          <p><strong>Diet</strong></p>
+          <p>Main food is small mammals.</p>
+          <p>Owls in urban areas eat more <b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)"></p>
+          <p><strong>Survival</strong></p>
+          <p>Two thirds of young owls die within a <b>9 </b><input type="text" required="" id="q9" onkeyup="gtb(this)">
+          </p>
+          <p>Owls don’t disperse over long distances.</p>
+          <p>Owls seem to dislike flying over large areas of <b>10 </b><input type="text" required="" id="q10"
+              onkeyup="gtb(this)"></p>
+        </div>
+        <h2>&nbsp;</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: The Tawny Owl
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> common</td>
+            <td style="width: 10%"><b>6.</b> memory</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> woodland/woods/forest(s)</td>
+            <td style="width: 10%"><b>7.</b> hearing</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> tail</td>
+            <td style="width: 10%"><b>8.</b> birds</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> grey/gray</td>
+            <td style="width: 10%"><b>9.</b> year</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> humans/people</td>
+            <td style="width: 10%"><b>10.</b> water</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['common'],
+      ['woodland','woods','forest','forests'],
+      ['tail'],
+      ['grey', 'gray'],
+      ['humans', 'people'],
+      ['memory'],
+      ['hearing'],
+      ['birds'],
+      ['year'],
+      ['water']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+        for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

@@ -1,0 +1,167 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em>Complete the notes below.</em></p>
+        <p><em>Write<span style="color: #ff0000;"><strong> ONE WORD ONLY</strong></span> for each answer.</em></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <h1><strong>The use of soil to reduce carbon dioxide in the atmosphere&nbsp;</strong></h1>
+          <p><strong>Rattan Lal:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;Claims that 13% of C0<sub>2</sub> in the atmosphere could be absorbed
+            by&nbsp;agricultural soils</p>
+          <p>• &nbsp;&nbsp;&nbsp;Erosion is more likely in soil that is <b>1 </b><input type="text" required="" id="q1"
+              onkeyup="gtb(this)"> </p>
+          <p>• &nbsp;&nbsp;&nbsp;Lal&nbsp;found soil in Africa that was very <b>2 </b><input type="text" required=""
+              id="q2" onkeyup="gtb(this)"> </p>
+          <p>• &nbsp;&nbsp;&nbsp;It was suggested that carbon from soil was entering the atmosphere</p>
+          <p><strong>Soil and carbon:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;plants turn C0<sub>2</sub> from the air into carbon-based substances such as&nbsp;<b>3
+            </b><input type="text" required="" id="q3" onkeyup="gtb(this)"> </p>
+          <p>• &nbsp;&nbsp;&nbsp;some C0<sub>2</sub> moves from the <b>4 </b><input type="text" required="" id="q4"
+              onkeyup="gtb(this)">&nbsp;of plants to microbes in&nbsp;the soil</p>
+          <p>• &nbsp;&nbsp;&nbsp;carbon was lost from the soil when agriculture was invented</p>
+          <p><strong>Regenerative agriculture:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;uses established practices to make sure soil remains fertile and&nbsp;<b>5 </b><input
+              type="text" required="" id="q5" onkeyup="gtb(this)"> </p>
+          <p>• &nbsp;&nbsp;&nbsp;e.g. through year-round planting and increasing the <b>6 </b><input type="text"
+              required="" id="q6" onkeyup="gtb(this)">&nbsp;plants that are grown</p>
+          <p><strong>California study:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;taking place on a big <b>7 </b><input type="text" required="" id="q7"
+              onkeyup="gtb(this)">&nbsp;farm</p>
+          <p>• &nbsp;&nbsp;&nbsp;uses compost made from waste from agriculture and <b>8 </b><input type="text"
+              required="" id="q8" onkeyup="gtb(this)"> </p>
+          <p><strong>Australia study:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;aims to increase soil carbon by using <b>9 </b><input type="text" required="" id="q9"
+              onkeyup="gtb(this)">&nbsp;that are always&nbsp;green</p>
+          <p><strong>Future developments may include:</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;reducing the amount of fertilizer used in farming</p>
+          <p>• &nbsp;&nbsp;&nbsp;giving farmers <b>10 </b><input type="text" required="" id="q10"
+              onkeyup="gtb(this)">&nbsp;for carbon storage, as well as their produce </p>
+        </div>
+        <h1>&nbsp;</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: The use of soil to reduce carbon dioxide in the atmosphere
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> dry</td>
+            <td style="width: 10%"><b>6.</b> variety</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> hard</td>
+            <td style="width: 10%"><b>7.</b> cattle</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> sugar/sugars</td>
+            <td style="width: 10%"><b>8.</b> gardens/gardening</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> roots</td>
+            <td style="width: 10%"><b>9.</b> grasses</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> moist/damp/wet</td>
+            <td style="width: 10%"><b>10.</b> payment/payments / money</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['dry'],
+      ['hard'],
+      ['sugar', 'sugars'],
+      ['roots'],
+      ['moist', 'damp', 'wet'],
+      ['variety'],
+      ['cattle'],
+      ['gardens', 'gardening'],
+      ['grasses'],
+      ['payment', 'payments', 'money']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+      for (var j = 0; j < resultBoard[i - 1].length; j++ )  {
+        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

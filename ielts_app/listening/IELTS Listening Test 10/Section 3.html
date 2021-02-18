@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/10.3.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+            <div id="exam-text">
+          <p>&nbsp;</p>
+          <p><strong>SECTION 3. </strong><strong>QUESTIONS 21-30</strong>            </p>
+          <p>&nbsp;</p>
+          <p><strong>Questions 21</strong>-<strong>23</strong></p>
+          <p>
+            Choose the correct letter, <strong>A</strong>, <strong>B</strong> or <strong>C</strong>.</p>
+          <p><strong>21.</strong> Information on the test is from <span id="s1"></span></p>
+          <ol type="A">
+            <li>
+              <input type="radio" name="q1">
+            the teacher.</li>
+            <li>
+              <input type="radio" name="q1">
+              a class.</li>
+            <li>
+              <input type="radio" name="q1" id="a1">
+              a handout.</li>
+          </ol>
+       
+          <p>&nbsp;</p>
+          <p><strong>22.</strong> This assignment is important because <span id="s2"></span></p>
+          <ol type="A">
+            <li>
+              <input type="radio" name="q2" id="a2">
+            it will become a permanent record.</li>
+            <li>
+              <input type="radio" name="q2">
+              it is a must for passing 11th grade English.</li>
+            <li>
+              <input type="radio" name="q2">
+              it will affect the English level next year.</li>
+          </ol>
+         
+           <p>&nbsp;</p>
+          <p><strong>23.</strong> Bobby chooses football as project topic because <span id="s3"></span></p>
+          <ol type="A">
+            <li>
+              <input type="radio" name="q3">
+              he often plays football.</li>
+            <li>
+              <input type="radio" name="q3" id="a3">
+              his father loves football.</li>
+            <li>
+              <input type="radio" name="q3">
+              he is interested in football.</li>
+            </ol>
+<p>&nbsp;</p>
+<p><strong>Questions 24-30</strong></p>
+<p>What problems do the speakers identify for this project?</p>
+<p>
+  Choose <strong>SEVEN</strong> answers from the box and write the letters <strong>A</strong>-<strong>H </strong>next to questions <strong>24</strong>-<strong>30</strong>.</p>
+<table border="1" cellspacing="0" cellpadding="5">
+  <tbody><tr>
+    <td width="189" valign="top"><p align="center"><strong>Problems</strong></p>
+      <p><strong>A </strong>too vague</p>
+        <p><strong>B </strong>too factual</p>
+        <p><strong>C </strong>too unreliable</p>
+        <p><strong>D </strong>too noisy</p>
+        <p><strong>E </strong>too long</p>
+        <p><strong>F </strong>too short</p>
+        <p><strong>G </strong>too complicated</p>
+        <p><strong>H </strong>too simple</p></td>
+  </tr>
+</tbody></table>
+
+
+
+<p>&nbsp;</p>
+<strong>24.</strong> Background sounds
+  <input type="text" class="ex-input" style="width:30px" id="ex4" required="required"> <span id="s4"></span> 
+  <p></p>
+  <strong>25.</strong> Answer of questions
+  <input type="text" class="ex-input" style="width:30px" id="ex5" required="required"> <span id="s5"></span> 
+  <p></p>
+  <strong>26.</strong> One of the questions
+  <input type="text" class="ex-input" style="width:30px" id="ex6" required="required"> <span id="s6"></span> 
+  <p></p>
+  <strong>27. </strong>Time of answering
+  <input type="text" class="ex-input" style="width:30px" id="ex7" required="required"> <span id="s7"></span>  
+ <p></p>
+  <strong>28.</strong> Recording equipment
+  <input type="text" class="ex-input" style="width:30px" id="ex8" required="required"> <span id="s8"></span>
+  <p></p>
+  <strong>29.</strong> Topic of project
+  <input type="text" class="ex-input" style="width:30px" id="ex9" required="required"> <span id="s9"></span>
+  <p></p>
+  <strong>30.</strong> Report on project
+  <input type="text" class="ex-input" style="width:30px" id="ex10" required="required"> <span id="s10"></span><p></p>
+<p><br>
+  </p>
+     
+  </div>
+          
+           
+		
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 3</strong></p>
+  <ol start="21">
+    <li>C</li>
+    <li>A</li>
+    <li>B</li>
+    <li>D</li>
+    <li>F</li>
+    <li>G</li>
+    <li>E</li>
+    <li>C</li>
+    <li>A</li>
+    <li>B</li>
+  </ol>
+  
+</div> <br> <br>
+
+<div align="center">
+
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+</div>
+
+<br>
+
+
+
+
+
+
+			<script>
+			function check()
+			{
+				
+				var ex4, ex5, ex6, ex7, ex8, ex9, ex10, score, result;
+				score=0;
+				
+				
+				
+				for (var i=1; i<4; i++) 
+					{
+						text="a"+i; text2="s"+i;
+					if (document.getElementById(text).checked == true)	{
+				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  />';
+				score++;}
+					else { result=false; document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  />';}
+					}
+					
+					
+					
+					ex4=document.getElementById("ex4").value;
+						if (ex4.trim().toLowerCase()=="d")
+					 {document.getElementById("s4").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex5=document.getElementById("ex5").value;
+						if (ex5.trim().toLowerCase()=="f")
+					 {document.getElementById("s5").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex6=document.getElementById("ex6").value;
+						if (ex6.trim().toLowerCase()=="g")
+					 {document.getElementById("s6").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex7=document.getElementById("ex7").value;
+						if (ex7.trim().toLowerCase()=="e")
+					 {document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex8=document.getElementById("ex8").value;
+						if (ex8.trim().toLowerCase()=="c")
+					 {document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex9=document.getElementById("ex9").value;
+						if (ex9.trim().toLowerCase()=="a")
+					 {document.getElementById("s9").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+						 ex10=document.getElementById("ex10").value;
+						if (ex10.trim().toLowerCase()=="b")
+					 {document.getElementById("s10").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 3 is "+score+"/10 </div>";
+			}
+			
+	
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

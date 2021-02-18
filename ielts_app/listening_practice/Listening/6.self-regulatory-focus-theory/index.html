@@ -1,0 +1,178 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em><span style="font-weight: 400;">Complete the notes below.</span></em></p>
+        <p><em><span style="font-weight: 400;">Write<span style="color: #ff0000;"><strong> ONE WORD ONLY</strong></span>
+              for each answer.</span></em></p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <h2 style="text-align: center;"><strong>'Self-regulatory focus theory' and leadership</strong></h2>
+          <p><strong>Self-regulatory focus theory</strong></p>
+          <p>People's focus is to approach pleasure or avoid pain</p>
+          <p>Promotion goals focus on <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"></p>
+          <p>Prevention goals emphasise avoiding punishment</p>
+          <p><strong>Factors that affect people's focus</strong></p>
+          <p>The Chronic Factor</p>
+          <ul>
+            <li>comes from one's <b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)"></li>
+          </ul>
+          <p>The <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)"> Factor</p>
+          <ul>
+            <li>we are more likely to focus on promotion goals when with a <b>4 </b><input type="text" required=""
+                id="q4" onkeyup="gtb(this)"></li>
+            <li>we are more likely to focus on prevention goals with our boss</li>
+          </ul>
+          <p><strong>How people's focus affects them</strong></p>
+          <p>Promotion Focus: People think about an ideal version of themselves, their <b>5 </b><input type="text"
+              required="" id="q5" onkeyup="gtb(this)"> and their gains.</p>
+          <p>Prevention Focus: People think about their 'ought' self and their obligations</p>
+          <p><strong>Leaders</strong></p>
+          <p>Leadership behaviour and <b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"> affects
+            people's focus</p>
+          <p><em>Transformational Leaders:</em></p>
+          <ul>
+            <li>pay special attention to the <b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"> of
+              their followers</li>
+            <li>passionately communicate a clear <b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)">
+            </li>
+            <li>inspire promotion focus in followers</li>
+          </ul>
+          <p><em>Transactional Leaders:</em></p>
+          <ul>
+            <li>create <b>9 </b><input type="text" required="" id="q9" onkeyup="gtb(this)"> to make expectations clear
+            </li>
+            <li>emphasise the results of a mistake</li>
+            <li>inspire prevention focus in followers</li>
+          </ul>
+          <p><strong>Conclusion</strong></p>
+          <p>Promotion Focus is good for jobs requiring <b>10 </b><input type="text" required="" id="q10"
+              onkeyup="gtb(this)"></p>
+          <p>Prevention Focus is good for work such as a surgeon Leaders' actions affect which focus people use</p>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Self-regulatory focus theory
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> achievement/achievements</td>
+            <td style="width: 10%"><b>6.</b> style</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> personality / character</td>
+            <td style="width: 10%"><b>7.</b> development</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> situational</td>
+            <td style="width: 10%"><b>8.</b> vision</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> friend</td>
+            <td style="width: 10%"><b>9.</b> structures</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> aspirations / ambitions</td>
+            <td style="width: 10%"><b>10.</b> innovation / innovations</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['achievement', 'achievements'],
+      ['personality', 'character'],
+      ['situational'],
+      ['friend'],
+      ['aspirations', 'ambitions'],
+      ['style'],
+      ['development'],
+      ['vision'],
+      ['structures'],
+      ['innovation' , 'innovations']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+         for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

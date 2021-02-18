@@ -1,0 +1,288 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-2</h2>
+        <p><em><span style="font-weight: 400;">Choose <span style="color: #ff0000;"><strong>TWO</strong></span> letters,
+              <strong>A-E.</strong></span></em></p>
+        <p><span style="font-weight: 400;">Which </span><span style="color: #ff0000;"><strong>TWO </strong></span><span
+            style="font-weight: 400;">things does Alice say about the Dolphin Conservation Trust?</span></p>
+        <p><span><b>A</b></span> <input type="checkbox" name="q1" value="A" onchange="gcb(this,2,4)">&nbsp;<span
+            style="font-weight: 400;">Children make up most of the membership.</span></p>
+        <p><span><b>B</b></span> <input type="checkbox" name="q1" value="B" onchange="gcb(this,2,4)"> <span
+            style="font-weight: 400;">It’s the country's largest conservation organisation.</span></p>
+        <p><span><b>C</b></span> <input type="checkbox" name="q1" value="C" onchange="gcb(this,2,4)"> <span
+            style="font-weight: 400;">It helps finance campaigns for changes in fishing practices.</span></p>
+        <p><span><b>D</b></span> <input type="checkbox" name="q1" value="D" onchange="gcb(this,2,4)"> <span
+            style="font-weight: 400;">It employs several dolphin experts full-time.</span></p>
+        <p><span><b>E</b></span> <input type="checkbox" name="q1" value="E" onchange="gcb(this,2,4)"> <span
+            style="font-weight: 400;">Volunteers help in various ways.</span></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 3-5</h2>
+        <p><em><span style="font-weight: 400;">Choose the correct letter, <strong>A, B</strong>, or
+              <strong>C</strong></span></em></p>
+        <p><span style="font-weight: 400;"><strong>3.</strong> Why is Alice so pleased the Trust has won the Charity
+            Commission award?</span></p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A" onclick="grd(this)"> It has
+          brought in extra money.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)"> It made the
+          work of the trust better known.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)"> <span
+            style="font-weight: 400;">1t has attracted more members.</span></p>
+        <p style="padding-left: 30px;">&nbsp;</p>
+        <p><span style="font-weight: 400;"><strong>4.</strong> Alice says oil exploration causes problems to dolphins
+            because of</span></p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)"> <span
+            style="font-weight: 400;">noise.</span></p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)"> <span
+            style="font-weight: 400;">oil leaks.</span></p>
+        <p style="padding-left: 30px;"><span style="font-weight: 400;"><b>C</b> <input type="radio" name="q4" value="C"
+              onclick="grd(this)"> movement of ships.</span></p>
+        <p style="padding-left: 30px;">&nbsp;</p>
+        <p><span style="font-weight: 400;"><strong>5.</strong> Alice became interested in dolphins when</span></p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q5" value="A" onclick="grd(this)"> <span
+            style="font-weight: 400;">she saw one swimming near her home.</span></p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q5" value="B" onclick="grd(this)"> <span
+            style="font-weight: 400;">she heard a speaker at her school.</span></p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q5" value="C" onclick="grd(this)"> <span
+            style="font-weight: 400;">she read a book about them.</span></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 6-10</h2>
+        <p><span style="font-weight: 400;">Which dolphin does Alice make each of the following comments about? </span>
+        </p>
+        <p><em><span style="font-weight: 400;">Write the correct letter, <strong>A, B, C or D,</strong> next to
+              questions <strong>6-10</strong>.</span></em></p>
+        <p>&nbsp;</p>
+        <div style="padding: 10px; border: 1px solid black;">
+          <h2 style="text-align: center;"><strong>Dolphins</strong></h2>
+          <p><strong>A </strong>Moondancer</p>
+          <p><strong>B </strong>Echo</p>
+          <p><strong>C </strong>Kiwi</p>
+          <p><strong>D </strong>Samson</p>
+        </div>
+        <p><strong>Comments</strong></p>
+        <p><span style="font-weight: 400;"><strong>6.</strong> It has not been seen this year.<b> </b><select id="q6"
+              onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select></span></p>
+        <p><span style="font-weight: 400;"><strong>7.</strong> It is photographed more than the others.<b> </b><select
+              id="q7" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select></span></p>
+        <p><span style="font-weight: 400;"><strong>8.</strong> It is always very energetic.<b> </b><select id="q8"
+              onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select></span></p>
+        <p><span style="font-weight: 400;"><strong>9.</strong> It is the newest one in the scheme.<b> </b><select
+              id="q9" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select></span></p>
+        <p><span style="font-weight: 400;"><strong>10.</strong> It has an unusual shape.<b> </b><select id="q10"
+              onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+            </select></span></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Dolphin Conservation Trust
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> IN EITHER ORDER C &amp; E</td>
+            <td style="width: 10%"><b>6.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> IN EITHER ORDER C &amp; E</td>
+            <td style="width: 10%"><b>7.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> B</td>
+            <td style="width: 10%"><b>8.</b> D</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> A</td>
+            <td style="width: 10%"><b>9.</b> D</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> C</td>
+            <td style="width: 10%"><b>10.</b> A</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['C', 'E'],
+      ['C', 'E'],
+      ['B'],
+      ['A'],
+      ['C'],
+      ['B'],
+      ['C'],
+      ['D'],
+      ['D'],
+      ['A']
+    ];
+    var numCh = 2;
+    var numRa = 5;
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      if (i <= 2) {
+        if (i % 2 != 0) {
+          var content = this.getValueCheckBox(id);
+          for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+            for (var k = 0; k < content.length; k++) {
+              if (resultBoard[i - 1][j].trim().toUpperCase() == content[k].trim().toUpperCase()) count += 1;
+            }
+          }
+        }
+      } else if( i > numCh && i <= numRa){
+        var checkedValueRa = '';
+        var radios = document.getElementsByName(id);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            checkedValueRa = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == checkedValueRa) {
+          count += 1;
+        }
+      } else {
+        var selectedVal = document.getElementById(id);
+        var checkedValueSe = selectedVal.options[selectedVal.selectedIndex].value;
+        if (resultBoard[i - 1] == checkedValueSe) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+  function grd(n) {}
+
+  function getValueCheckBox(value) {
+    var cCoxes = document.getElementsByName(value);
+    var len = cCoxes.length;
+    var arrayReturn = []
+    for (var i = 0; i < len; i++) {
+      if (cCoxes[i].checked) {
+        arrayReturn.push(cCoxes[i].value);
+      }
+    }
+    return arrayReturn;
+  }
+
+  function gcb(n, va2, va3) {
+    var inputTags = document.getElementsByName(n.name);
+    var total = 0;
+    // limit checkbox
+    var limit = 2;
+    for (var i = 0; i < inputTags.length; i++) {
+      if (inputTags[i].checked) {
+        total = total + 1;
+      }
+      if (total > limit) {
+        inputTags[i].checked = false;
+        return;
+      }
+    }
+  }
+</script>

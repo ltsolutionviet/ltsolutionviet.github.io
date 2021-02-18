@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        
+     <p>This is the <strong>last section</strong> of <strong>IELTS Listening test 4</strong>. Listen to the audio and answer all the questions. After you finish, click 'check' and 'get result!' to see your score for the whole Listening test.</p>
+            
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/4.4.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+          <p><strong>SECTION 4. QUESTIONS 31-40</strong></p>
+          <p><strong>Questions 31-35</strong></p>
+          <p>Complete the chart with information about the black bear.</p>
+          <p>Write <strong>NO MORE THAN TWO WORDS AND/OR A NUMBER</strong> for each answer.</p>
+          
+          
+          <table border="1" cellspacing="0" cellpadding="3" width="80%" align="center">
+            <tbody><tr>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Range </p></td>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Lives in <strong>(31)</strong> <input type="text" class="ex-input" style="width:120px" id="ex1"> <span id="s1"></span> of North America </p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Diet </p></td>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Ninety percent of diet consists of <strong>(32)</strong> <input type="text" class="ex-input" style="width:120px" id="ex2"> <span id="s2"></span>. Also eats <strong>(33)</strong> <input type="text" class="ex-input" style="width:120px" id="ex3">. <span id="s3"></span></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Cubs </p></td>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Baby bear cubs are born in <strong>(34)</strong> 
+                  <input type="text" class="ex-input" style="width:120px" id="ex4">. <span id="s4"></span></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Life span </p></td>
+              <td style="padding-left:7px; padding-right:5px;" valign="top"><p>Black bears live for about <strong>(35)</strong>  
+                  <input type="text" class="ex-input" style="width:125px" id="ex5"> in the wild. <span id="s5"></span></p></td>
+            </tr>
+          </tbody></table><br><br>
+
+          
+          <p><strong>Questions 36-40</strong></p>
+            <p>Which characteristics fit black bears and which fit grizzly bears? </p>
+            <p>Write <strong>A</strong> if it is a characteristic оf black bears. Write <strong>В</strong> if it is a characteristic of
+grizzly bears.</p>
+            <br>
+            <p><strong>(36)</strong> Has a patch of light fur on its chest
+              <input type="text" class="ex-input" style="width:50px" id="ex6">
+            <span id="s6"></span></p>
+            <p><strong>(37)</strong> Weighs 225 kilos
+              <input type="text" class="ex-input" style="width:50px" id="ex7">
+            <span id="s7"></span></p>
+            <p><strong>(38)</strong> Has a shoulder hump <input type="text" class="ex-input" style="width:50px" id="ex8"><span id="s8"></span>
+            </p>
+            <p><strong>(39)</strong> Has pointed ears&nbsp;<strong>
+              <input type="text" class="ex-input" style="width:50px" id="ex9"></strong> <span id="s9"></span> </p>
+            <p><strong>(40)</strong> Has shorter claws
+              <input type="text" class="ex-input" style="width:50px" id="ex10">
+              <span id="s10"></span></p>
+            <br> 
+            
+     <br>
+
+<div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 4</strong></p>
+  <ol start="31">
+    <li>Forested area</li>
+    <li>Plant foods</li>
+    <li>Insects/fish</li>
+    <li>The winter</li>
+    <li>Twenty-five years</li>
+    <li>A</li>
+    <li>B</li>
+    <li>B</li>
+    <li>A</li>
+    <li>A</li>
+  </ol>
+  
+  </div>
+</div> <br> <br>
+
+        <div align="center">
+          &emsp;
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+        
+         
+        
+        </div>
+
+<br>
+
+
+
+
+
+			<script>
+			
+			
+			
+			
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+			
+				
+				var ex = ["forested area","plant foods","insects","the winter","twenty-five years","a","b","b","a","a"];
+				
+				for (var i=1; i<11; i++) 
+					{
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+			}
+
+
+				ex1=document.getElementById("ex1").value;
+				if ((ex1.trim().toLowerCase()!="forested area")&&(ex1.trim().toLowerCase()!="forested areas"))
+				{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex3=document.getElementById("ex3").value;
+				if ((ex3.trim().toLowerCase()!="insects")&&(ex3.trim().toLowerCase()!="fish")&&(ex3.trim().toLowerCase()!="insects, fish"))
+				{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex4=document.getElementById("ex4").value;
+				if ((ex4.trim().toLowerCase()!="winter")&&(ex4.trim().toLowerCase()!="the winter"))
+				{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex5=document.getElementById("ex5").value;
+				if ((ex5.trim().toLowerCase()!="25 years")&&(ex5.trim().toLowerCase()!="twenty-five years"))
+				{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 4 is "+score+"/10 </div>";
+			}
+			
+			
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+                
+        
+     
+        </div>
+</body>
+</html>

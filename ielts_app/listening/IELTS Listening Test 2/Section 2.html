@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        <p>This is the <strong>second section of IELTS Listening test #2</strong>. Listen to the audio and answer the questions. Then click 'check' and proceed to the next section.</p>
+          <br> 
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/2.2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+            <div id="exam-text">
+          <p>&nbsp;</p>
+          <p><strong>SECTION 2. </strong><strong>QUESTIONS 11-20</strong>            </p>
+          <p><strong>Questions 11-15</strong></p>
+          
+          <p>What change has been made to each part оf the health club?</p>
+          <p> Write the correct letter, <strong>A</strong>-<strong>F</strong> next to questions <strong>11</strong>—<strong>15</strong>.          </p>
+          <table border="1" cellspacing="0" cellpadding="5">
+            <tbody><tr>
+              <td width="328" valign="top"><p>HARTFORD HEALTH CLUB<br>
+                
+                </p><p><strong>A</strong> installed a new floor&nbsp;</p>
+                <p><strong>В</strong> repainted</p>
+                <p><strong>С</strong> moved to a new location</p>
+                <p><strong>D</strong> rebuilt</p>
+                <p><strong>E</strong> enlarged</p>
+                <p><strong>F</strong> replaced the    equipment</p><p></p></td>
+              <td width="329" valign="top"><p>Part of the health club</p>
+                <p><strong>11.</strong> swimming pools 
+                <input type="text" class="ex-input" style="width:40px" id="ex1" required=""> <span id="s1"></span></p>
+                <p><strong>12.</strong> locker rooms 
+                  <input type="text" class="ex-input" style="width:40px" id="ex2" required=""> <span id="s2"></span></p>
+                 <p><strong>13. </strong>exercise room <input type="text" class="ex-input" style="width:40px" id="ex3" required=""><span id="s3"></span></p>
+                  <p><strong>14.</strong> tennis court <input type="text" class="ex-input" style="width:40px" id="ex4" required=""> <span id="s4"></span></p>
+                  <p><strong>15.</strong> club store 
+                  <input type="text" class="ex-input" style="width:40px" id="ex5" required=""> <span id="s5"></span></p></td>
+            </tr>
+          </tbody></table>
+ <br>
+                <br>
+<p><strong>Questions 16-18</strong></p>
+<p>Complete the sentences below.</p>
+<p>Write <strong>NO  MORE THAN TWO WORDS</strong> for each answer.</p>
+<p><strong>16.</strong> Tomorrow, <strong><input type="text" class="ex-input" style="width:200px" id="ex6" required=""></strong> <span id="s6"></span> for adults and children will  start.</p>
+<p><strong>17.</strong> On Wednesday, there  will be a <strong><input type="text" class="ex-input" style="width:200px" id="ex7" required=""></strong> <span id="s7"></span>.</p>
+<p><strong>18.</strong> A <strong><input type="text" class="ex-input" style="width:200px" id="ex8" required=""></strong> <span id="s8"></span> is planned for next  weekend.</p>
+
+<p>&nbsp;</p>
+<p><strong>Questions 19 and 20</strong></p>
+<p>Answer the questions below. Choose the  correct letter, <strong>A</strong>, <strong>B</strong>, or <strong>C</strong>.<strong></strong></p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>19.</strong> How many months did  it take to complete the renovation work? <span id="s9"></span></p>
+
+<ol type="A"> 
+             <li><input type="radio" name="q9"> Three.</li>
+             <li><input type="radio" name="q9" id="a9"> Nine.</li>
+             <li><input type="radio" name="q9"> Twelve.</li>
+            </ol><p></p>
+
+<p>&nbsp;</p>
+<p><strong>20.</strong> What project is  planned for next year? <span id="s10"></span></p>
+<ol type="A"> 
+             <li><input type="radio" name="q10"> An indoor pool.</li>
+             <li><input type="radio" name="q10"> An outdoor tennis court.</li>
+             <li><input type="radio" name="q10" id="a10"> An outdoor pool.</li>
+            </ol><p></p>
+
+
+  <br>
+<p></p>
+          
+            </div>
+          
+           
+		<p></p>
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>B</li>
+    <li>E</li>
+    <li>A</li>
+    <li>F</li>
+    <li>C</li>
+    <li>Swimming lessons</li>
+    <li>Tennis competition</li>
+    <li>Party / club party</li>
+    <li>B</li>
+    <li>C</li>
+  </ol>
+  
+</div> <br> <br>
+
+<div align="center">
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+</div>
+
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+				
+				var ex = ["b","e","a","f","c","swimming lessons","tennis competition","party"];
+				
+				for (var i=1; i<8; i++) 
+					{
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+					}
+					
+					
+					ex1=document.getElementById("ex8").value;
+						if ((ex1.trim().toLowerCase()!='club party')&&(ex1.trim().toLowerCase()!='party'))
+						{ document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+					
+				for (var i=9; i<11; i++) 
+					{
+						text="a"+i; text2="s"+i;
+					if (document.getElementById(text).checked == true)	{
+				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  />';
+				score++;}
+					else { result=false; document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  />';}
+					}
+				
+				
+				
+	
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

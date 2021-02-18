@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+        <p>Listen to the audio and answer the questions. After you finish, click 'check' and move on to the next section.</p>
+            <br> 
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/8.2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+            <div id="exam-text">
+          <p>&nbsp;</p>
+          <p><strong>SECTION 2. </strong><strong>QUESTIONS 11-20</strong></p>
+          <p>You will hear a talk by a tour guide about travel to Enzia.</p>
+          <p>Complete the notes by filling in the blanks with <strong>NO MORE THAN THREE WORDS AND/OR NUMBER</strong> for each answer.</p>
+          <p>&nbsp;</p>
+          
+          <div style="border:1px solid black; padding: 0 17px 0 17px;">
+          <p align="center"><strong>Notes</strong></p><br>
+                      <strong>VISAS</strong>
+                  <p>Now Eznina visas are needed by almost all    nationalities.</p>
+                <p>Normal visas last <strong>11. <input type="text" class="ex-input" style="width:190px" id="ex1">
+          <span id="s1"> </span></strong></p>
+                <p>You need to pay <strong>12.
+                <input type="text" class="ex-input" style="width:190px" id="ex2">
+                <span id="s2"> </span> </strong>for the visa.</p>
+                <p>Price may change from time to time</p>
+                <p>Some Enzian consulates neighbouring countries    require you to provide a letter to<br>
+                      <strong>13.</strong><strong>
+                      <input type="text" class="ex-input" style="width:190px" id="ex3">
+                      <span id="s3"> </span></strong></p>
+                <p>You can get information of major embassies on <strong>14. 
+                <input type="text" class="ex-input" style="width:190px" id="ex4">
+                <span id="s4"> </span></strong> of the student handbook.</p>
+                <p>If you want to re-enter Eznia, you must get a multi-entry visa.</p>
+                <p>&nbsp;</p>
+                <p><strong>SOME MISCELLANEOUS&nbsp; GENERAL    ADVICE</strong></p>
+                <p>If you carry a lot of money, you need to complete a <strong>15.</strong><strong>
+                <input type="text" class="ex-input" style="width:190px" id="ex5">
+                <span id="s5"> </span></strong></p>
+                <p>Remember to declare all your items, especially    expensive items, on a <strong>16.</strong><strong>
+                <input type="text" class="ex-input" style="width:190px" id="ex6">
+                <span id="s6"> </span></strong></p>
+                <p>You are advised to carry a health certificate. The    one you need is the <strong>17.</strong><strong>
+                <input type="text" class="ex-input" style="width:190px" id="ex7">
+                <span id="s7"> </span></strong></p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>NOTES FOR STUDENTS</strong></p>
+                <p>If you wish to get a youth fare card, you should    show your <strong>18.</strong><strong>
+                <input type="text" class="ex-input" style="width:190px" id="ex8">
+                <span id="s8"> </span></strong></p>
+                <p>Due to the bureaucracy in Eznia, you are advised to take at least <strong>19.
+                <input type="text" class="ex-input" style="width:190px" id="ex9">
+                <span id="s9"> </span> </strong>passport photos with you.</p>
+                <p>&nbsp;</p>
+                <p><strong>CURRENCY</strong></p>
+                <p>Pounds and US dollars are not very useful now in Eznia, so you should take <strong>20. </strong>
+                <input type="text" class="ex-input" style="width:190px" id="ex10a">
+                or 
+                <input type="text" class="ex-input" style="width:190px" id="ex10b">
+                <span id="s10"> </span>&nbsp;with you .</p>
+              <p>Credit cards are not acceptable because of fraud scandals.</p>
+          
+        </div>
+          
+        <p></p>
+          </div>
+          
+           
+		<p></p>
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>90 days</li>
+    <li>30 pounds</li>
+    <li>Confirm your nationality</li>
+    <li>Page 13</li>
+    <li>Currency form</li>
+    <li>Tourist export form</li>
+    <li>BM276</li>
+    <li>International student card</li>
+    <li>12</li>
+    <li>Yen, Australian dollar</li>
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+
+</div>
+<br>
+
+			<script>
+			function check()
+			{
+				
+				var ex, score;
+				score=0;
+				
+			
+				
+				
+					
+					
+					ex1=document.getElementById("ex1").value;
+				if ((ex1.trim().toLowerCase()!="90 days")&&(ex1.trim().toLowerCase()!="ninety days"))
+				{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				
+				ex2=document.getElementById("ex2").value;
+				if ((ex2.trim().toLowerCase()!="30 pounds")&&(ex2.trim().toLowerCase()!="thirty pounds"))
+				{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex3=document.getElementById("ex3").value;
+				if (ex3.trim().toLowerCase()!="confirm your nationality")
+				{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				
+				ex4=document.getElementById("ex4").value;
+				if ((ex4.trim().toLowerCase()!="page 13")&&(ex4.trim().toLowerCase()!="page thirteen"))
+				{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex5=document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase()!="currency form")
+				{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex6=document.getElementById("ex6").value;
+				if (ex6.trim().toLowerCase()!="tourist export form")
+				{ result=false; document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex7=document.getElementById("ex7").value;
+				if (ex7.trim().toLowerCase()!="bm276")
+				{ result=false; document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex8=document.getElementById("ex8").value;
+				if (ex8.trim().toLowerCase()!="international student card")
+				{ result=false; document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+				
+				ex9=document.getElementById("ex9").value;
+				if ((ex9.trim().toLowerCase()!="12")&&(ex9.trim().toLowerCase()!="twelve"))
+				{ result=false; document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />';
+				score++;}
+					
+					
+						ex10a=document.getElementById("ex10a").value;
+				ex10b=document.getElementById("ex10b").value;
+				if (((ex10a.trim().toLowerCase()=="yen")&&(ex10b.trim().toLowerCase()=="australian dollar"))||
+				((ex10b.trim().toLowerCase()=="yen")&&(ex10a.trim().toLowerCase()=="australian dollar")))
+				
+				{ document.getElementById("s10").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				else {document.getElementById("s10").innerHTML='<img height=20px src="../images/cross.png" />';}
+					
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+			
+		
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

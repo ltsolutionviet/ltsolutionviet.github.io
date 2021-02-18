@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+<div id="content">
+
+        <p style="opacity:0;"> The Listening module takes 40 minutes: 30 min for testing and 10 min for transferring your answers.</p>      
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/3.3.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+        
+            <br> <br>
+          
+          <p><strong>SECTION 3. </strong><strong>QUESTIONS 21-30</strong></p>
+          <br>
+          <div id="exam-text">
+          <p><strong>Questions 21-23</strong></p>
+          <p>Answer the questions below. Write <strong>NO MORE THAN TWO WORDS 
+          AND/OR A NUMBER</strong> for each answer. Do NOT write articles.</p>
+          <p><strong>21.</strong> When is the research project due?
+            <input type="text" class="ex-input" style="width:150px" id="ex1" required="required">
+            <span id="s1"></span></p>
+            <p><strong>22.</strong> Where will the students conduct the interviews? 
+            <input type="text" class="ex-input" style="width:150px" id="ex2" required="required">
+            <span id="s2"></span></p>
+            <p><strong>23.</strong> How many interviews will they complete all together? 
+            <input type="text" class="ex-input" style="width:150px" id="ex3" required="required">
+            <span id="s3"></span></p>
+          <p>&nbsp;</p>
+            <p><strong>Questions 24-30</strong></p>
+              <p>Complete the outline showing the steps the students will take to complete<br>
+            their projects. Write <strong>NO MORE THAN TWO WORDS</strong> for each answer. Do NOT write articles.</p>
+            <ol type="A">
+            <li> Read <strong>(24)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex4" required="required">
+              <span id="s4"></span></li>
+             <li> <strong>(25)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex5" required="required">
+              <span id="s5"></span></li>
+              <li> Get <strong>(26)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex6" required="required">
+              <span id="s6"></span></li>
+              <li> <strong>(27)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex7" required="required">
+              <span id="s7"></span></li>
+              <li> Get together to <strong>(28)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex8" required="required">
+              <span id="s8"></span></li>
+             <li> Prepare <strong>(29)</strong>
+              <input type="text" class="ex-input" style="width:220px" id="ex9" required="required">
+              <span id="s9"></span></li>
+            <li> Give <strong>(30)</strong>
+            <input type="text" class="ex-input" style="width:220px" id="ex10" required="required">
+            <span id="s10"></span></li>
+            </ol><br>
+            
+          <div id="result" align="center"> </div>
+            
+            </div>
+            
+            <button id="b2" type="button" onclick="toggle()"> 
+            <img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+            
+            <div id="answers" style="display:none;" class="hint">  
+              <p><strong>ANSWERS</strong></p>
+            <p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+              <p><strong>Section 3</strong></p>
+              <ol start="21">
+                <li>Three weeks</li>
+                <li>Shopping mall</li>
+                <li>30</li>
+                <li>Government study</li>
+                <li>Design questionnaire</li>
+                <li>Professor's approval</li>
+                <li>Conduct interviews</li>
+                <li>Analyze results</li>
+                <li>Charts</li>
+                <li>Class presentation</li>
+              </ol>
+            </div> <br> <br>
+            
+            <div align="center">
+
+            
+            <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+            </div>
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				
+				
+				var ex1, score, result;
+				score=0;
+				
+				
+				i=1;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='three weeks')&&(ex1.trim().toLowerCase()!='3 weeks'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+				i=2;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!='shopping mall')
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+				i=3;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='thirty')&&(ex1.trim().toLowerCase()!='30'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+				i=4;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='government study'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+				i=5;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='design questionnaire'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+				i=6;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='approval')&&(ex1.trim().toLowerCase()!="professor's approval"))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+				i=7;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='conduct interviews'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+						 
+				i=8;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='analyse results')&&(ex1.trim().toLowerCase()!="analyze results"))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+				i=9;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='charts')&&(ex1.trim().toLowerCase()!="chart"))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;} 
+						 		 
+				i=10;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim().toLowerCase()!='class presentation'))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;} 
+						 
+						 
+				setCookie("third", score, 3);	
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 3 is "+score+"/10 </div>";
+			}
+			
+			
+			function setCookie(cname, cvalue, exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = "expires="+d.toUTCString();
+					document.cookie = cname + "=" + cvalue + "; " + expires;
+				}
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+        
+     
+        </div>
+</body>
+</html>

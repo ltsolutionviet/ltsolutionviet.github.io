@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+        
+        <h2>Exercise 3</h2>
+        <p>Read the text and answer the questions below.</p>
+        <div class="exam-text"> 
+        <p align="center" style="font-weight:bold;"> A giant panda at a zoo in the United States has given birth to twin cubs. </p>
+        <p>&emsp; Keepers at the Smithsonian National Zoo in Washington DC only discovered Mei Xiang was pregnant during an ultrasound scan last week. The zoo said both cubs appeared healthy. Giant pandas are one of the most endangered species in the world and are notoriously hard to breed in captivity.  </p>
+        <p>&emsp; The National Zoo is one of only four zoos in the US to have pandas, which are on loan from China. Mei Xiang, who has two other offspring, is one of the zoo's star attractions and a Panda Cam on her enclosure crashed within seconds of the birth of the first cub being announced because of the volume of interest. </p>
+
+<p>&emsp; Female pandas are able to conceive for only two or three days a year, leading to a very low reproduction rate. Mei Xiang was artificially inseminated with sperm from the zoo's resident male Tian Tian and a panda named Hui Hui from Wolong, China. It will not be known for a while which is the father, or what sex the cubs are.</p>
+
+<p>&emsp; It has previously taken months before Mei Xiang's cubs have been introduced to the public. AP news agency reports that her first cub, Tai Shan, was born in 2005 and returned to China in 2010; her second cub, Bao Bao, is two years old on Sunday and still lives at the zoo. The panda population is threatened by habitat loss as land is increasingly inhabited by humans, with about 1,800 pandas left in the wild in China. However, the number living in the wild in China has gone up over the last 10 years. </p>
+        </div>
+        
+        <br> 
+        <br>
+        <p>Complete the sentences below. </p>
+
+		<p> Write <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
+        <br>
+        <form>
+        
+        <ol>
+        <li> Mei Xiang pregnancy was discovered with an <input type="text" class="ex-input" style="width:210px" id="ex1" required=""> last week.
+         <span id="s1"> </span> 
+         
+        <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show hint</button></li>
+        
+        <div id="hint1" style="display:none;"> <p class="hint"> It is written in the first paragraph: "...discovered Mei Xiang was pregnant during an <em>ultrasound scan</em> last week." </p></div> <br> 
+        
+        
+        
+        
+        
+        <li> Pandas from the USA National Zoo are 
+        <input type="text" class="ex-input" style="width:210px" id="ex2" required=""> from China.
+         <span id="s2"> </span> 
+         
+        <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show hint</button></li>
+           
+        <div id="hint2" style="display:none;"> <p class="hint"> The second paragraph says that "The National Zoo is one of only four zoos in the US to have pandas, which are <em>on loan</em> from China." </p></div> <br> 
+        
+        
+        
+        
+        <li> Due to the short conceiving period, pandas have a low 
+        <input type="text" class="ex-input" style="width:210px" id="ex3" required=""> .
+         <span id="s3"> </span> 
+         
+        <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show hint</button></li>
+        
+        <div id="hint3" style="display:none;"> <p class="hint"> In the third paragraph we see that "Female pandas are able to conceive for only two or three days a year, leading to a very low <em>reproduction rate</em>." </p></div> <br> 
+        
+        
+        
+        
+        <li> Pandas are in danger because their lands are increasingly
+        <input type="text" class="ex-input" style="width:210px" id="ex4" required="">.
+         <span id="s4"> </span> 
+         
+        <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show hint</button></li>
+        
+        <div id="hint4" style="display:none;"> <p class="hint"> It is written in the last paragraph: "The panda population is threatened by habitat loss as land is increasingly <em>inhabited by humans</em>..." </p></div> <br> 
+        
+        </ol>
+        
+        <p id="result" class="exercises"> </p>
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
+        
+        
+        <!--<input type="submit"  onclick="check()" />-->
+        </form><br>
+        
+          
+          <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+				var ex1, ex, score, total;
+				score=0; total=0; ex=['ultrasound scan', 'on loan', 'reproduction rate', 'inhabited by humans'];
+				for (var i=1; i<5;i ++) {
+					total++;
+					ex1=document.getElementById("ex"+i).value;
+					if (ex1.trim().toLowerCase()!=ex[i-1])
+					document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
+					else { score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />';}
+				}
+				
+				score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+          </script>
+          
+          
+ 
+             
+        
+     
+        </div>
+</body>
+</html>

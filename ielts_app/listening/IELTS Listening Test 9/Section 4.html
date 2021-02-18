@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        <p>This is the last section of <strong>IELTS Listening practice test #9</strong>. Listen to the audio and answer the questions. After you finish, click 'check' and 'get result!' to see your score for the whole test.</p><br>
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/9.4.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+          <p><strong>SECTION 4. </strong><strong>QUESTIONS 31-40</strong>          </p>
+          <p>Complete the notes below. </p>
+          <p>Write <strong>NO MORE THAN TWO WORDS </strong> for each answer.</p>
+          <p>&nbsp; </p>
+          <table border="0" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td width="828" height="667" valign="top"><p align="center"><strong>ADVERTISING EFFECT</strong></p>
+                <strong>The important factor to consider</strong><ul>
+                  <li>The <strong>31.</strong> 
+                    <input type="text" class="ex-input" style="width:120px" id="ex1" required="required"> 
+                    customers must travel affects the probability that they will buy the product. <span id="s1"></span></li>
+                </ul>
+                <br>
+                <p><strong>Methods of communication</strong></p>
+                <ul>
+                  <li>Advertising slogans are easier to remember if there is a  <strong>32.</strong>
+                    <input type="text" class="ex-input" style="width:150px" id="ex2" required="required"> 
+                    
+                  played with them. <span id="s2"></span></li><p></p>
+                 <li>Mandy's Candy Store appeals to people's sense of <strong>33.</strong>
+                   <input type="text" class="ex-input" style="width:150px" id="ex3" required="required">
+                    to draw in customers. <span id="s3"></span></li><p></p>
+                 <li>To an ad campaign for digital products, it is  <strong>34.</strong>
+                   <input type="text" class="ex-input" style="width:150px" id="ex4" required="required">
+                    that is extremely important. <span id="s4"></span></li>
+                </ul>
+                <br>
+                <p><strong>Effect on your product sales</strong></p>
+                <ul>
+                  <li>The customer's <strong>35.</strong>
+                    <input type="text" class="ex-input" style="width:150px" id="ex5" required="required">
+                    after he or she experiences the ad is most important. <span id="s5"></span><br>
+                </li>
+                </ul>
+                <br>
+                <p><strong>Marketing strategies</strong></p>
+                <ul>
+                  <li>On international flights, it is wise for the advertisement to be displayed in the common  <strong>36.</strong>
+                    <input type="text" class="ex-input" style="width:150px" id="ex6" required="required"> 
+                    of most passengers. <span id="s6"></span></li><p></p>
+                
+                <li>Very few young people buy<strong> 37.</strong> 
+                  <input type="text" class="ex-input" style="width:150px" id="ex7" required="required">. 
+                  <span id="s7"></span></li><p></p>
+                 <li>The UNESCO website would be a good place to advertise for companies aiming to improve the <strong>38.</strong> 
+                   <input type="text" class="ex-input" style="width:150px" id="ex8" required="required">. 
+                   <span id="s8"></span>
+                  </li><p></p>
+                <li>One good location to place ads for sunscreen is the <strong>39.</strong> 
+                  <input type="text" class="ex-input" style="width:150px" id="ex9" required="required">.
+                  <span id="s9"></span></li>
+                <p></p>
+                <li>A good scene for a water purification commercial would be <strong>40.</strong> 
+                  <input type="text" class="ex-input" style="width:150px" id="ex10" required="required">. 
+                  <span id="s10"></span></li>
+                </ul></td>
+            </tr>
+          </tbody></table>
+          <p><br> 
+          </p>
+       
+<div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 4</strong></p>
+  <ol start="31">
+    <li>Distance</li>
+    <li>Sound</li>
+    <li>Smell</li>
+    <li>Flexibility</li>
+    <li>Reaction</li>
+    <li>Languages</li>
+    <li>Newspaper</li>
+    <li>Environment</li>
+    <li>Swimming pool</li>
+    <li>National park</li>
+  </ol>
+
+  </div>
+
+</div> <br> <br>
+
+        <div align="center">
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+        
+
+        
+        </div><br>
+        
+     
+    
+    
+    
+
+			<script>
+
+			
+			
+			
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+				
+				var ex = ["distance","sound","smell","flexibility","reaction","languages","newspaper","environment","swimming pool","national park"];
+				
+				for (var i=1; i<11; i++) 
+					{
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+					}
+				
+				ex1=document.getElementById("ex6").value;
+				if (ex1.trim().toLowerCase()=="languageTranslate")
+				{document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+				 score++;}
+
+				ex1=document.getElementById("ex7").value;
+				if (ex1.trim().toLowerCase()=="newspapers") 
+				{document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+				 score++;}
+
+
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 4 is "+score+"/10 </div>";
+			}
+			
+			
+			
+		
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

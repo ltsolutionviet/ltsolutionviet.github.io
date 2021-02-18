@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        <p>This is the <strong>last section of IELTS Listening test #1</strong>. Listen to the audio and complete all the questions. After you finish click '<em>check</em>' and '<em>get result</em>' to see your mistakes and view your result for this test on IELTS scale.</p>
+        <br>
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/1.4.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+          <p><strong>SECTION 4. </strong><strong>QUESTIONS 31-40</strong></p>
+          <br>
+          <p><strong>Questions 31-33</strong></p>
+            <p>Complete the information about the Great  Barrier Reef.</p>
+          <p>Write <strong>NO  MORE THAN TWO WORDS</strong> for each answer.</p>
+            <p>The Great Barrier Reef is made up of 3,000 <strong>(31)</strong>
+              <input type="text" class="ex-input" style="width: 220px" id="ex31" required=""> 
+              <span id="s31"></span>
+             and 600 <br><strong>(32)</strong>
+            <input type="text" class="ex-input" style="width: 220px" id="ex32" required=""> 
+            <span id="s32"></span>
+            . Over 400 kinds of <strong>(33)</strong>
+            <input type="text" class="ex-input" style="width: 220px" id="ex33" required=""> 
+            <span id="s33"></span>
+            can be found there.</p>
+            <br> <br>
+          <p><strong>Questions 34-38</strong></p>
+          <p>Choose <strong>FIVE</strong> letters, <strong>A-I</strong>. Which <strong>FIVE</strong> оf these binds of animals inhabiting the
+            Great Barrier Reef are mentioned?</p>
+            
+            <div style="margin: 0 0 0 30px;">
+          <p><input type="checkbox" id="ch1" value="1"><strong>A </strong>sharks 
+          <span id="s1"> </span></p>
+          <p><input type="checkbox" id="ch2"><strong>В </strong>starfishes 
+           <span id="s2"> </span></p>
+            <p><input type="checkbox" id="ch7"><strong>С </strong>seahorses 
+           <span id="s17"> </span></p>
+          <p><input type="checkbox" id="ch8" value="1"><strong>D </strong>clams 
+           <span id="s8"> </span></p>
+          <p><input type="checkbox" id="ch9" value="1"><strong>E </strong>whales  
+          <span id="s9"> </span></p> 
+          <p><input type="checkbox" id="ch3"><strong>F </strong>dolphins 
+           <span id="s3"> </span></p>
+          <p><input type="checkbox" id="ch4"><strong>G </strong>sea turtles 
+           <span id="s4"> </span></p>
+          <p><input type="checkbox" id="ch5" value="1"><strong>H </strong>crocodiles 
+           <span id="s5"> </span></p>
+          <p><input type="checkbox" id="ch6" value="1"><strong>I </strong>frogs 
+           <span id="s6"> </span></p>
+         </div>
+<p>&nbsp;</p>
+<p><strong>Questions 39 and 40</strong></p>
+<p>Answer the questions below. Write <strong>NO MORE THAN THREE WORDS</strong> for
+  each answer.</p>
+<p><strong>39. </strong>What causes coral bleaching? </p>
+<p><strong>
+  <input type="text" class="ex-input" style="width: 320px" id="ex39" required=""> 
+  <span id="s39"></span>
+</strong></p>
+<p><strong>40.</strong> What has been one  response to this problem?</p>
+<div></div>
+<p><strong>
+  <input type="text" class="ex-input" style="width: 320px" id="ex40" required=""> 
+  <span id="s40"></span>
+</strong></p>
+<p><br>
+</p>
+<div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 4</strong></p>
+  <ol start="31">
+    <li>Individual reefs/Coral reefs</li>
+    <li>Islands</li>
+    <li>Coral(s)</li>
+    <li>A</li>
+    <li>D</li>
+    <li>E</li>
+    <li>H</li>
+    <li>I</li>
+    <li>Rising sea temperatures</li>
+    <li>Shading the reef/Shading certain areas</li>
+  </ol>
+  
+  </div>
+</div> <br> <br>
+
+        <div align="center">
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+ 
+        </div>
+
+<br>
+
+
+<script>
+			
+
+			
+			
+			
+			function check()
+			{
+				
+				var ex31, ex32, ex33, ex39, ex40, text, score, result;
+				result=true; score=0;
+				
+				for (var i=1; i<10; i++)
+				{
+					text='ch'+i;
+					if (document.getElementById(text).checked==true){
+						if (document.getElementById(text).value==1) 
+						{document.getElementById('s'+i).innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+						else document.getElementById('s'+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+						
+						
+				}
+				
+				
+				ex31=document.getElementById("ex31").value;
+				if ((ex31.trim().toLowerCase()!="individual reefs") && (ex31.trim().toLowerCase()!="coral reefs"))
+				{ result=false; document.getElementById("s31").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s31").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex32=document.getElementById("ex32").value;
+				if (ex32.trim().toLowerCase()!="islands") 
+				{ result=false; document.getElementById("s32").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else { document.getElementById("s32").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex33=document.getElementById("ex33").value;
+				if ((ex33.trim().toLowerCase()!="coral") && (ex33.trim().toLowerCase()!="corals"))
+				{ result=false; document.getElementById("s33").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s33").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex39=document.getElementById("ex39").value;
+				if ((ex39.trim().toLowerCase()!="rising sea temperatures") &&(ex39.trim().toLowerCase()!="rising sea temperature"))
+				{ result=false; document.getElementById("s39").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s39").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex40=document.getElementById("ex40").value;
+				if ((ex40.trim().toLowerCase()!="shading the reef") && (ex40.trim().toLowerCase()!="shading certain areas"))
+				{ result=false; document.getElementById("s40").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s40").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+		
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 1 is "+score+"/10 </div>";
+			}
+			
+			
+			
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+        
+     
+        </div>
+</body>
+</html>

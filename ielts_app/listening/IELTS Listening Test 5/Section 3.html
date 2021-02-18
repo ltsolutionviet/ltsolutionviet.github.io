@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+            <p>Listen to the audio and answer all the questions. After you finish, press 'check' and move on to the next section.</p>
+            
+            <center><audio controls="" controlslist="nodownload">
+              <source src="../audio_listening/5.3.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            
+             <br>
+          
+          <p><strong>SECTION 3. QUESTIONS 21-30</strong></p>
+          <br>
+          <div id="exam-text">
+          <p><strong>Questions 21-23</strong> </p>
+<p>Complete the information below. Write <strong>NO MORE THAN THREE WORDS</strong> for each answer.</p>
+<p><strong>21.</strong> The total course duration is <input type="text" class="ex-input" style="width:220px" id="ex1">. <span id="s1"></span></p>
+<p><strong>22.</strong> During the final project students will work in teams of <input type="text" class="ex-input" style="width:220px" id="ex2">. <span id="s2"></span></p>
+<p><strong>23.</strong> The professor told that the key thing in marketing strategy is to <input type="text" class="ex-input" style="width:220px" id="ex3">. <span id="s3"></span></p>
+<br><br>
+          <p><strong>Questions 24-28</strong> </p>
+          <p>Choose <strong>FIVE</strong> letters, A-I. What <strong>FIVE</strong> modules does the course include?</p>
+          <ol type="A">
+            <li> <input type="checkbox" id="ch11" value="1"> Marketing <span id="s11"></span></li>
+            <li> <input type="checkbox" id="ch12"> Design of custom logos <span id="s12"></span></li>
+            <li> <input type="checkbox" id="ch13"> Product management <span id="s13"></span></li>
+            <li> <input type="checkbox" id="ch14" value="1"> Branding <span id="s14"></span></li>
+            <li> <input type="checkbox" id="ch15" value="1"> E-commerce <span id="s15"></span></li>
+            <li> <input type="checkbox" id="ch16" value="1"> Advertising <span id="s16"></span></li>
+            <li> <input type="checkbox" id="ch17"> Analytics <span id="s17"></span></li>
+            <li> <input type="checkbox" id="ch18" value="1"> Customer attraction <span id="s18"></span></li>
+            <li> <input type="checkbox" id="ch19"> Business strategies <span id="s19"></span></li>
+          </ol>
+          
+          <br><br>
+          <p><strong>Questions 29-30</strong> </p>
+            <p>Complete the information below. Write <strong>NO MORE THAN TWO WORDS</strong> for each answer.</p>
+          <br>
+          <p><strong>29.</strong> The next lecture is in the big classroom on the <input type="text" class="ex-input" style="width:150px" id="ex4">. <span id="s4"></span></p>
+          <p><strong>30.</strong> Students need to take their last week <input type="text" class="ex-input" style="width:150px" id="ex5">. <span id="s5"></span></p>
+<p></p>
+            <br>
+            <div id="result" align="center"> </div>
+            
+          </div>
+            
+            <button id="b2" type="button" onclick="toggle()"> 
+            <img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+            
+            <div id="answers" style="display:none;" class="hint">  
+              <p><strong>ANSWERS</strong></p>
+            <p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+              <p><strong>Section 3</strong></p>
+              <ol start="21">
+                <li>seven weeks</li>
+                <li>five people</li>
+                <li>grab people's attention</li>
+                <li>A</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>H</li>
+                <li>ground floor</li>
+                <li>assignment</li>
+              </ol>
+             
+            </div> <br> <br>
+            
+            <div align="center">
+     
+            
+            <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+            
+       
+            </div>
+
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				
+				var ex1, ex2, ex3, ex4, score, sum; score=0;
+				
+				for (var i=11; i<20; i++)
+				{
+					text='ch'+i;
+					if (document.getElementById(text).checked==true){
+						if (document.getElementById(text).value==1) 
+						{document.getElementById('s'+i).innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+						else document.getElementById('s'+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+						
+						
+				}
+				
+				
+				ex1=document.getElementById("ex1").value;
+				if (ex1.trim().toLowerCase()!="seven weeks")
+				{ document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex2=document.getElementById("ex2").value;
+				if (ex2.trim().toLowerCase()!="five people")
+				{ document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex3=document.getElementById("ex3").value;
+				if ((ex3.trim().toLowerCase()!="grab people's attention")&&(ex3.trim().toLowerCase()!="grab people&rsquo;s attention"))
+				{ document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex4=document.getElementById("ex4").value;
+				if (ex4.trim().toLowerCase()!="ground floor")
+				{ document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex5=document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase()!="assignment")
+				{ document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 3 is "+score+"/10 </div>";
+			}
+			
+			
+	
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+      
+        
+     
+        </div>
+</body>
+</html>

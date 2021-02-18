@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+	<div id="content">
+        	<p> This module is the same for Academic and General IELTS.</p>
+            <p> The Listening module takes 40 minutes: 30 min for testing and 10 min for transferring your answers to the answer sheet.</p>
+            
+            <center><audio controls="" controlslist="nodownload">
+              <source src="../audio_listening/2.1.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+            <p><strong>SECTION 1. QUESTIONS 1-10</strong></p>
+            <p><strong>Questions 1-4</strong></p>
+            <p>Complete the form below.</p>
+            <p>Write <strong>NO MORE THAN ONE WORD AND/OR A NUMBER</strong> for each answer.</p>
+            <table border="1" width="85%" cellspacing="0" cellpadding="5" align="center">
+              <tbody><tr>
+                <td valign="top"><p>Example: </p></td>
+                <td valign="top"><p><u>Global</u> Bicycle Tours</p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Tour name:</p></td>
+                <td valign="top"><p>River Valley tour. Tour month: <strong>(1)<input type="text" class="ex-input" style="width:120px" id="ex1" required=""></strong> <span id="s1"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Customer Name:</p></td>
+                <td valign="top">
+                  <p><strong>(2)<input type="text" class="ex-input" style="width:120px" id="ex2" required=""></strong> &nbsp;Schmidt <span id="s2"></span></p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Address:</p></td>
+                <td valign="top"><p>P. O. Box <strong>(3)<input type="text" class="ex-input" style="width:120px" id="ex3" required=""></strong> <span id="s3"></span> <br>
+                  Manchester</p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Bicycle rental required?</p></td>
+                <td valign="top"><p>__Yes _☑_No </p></td>
+              </tr>
+              <tr>
+                <td valign="top"><p>Dietary restrictions:</p></td>
+                <td valign="top"><p><strong>(4)<input type="text" class="ex-input" style="width:120px" id="ex4" required=""></strong> <span id="s4"></span></p></td>
+              </tr>
+            </tbody></table>
+<p>&nbsp;</p>
+
+            
+            <p><strong>Questions 5 -7</strong></p>
+            <p>Choose the correct letters, <strong>A</strong>,<strong> B</strong>,<strong> </strong>or<strong> C</strong>.</p>
+            <p>&nbsp;</p>
+            <p><strong>5.</strong> What size deposit does the caller have to pay? <span id="s5"></span>
+            
+            </p><ol type="A"> 
+             <li><input type="radio" name="q5"> 5 percent.</li>
+             <li><input type="radio" name="q5" id="a5"> 30 percent.</li>
+             <li><input type="radio" name="q5"> 50 percent.</li>
+            </ol><p></p>
+            
+            <p>&nbsp;</p>
+            <p><strong>6.</strong> When does the deposit have to be paid? <span id="s6"></span>
+            </p><ol type="A"> 
+             <li><input type="radio" name="q6" id="a6"> Two weeks from now.</li>
+             <li><input type="radio" name="q6"> Four weeks from now.</li>
+             <li><input type="radio" name="q6"> Six weeks from now.</li>
+            </ol><p></p>
+            <p>&nbsp;</p>
+            <p><strong>7</strong>. How will the luggage be carried? <span id="s7"></span>
+            </p><ol type="A"> 
+             <li><input type="radio" name="q7"> By bus.</li>
+             <li><input type="radio" name="q7"> By bicycle.</li>
+             <li><input type="radio" name="q7" id="a7"> By van.</li>
+            </ol><p></p>
+            
+            
+            <p>&nbsp;</p>
+             <p><strong>Questions 8-10</strong></p>
+            <p>&nbsp;</p>
+            <p>Choose <strong>THREE</strong> letters, <strong>A</strong>-<strong>F</strong>.</p>
+            <p>Which <strong>THREE</strong> things should the caller take on the tour?</p>
+            <p><input type="checkbox" id="ch8" value="1"> <strong>A</strong> raincoat <span id="s8"></span></p>
+            <p><input type="checkbox" id="ch10"> <strong>В</strong> spare tire <span id="s10"></span></p>
+            <p><input type="checkbox" id="ch12"> <strong>С</strong> maps&nbsp;<span id="s12"></span></p>
+            <p><input type="checkbox" id="ch9" value="1"> <strong>D</strong> water bottle <span id="s9"></span></p>
+            <p><input type="checkbox" id="ch11" value="1"> <strong>E</strong> camera <span id="s11"></span></p>
+            <p><input type="checkbox" id="ch13"> 
+            <strong>F</strong> guide book <span id="s13"></span></p>
+          </div>
+		<br>
+		<div id="result" align="center"> </div>
+
+<button id="b2" class="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 1</strong></p>
+  <ol>
+    <li>June</li>
+    <li>Karla</li>
+    <li>257</li>
+    <li>Vegetarian</li>
+    <li>B</li>
+    <li>A</li>
+    <li>C</li>
+    <li>A</li>
+    <li>D</li>
+    <li>E</li>
+  </ol>
+  <p>&nbsp;</p>
+  <ol>
+   
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+</div>
+
+<br>
+
+
+
+
+
+		  <script>
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+				
+				var ex = ["june","karla","257","vegetarian"];
+				
+				for (var i=1; i<5; i++) 
+					{
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+					}
+					
+					for (var i=5; i<8; i++) 
+					{
+						text="a"+i; text2="s"+i;
+					if (document.getElementById(text).checked == true)	{
+				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  />';
+				score++;}
+					else { result=false; document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  />';}
+					}
+					
+					
+				{
+
+              for (var i=8; i<14; i++) {
+					text='ch'+i;
+					if (document.getElementById(text).checked==true){
+						if (document.getElementById(text).value==1) 
+						{document.getElementById('s'+i).innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+						else document.getElementById('s'+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+						
+						
+				}}
+				
+				
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 1 is "+score+"/10 </div>";
+			}
+			
+		
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

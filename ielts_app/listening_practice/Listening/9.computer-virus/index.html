@@ -1,0 +1,212 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-5</h2>
+        <p><em>Choose the correct letter, <strong>A, B</strong> or <strong>C.</strong></em></p>
+        <p><strong>1.</strong> &nbsp; What does the speaker compare a computer virus to?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q1" value="A" onclick="grd(this)"> a
+          biological organism</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q1" value="B" onclick="grd(this)"> a corrupt
+          program</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q1" value="C" onclick="grd(this)"> an
+          irritating person</p>
+        <p><strong>2.</strong>&nbsp; &nbsp;Core Wars was designed as</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q2" value="A" onclick="grd(this)"> a model
+          virus.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q2" value="B" onclick="grd(this)"> a form of
+          amusement.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q2" value="C" onclick="grd(this)"> a low-cost
+          program.</p>
+        <p><strong>3.</strong>&nbsp; The speaker says that computer viruses are picked up because they can</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A"
+            onclick="grd(this)">&nbsp;infiltrate programs by themselves.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)"> be sold
+          with commercial software.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)"> hide in
+          unofficial software.</p>
+        <p><strong>4.</strong>&nbsp; What does the speaker find surprising?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)"> the rise in
+          the number of software infections</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)"> the
+          determination of those who develop viruses</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q4" value="C" onclick="grd(this)"> the fact
+          that people blame their own computers</p>
+        <p><strong>5</strong>. &nbsp;The worst aspect of a Trojan horse virus is its capacity to</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q5" value="A" onclick="grd(this)"> delete all
+          the files on your computer.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q5" value="B" onclick="grd(this)"> send
+          illegal emails to all your correspondents.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q5" value="C" onclick="grd(this)"> perform
+          operations in your name.</p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 6-9</h2>
+        <p><em>List <span style="color: #ff0000;"><strong>FOUR</strong> </span>ways of combating viruses.</em></p>
+        <p><em>Write&nbsp;<span style="color: #ff0000;"><strong>NO MORE THAN THREE WORDS</strong></span> for each
+            answer.</em></p>
+        <p><b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"></p>
+        <p><b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"></p>
+        <p><b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)"></p>
+        <p><b>9 </b><input type="text" required="" id="q9" onkeyup="gtb(this)"> <em>eg:&nbsp;get anti-virus
+            software</em></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Question 10</h2>
+        <p><em>Choose the correct letter,<strong> A, B</strong> or <strong>C</strong>.</em></p>
+        <p><strong>10</strong>. How does the speaker feel about computer viruses?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q10" value="A" onclick="grd(this)"> They are
+          here to stay.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q10" value="B" onclick="grd(this)"> They serve
+          no purpose.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q10" value="C" onclick="grd(this)"> They can
+          be avoided.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Computer virus
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> A</td>
+            <td style="width: 10%"><b>6.</b> be very careful</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> B</td>
+            <td style="width: 10%"><b>7.</b> avoid trouble</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> C</td>
+            <td style="width: 10%"><b>8.</b> understand (the viruses)</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> B</td>
+            <td style="width: 10%"><b>9.</b> be well prepared</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> C</td>
+            <td style="width: 10%"><b>10.</b> C</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'A',
+      'B',
+      'C',
+      'B',
+      'C',
+      'be very careful',
+      'avoid trouble',
+      ['understand (the viruses)','understand the viruses', 'understand'],
+      'be well prepared',
+      'C'
+    ];
+    for (var i = 1; i <= 10; i++) {
+      var qi = 'q' + i;
+      if (i >= 6 && i <= 9) {
+        var content = document.getElementById(qi).value;
+        if(i == 8){
+          for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+            if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) {
+              count += 1;
+            }
+          }
+        }else {
+          if (resultBoard[i - 1].toUpperCase() == content.trim().toUpperCase()) {
+            count += 1;
+          }
+        }
+      } else {
+        var value = '';
+        var radios = document.getElementsByName(qi);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            value = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == value) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+  function grd(){};
+  function gtb (){};
+</script>

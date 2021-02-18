@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        <p>This is the <strong>second section of IELTS Listening test #1</strong>. Listen to the audio and answer the questions. Then click 'check' and proceed to the next section.</p>
+        <br>
+        	
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/1.2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+            <div id="exam-text">
+          <p>&nbsp;</p>
+          <p><strong>SECTION 2. </strong><strong>QUESTIONS 11-20</strong>            </p>
+          <p><strong>Questions 11-15</strong></p>
+          
+          <p>Choose <strong>FIVE</strong> letters, A—I. Which <strong>FIVE</strong> activities  are available at Golden Lake<br>
+            Resort?</p>
+            
+            <div>
+    
+            </div>
+          <table border="0" cellspacing="0" cellpadding="20">
+            <tbody><tr>
+              <td>
+              <p><input type="checkbox" id="ch1" value="1"> <strong>A</strong> swimming 
+              <span id="s1"> </span></p>
+              <p>  <input type="checkbox" id="ch2" value="1"> <strong>В</strong> boating 
+                <span id="s2"> </span></p>
+                <p><input type="checkbox" id="ch3"> <strong>С</strong> waterskiing 
+                <span id="s3"> </span></p>
+                <p><input type="checkbox" id="ch4" value="1"> <strong>D</strong> fishing 
+                <span id="s4"> </span></p>
+                <p><input type="checkbox" id="ch5"> <strong>E</strong> tennis 
+              <span id="s5"> </span></p></td>
+              <td>
+              <p><input type="checkbox" id="ch6"> <strong>F</strong> golf 
+              <span id="s6"> </span></p>
+                <p><input type="checkbox" id="ch7" value="1"> <strong>G</strong> horseback riding 
+                <span id="s7"> </span></p>
+                <p><input type="checkbox" id="ch8"> <strong>H</strong> hiking 
+                <span id="s8"> </span></p>
+                <p><input type="checkbox" id="ch9" value="1"> <strong>I</strong> arts and crafts 
+              <span id="s9"> </span></p></td>
+            </tr>
+          </tbody></table>
+         
+        
+<p><strong>Questions 16-20</strong></p>
+<p>Complete the schedule below. Write <strong>NO MORE THAN ONE WORD</strong> for each<br>
+  answer.</p>
+<table border="1" cellspacing="0" cellpadding="5" align="center" width="70%">
+        <tbody><tr>
+                <td valign="top"><p align="center"><u>Night</u></p></td>
+                <td valign="top"> <p align="center"><u>Activity</u></p></td>
+              </tr>
+              <tr valign="top">
+                <td><p>Sunday</p></td> <td><p align="left"><strong>(16)</strong>
+                    <input type="text" class="ex-input" style="width:120px" id="ex16" required=""> 
+                    <span id="s16"> </span> </p></td>
+                </tr>
+                <tr><td><p>Monday </p></td>
+                <td><p align="left">Dessert night</p></td></tr>
+                <tr><td><p>Tuesday</p></td><td><p align="left"><strong>(17)</strong> 
+                    <input type="text" class="ex-input" style="width:120px" id="ex17" required=""> 
+                    <span id="s17"> </span> night</p></td></tr>
+                <tr><td><p>Wednesday</p></td><td><p><strong>(18)</strong> 
+                    <input type="text" class="ex-input" style="width:120px" id="ex18" required=""> 
+                    <span id="s18"></span>
+                  </p></td></tr>
+                <tr><td><p>Thursday</p></td><td><p align="left"><strong>(19)</strong> 
+                    <input type="text" class="ex-input" style="width:120px" id="ex19" required=""> 
+                  <span id="s19"> </span></p></td></tr>
+                <tr><td><p>Friday</p></td><td><p align="left">Talent show</p></td></tr>
+                <tr><td><p>Saturday</p></td><td><p><strong>(20)</strong> 
+                    <input type="text" class="ex-input" style="width:120px" id="ex20" required="">
+                 <span id="s20"> </span></p></td>
+              </tr>
+                    
+            </tbody></table>
+            </div>
+            <p><br>
+		</p>
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>A</li>
+    <li>B</li>
+    <li>D</li>
+    <li>G</li>
+    <li>I</li>
+    <li>Film</li>
+    <li>Discussion</li>
+    <li>Lectures</li>
+    <li>Games</li>
+    <li>Dance </li>
+  </ol>
+  <ol>
+   
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+</div>
+
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				var text, score;
+				 score=0;
+				for (var i=1; i<10; i++)
+				{
+					text='ch'+i;
+					if (document.getElementById(text).checked==true){
+						if (document.getElementById(text).value==1) 
+						{document.getElementById('s'+i).innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+						else document.getElementById('s'+i).innerHTML='<img height=20px src="../images/cross.png" />';}
+						
+						
+				}
+				
+				
+				
+				var ex16, ex17, ex18, ex19, ex20, result;
+				result=true;
+				
+				ex16=document.getElementById("ex16").value;
+				if ((ex16.trim().toLowerCase()!="film") && (ex16.trim().toLowerCase()!="movie"))
+				{ result=false; document.getElementById("s16").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s16").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex17=document.getElementById("ex17").value;
+				if (ex17.trim().toLowerCase()!="discussion")
+				{ result=false; document.getElementById("s17").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s17").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex18=document.getElementById("ex18").value;
+				if (ex18.trim().toLowerCase()!="lectures")
+				{ result=false; document.getElementById("s18").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s18").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex19=document.getElementById("ex19").value;
+				if (ex19.trim().toLowerCase()!="games")
+				{ result=false; document.getElementById("s19").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s19").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex20=document.getElementById("ex20").value;
+				if (ex20.trim().toLowerCase()!="dance")
+				{ result=false; document.getElementById("s20").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s20").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				
+
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+			
+	
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+             
+        
+     
+        </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+ <div class="video-wrapper">
+    <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9iMGFqMmUFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+</div>
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-8</h2>
+        <p><em><strong>Provide TWO answers of <span style="color: #ff0000;">NO MORE THAN THREE WORDS</span>&nbsp;for
+              each questions</strong></em></p>
+        <p>Which TWO organs in our body are almost&nbsp;75% water?</p>
+        <p><b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"></p>
+        <p><b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)"></p>
+        <p>Which are the two extremes of water consumption?</p>
+        <p><b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)"></p>
+        <p><b>4 </b><input type="text" required="" id="q4" onkeyup="gtb(this)"></p>
+        <p>What does the recommended water intake depend on?</p>
+        <p><b>5 </b><input type="text" required="" id="q5" onkeyup="gtb(this)"></p>
+        <p><b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"></p>
+        <p>Where else can you find your necessary water intake?</p>
+        <p><b>7 </b><input type="text" required="" id="q7" onkeyup="gtb(this)"></p>
+        <p><b>8 </b><input type="text" required="" id="q8" onkeyup="gtb(this)"></p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 9-12</h2>
+        <p><em>For each questions choose the correct answer <strong>A, B</strong>, or
+            <strong>C.</strong></em><strong>&nbsp;</strong></p>
+        <p><strong>9.</strong> What percentage of a human baby is made of water at birth?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q9" value="A" onclick="grd(this)"> 55%</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q9" value="B" onclick="grd(this)"> 65%</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q9" value="C" onclick="grd(this)"> 75%</p>
+        <p><strong>10</strong>. How do we mainly loose water each day?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q10" value="A" onclick="grd(this)"> Breathing
+        </p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q10" value="B" onclick="grd(this)"> Urinating
+        </p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q10" value="C" onclick="grd(this)"> both of
+          the above</p>
+        <p><strong>11</strong>. What problem does a dehydrated brain have?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q11" value="A" onclick="grd(this)"> Shrinks
+        </p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q11" value="B" onclick="grd(this)"> Shakes</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q11" value="C" onclick="grd(this)"> Melts</p>
+        <p><strong>12</strong>. What’s the amount of water consumption recommended for women</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q12" value="A" onclick="grd(this)"> 2.5 to 2.7
+        </p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q12" value="B" onclick="grd(this)"> 2 to 2.7
+        </p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q12" value="C" onclick="grd(this)"> 2.5 to 3.7
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: What would happen if you didn’t drink water?
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 12</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> Brain/Heart (in any order)</td>
+            <td style="width: 10%"><b>7.</b> Beverages/Fruits and vegetables (in any order)</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> Brain/Heart (in any order)</td>
+            <td style="width: 10%"><b>8.</b> Beverages/Fruits and vegetables (in any order)</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> Dehydration/Overhydration (in any order)</td>
+            <td style="width: 10%"><b>9.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> Dehydration/Overhydration (in any order)</td>
+            <td style="width: 10%"><b>10.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> Weight/Environment (in any order)</td>
+            <td style="width: 10%"><b>11.</b> A</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>6.</b> Weight/Environment (in any order)</td>
+            <td style="width: 10%"><b>12.</b> B</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['Brain', 'Heart'],
+      ['Brain', 'Heart'],
+      ['Dehydration', 'Overhydration'],
+      ['Dehydration', 'Overhydration'],
+      ['Weight', 'Environment'],
+      ['Weight', 'Environment'],
+      ['Beverages', 'Fruits and vegetables'],
+      ['Beverages', 'Fruits and vegetables'],
+      'C',
+      'C',
+      'A',
+      'B'
+    ];
+    var numInp = 8;
+    for (var i = 1; i <= 12; i++) {
+      var qi = 'q' + i;
+      if (i >= 1 && i <= numInp) {
+        var content = document.getElementById(qi).value;
+         for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+          if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) {
+            count += 1;
+          }
+        }
+
+      } else {
+        var value = '';
+        var radios = document.getElementsByName(qi);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            value = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == value) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb(){};
+  function grd(){};
+</script>

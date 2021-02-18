@@ -1,0 +1,158 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-7</h2>
+        <p><em>Listen to the prizes in a lottery. What were the winning numbers? </em><br><em>Choose&nbsp;the correct
+            number for each prize.&nbsp;Circle the appropriate letter <strong>A</strong>, <strong>B</strong> or
+            <strong>C</strong>.</em></p>
+        <p><strong>1.</strong> What is the winning&nbsp;number of 7th prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q1" value="A" onclick="grd(this)"> 151</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q1" value="B" onclick="grd(this)"> 150</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q1" value="C" onclick="grd(this)"> 115 </p>
+        <p><strong>2</strong>. What is the winning number of 6th prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q2" value="A" onclick="grd(this)"> 1707</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q2" value="B" onclick="grd(this)"> 1770</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q2" value="C" onclick="grd(this)"> 1777 </p>
+        <p><strong>3.</strong> What is the winning number of 5th prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A" onclick="grd(this)"> 91</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)"> 19</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)"> 90 </p>
+        <p><strong>4</strong>. What is the winning number of 4th prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)"> 390</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)"> 309</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q4" value="C" onclick="grd(this)"> 319 </p>
+        <p><strong>5.</strong> What is the winning number of 3rd prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q5" value="A" onclick="grd(this)"> 55</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q5" value="B" onclick="grd(this)"> 53</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q5" value="C" onclick="grd(this)"> 59 </p>
+        <p><strong>6.</strong> What is the winning number of 2nd prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q6" value="A" onclick="grd(this)"> 1990</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q6" value="B" onclick="grd(this)"> 1999</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q6" value="C" onclick="grd(this)"> 1099 </p>
+        <p><strong>7</strong>. What is the winning number of 1st prize?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q7" value="A" onclick="grd(this)"> 14</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q7" value="B" onclick="grd(this)"> 40</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q7" value="C" onclick="grd(this)"> 44 </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Winning in a lottery ticket
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 7</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> C</td>
+            <td style="width: 10%"><b>5.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> B</td>
+            <td style="width: 10%"><b>6.</b> A</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> B</td>
+            <td style="width: 10%"><b>7.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> B</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'C',
+      'B',
+      'B',
+      'B',
+      'C',
+      'A',
+      'B'
+    ];
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      var value = '';
+      var radios = document.getElementsByName(id);
+      for (var j = 0; j < radios.length; j++) {
+        if (radios[j].checked) {
+          value = radios[j].value;
+          break;
+        }
+      }
+      if (resultBoard[i - 1] == value) {
+        count += 1;
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function grd() {}
+</script>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+       <p>This is the <strong>last section</strong> of <strong>IELTS Listening test #4</strong>. Listen to the audio and complete all the questions. After you finish, click 'check' and 'Get result!' to see your score.</p>
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/3.4.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <p>&nbsp;</p>
+          <div id="exam-text">
+          <p><strong>SECTION 4. QUESTIONS 31-40</strong></p>
+          <p>Complete the timeline below. Write <strong>NO MORE THAN THREE WORDS 
+          AND/OR A NUMBER</strong> for each answer.</p>
+          <p><br>
+            1832 - Alcott <strong>(31)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex1" required="required">. <span id="s1"></span>
+            </p>
+          <p>
+            In her teens Alcott worked to <strong>(32)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex2" required="required">. <span id="s2"></span>
+            </p>
+          <p>
+            At age 17 Alcott wrote her <strong>(33)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex3" required="required">. <span id="s3"></span>
+            </p>
+          <p>
+            <strong>(34)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex4" required="required"> <span id="s4"></span>
+Alcott enlisted as an army nurse.</p>
+          <p>
+            <strong>(35)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex5" required="required"> <span id="s5"></span>
+Alcott published her letters in a book called Hospital Sketches.</p>
+          <p>
+            <strong>(36)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex6" required="required"> <span id="s6"></span>
+Alcott returned from her trip to Europe.</p>
+          <p>
+            <strong>(37)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex7" required="required"> <span id="s7"></span>
+Alcott published Little Women.</p>
+          <p>
+            1879 <strong>(38)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex8" required="required"> <span id="s8"></span>
+died.</p>
+          <p>
+            <strong>(39)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex9" required="required"> <span id="s9"></span>
+Alcott set up a home for her family in Boston.</p>
+          <p>
+            1888  - Alcott <strong>(40)</strong>
+            <input type="text" class="ex-input" style="width:150px" id="ex10" required="required">. <span id="s10"></span>
+            <br> 
+          </p>
+          <p><br>
+</p>
+<div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 4</strong></p>
+  <ol start="31">
+    <li>Was born</li>
+    <li>Support her family</li>
+    <li>First novel</li>
+    <li>1862</li>
+    <li>After the war</li>
+    <li>1866</li>
+    <li>1868</li>
+    <li>May / youngest sister / Alcott's youngest sister</li>
+    <li>1882</li>
+    <li>Died</li>
+  </ol>
+  
+  </div>
+</div> <br> <br>
+
+        <div align="center">
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+      
+       
+        
+        </div>
+<br>
+
+
+
+
+
+			<script>
+			
+			function check()
+			{
+				
+				var ex1, score, result;
+				score=0;
+				
+				var ex = ["was born","support her family","first novel","1862","after the war","1866","1868","may","1882","died"];
+				
+				for (var i=1; i<11; i++) 
+					{
+						if (i!=8) {
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1]) 
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;} }
+					}
+					
+					i=8;
+						text="ex"+i;
+						text2="s"+i; 
+						ex1=document.getElementById(text).value;
+						if ((ex1.trim()!='May')&&(ex1.trim().toLowerCase()!='youngest sister')&&(ex1.trim().toLowerCase()!="alcott's youngest sister"))
+						{ document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById(text2).innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						 score++;}
+				
+				setCookie("fourth", score, 3);	
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 4 is "+score+"/10 </div>";
+			}
+			
+			
+			
+			function setCookie(cname, cvalue, exdays) {
+					var d = new Date();
+					d.setTime(d.getTime() + (exdays*24*60*60*1000));
+					var expires = "expires="+d.toUTCString();
+					document.cookie = cname + "=" + cvalue + "; " + expires;
+				}
+				
+				function getCookie(cname) {
+					var name = cname + "=";
+					var ca = document.cookie.split(';');
+					for(var i=0; i<ca.length; i++) {
+						var c = ca[i];
+						while (c.charAt(0)==' ') c = c.substring(1);
+						if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+					}
+					return "";
+				}
+			
+			
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+              
+        
+     
+        </div>
+</body>
+</html>

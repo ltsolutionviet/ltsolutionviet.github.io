@@ -1,0 +1,147 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.webm" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-4</h2>
+        <p><em>Do the following statements agree with the information given in the video?</em><br><em>In boxes
+            <strong>1-4&nbsp;</strong>on your answer sheet write</em></p>
+        <p style="padding-left: 30px;"><br><em><strong>TRUE</strong>&nbsp; if the statement agrees with the
+            information</em><br><em><strong>FALSE</strong>&nbsp; if the statement contradicts the
+            information</em><br><em><strong>NOT GIVEN&nbsp;</strong> if there is no information on this</em></p>
+        <p><br><b>1 </b><select id="q1" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+            <option value="NOT GIVEN">NOT GIVEN</option>
+          </select> Everybody is&nbsp;good at everything at first.<br><b>2 </b><select id="q2" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+            <option value="NOT GIVEN">NOT GIVEN</option>
+          </select> Each wrong answer making you smarter.<br><b>3 </b><select id="q3" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+            <option value="NOT GIVEN">NOT GIVEN</option>
+          </select> Anyone can learn.<br><b>4 </b><select id="q4" onchange="gdd(this)">
+            <option value=""> </option>
+            <option value="TRUE">TRUE</option>
+            <option value="FALSE">FALSE</option>
+            <option value="NOT GIVEN">NOT GIVEN</option>
+          </select> Boys can learn better than girls.<br><br></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: You Can Learn Anything
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 4</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> FALSE : <span style="font-style: italic"></span> <span
+                class="glyphicon glyphicon-remove" style="color: red"></span>
+            </td>
+            <td style="width: 10%"><b>3.</b> TRUE : <span style="font-style: italic"></span> <span
+                class="glyphicon glyphicon-remove" style="color: red"></span>
+            </td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> TRUE : <span style="font-style: italic"></span> <span
+                class="glyphicon glyphicon-remove" style="color: red"></span>
+            </td>
+            <td style="width: 10%"><b>4.</b> NOT GIVEN : <span style="font-style: italic"></span> <span
+                class="glyphicon glyphicon-remove" style="color: red"></span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById("myAudio");
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['FALSE'],
+      ['TRUE'],
+      ['TRUE'],
+      ['NOT GIVEN']
+
+    ];
+    for (var i = 1; i <= 4; i++) {
+      var id = 'q' + i;
+      var selectedVal = document.getElementById(id);
+      var checkedValueSe = selectedVal.options[selectedVal.selectedIndex].value;
+      if (resultBoard[i - 1] == checkedValueSe) {
+        count += 1;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gdd(n) {}
+
+</script>

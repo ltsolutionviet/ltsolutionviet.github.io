@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <p class="exercises"> Correct the mistakes: </p>
+    <form>
+        <ol>
+            <li><p> My teacher is a 39-years old man.</p>
+                <p> My teacher is a <input type="text" class="ex-input" maxlength="17" id="ex1"
+                                           required="">
+                    man. <span id="s1"> </span></p></li>
+            <br>
+
+            <li><p> One of my roommate is from Brazil. </p>
+                <p> One of my <input type="text" class="ex-input" maxlength="17" id="ex2"
+                                     required="">
+                    is from Brazil. <span id="s2"> </span></p></li>
+            <br>
+
+            <li><p> The news on TV are always sad. </p>
+                <p> The news on TV <input type="text" class="ex-input" maxlength="17" id="ex3"
+                                          required="">
+                    always sad. <span id="s3" style="color:red;"> </span></p></li>
+            <br>
+
+            <li><p> Let's have a dinner together sometime. </p>
+                <p> Let's <input type="text" class="ex-input" maxlength="17" id="ex4" required="">
+                    together sometime. <span id="s4"> </span></p></li>
+            <br>
+
+            <li><p> I suggested to buy a new car. </p>
+                <p> I suggested <input type="text" class="ex-input" maxlength="17" id="ex5"
+                                       required="">
+                    a new car. <span id="s5"> </span></p></li>
+            <br>
+
+            <li><p> I can't find nothing in my neighborhood. </p>
+                <p> I can't find <input type="text" class="ex-input" maxlength="17" id="ex6"
+                                        required="">
+                    in my neighborhood. <span id="s6"> </span></p></li>
+            <br>
+
+            <li><p> If I would be taller, I'd play basketball. </p>
+                <p> If I <input type="text" class="ex-input" maxlength="17" id="ex7" required="">
+                    taller, I'd play basketball. <span id="s7"> </span></p></li>
+            <br>
+
+            <li><p> That's not that bad idea. </p>
+                <p> That's not that bad <input type="text" class="ex-input" maxlength="17" id="ex8"
+                                               required="">
+                    idea. <span id="s8"> </span></p></li>
+            <br>
+
+            <li><p> If I will be late, I'll call you. </p>
+                <p> If I <input type="text" class="ex-input" maxlength="17" id="ex9" required="">
+                    late, I'll call you. <span id="s9"> </span></p></li>
+            <br>
+
+            <li><p> Did you ever read the book "Martin Eden?" </p>
+                <p><input type="text" class="ex-input" maxlength="17" id="ex10" required=""> read
+                    the book "Martin Eden?" <span id="s10"> </span></p></li>
+            <br>
+
+        </ol>
+        <p id="result" class="exercises"></p>
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+        <button type="button" onclick="answers()">Show answers</button>
+        <button type="button" onclick="noanswers()">Hide answers</button>
+        <!--<input type="submit" onclick="check()" />-->
+    </form>
+
+
+    <script>
+function answers() {
+
+document.getElementById("ex1").value="39-year-old";
+document.getElementById("ex2").value="roommates";
+document.getElementById("ex3").value="is";
+document.getElementById("ex4").value="have dinner";
+document.getElementById("ex5").value="buying";
+document.getElementById("ex6").value="anything";
+document.getElementById("ex7").value="were";
+document.getElementById("ex8").value="of an";
+document.getElementById("ex9").value="am";
+document.getElementById("ex10").value="Have you ever";
+
+document.getElementById("s1").innerHTML='';
+document.getElementById("s2").innerHTML='';
+document.getElementById("s3").innerHTML='';
+document.getElementById("s4").innerHTML='';
+document.getElementById("s5").innerHTML='';
+document.getElementById("s6").innerHTML='';
+document.getElementById("s7").innerHTML='';
+document.getElementById("s8").innerHTML='';
+document.getElementById("s9").innerHTML='';
+document.getElementById("s10").innerHTML='';
+}
+
+function noanswers() {
+
+document.getElementById("ex1").value="";
+document.getElementById("ex2").value="";
+document.getElementById("ex3").value="";
+document.getElementById("ex4").value="";
+document.getElementById("ex5").value="";
+document.getElementById("ex6").value="";
+document.getElementById("ex7").value="";
+document.getElementById("ex8").value="";
+document.getElementById("ex9").value="";
+document.getElementById("ex10").value="";
+
+document.getElementById("s1").innerHTML='';
+document.getElementById("s2").innerHTML='';
+document.getElementById("s3").innerHTML='';
+document.getElementById("s4").innerHTML='';
+document.getElementById("s5").innerHTML='';
+document.getElementById("s6").innerHTML='';
+document.getElementById("s7").innerHTML='';
+document.getElementById("s8").innerHTML='';
+document.getElementById("s9").innerHTML='';
+document.getElementById("s10").innerHTML='';
+}
+
+function check() {
+var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, result;
+result=true;
+ex1=document.getElementById("ex1").value;
+if (ex1.trim().toLowerCase()!="39-year-old")
+{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex2=document.getElementById("ex2").value;
+if (ex2.trim().toLowerCase()!="roommates") 
+{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex3=document.getElementById("ex3").value;
+if (ex3.trim().toLowerCase()!="is")
+{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex4=document.getElementById("ex4").value;
+if (ex4.trim().toLowerCase()!="have dinner") 
+{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex5=document.getElementById("ex5").value;
+if (ex5.trim().toLowerCase()!="buying")
+{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex6=document.getElementById("ex6").value;
+if (ex6.trim().toLowerCase()!="anything")
+{ result=false; document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex7=document.getElementById("ex7").value;
+if (ex7.trim().toLowerCase()!="were")
+{ result=false; document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex8=document.getElementById("ex8").value;
+if (ex8.trim().toLowerCase()!="of an") 
+{ result=false; document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex9=document.getElementById("ex9").value;
+if (ex9.trim().toLowerCase()!="am")
+{ result=false; document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex10=document.getElementById("ex10").value;
+if (ex10.trim()!="Have you ever")
+{ result=false; document.getElementById("s10").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s10").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+if (result==false) document.getElementById("result").innerHTML="There are some mistakes..."
+else document.getElementById("result").innerHTML=
+'<span style="color:green; "> Correct! </span>';
+}
+
+    </script>
+
+
+</div>
+</body>
+</html>

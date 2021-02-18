@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet"  type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+        
+        <p>This is the second section of IELTS Listening test. Listen to the audio and complete all the questions. After you finish, press 'check' and move on to the next section.</p>
+        	
+            
+            <center><audio controls="" controlslist="nodownload">
+                <source src="../audio_listening/5.2.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            <br> 
+          <div id="exam-text">
+          <p>&nbsp;</p>
+          <p><strong>Questions 11-16</strong></p>
+<p>Complete the table below. </p><p>Write <strong>NO MORE THAN TWO WORDS AND/OR A NUMBER</strong> for each answer.</p><br>
+          <table border="1" cellspacing="0" cellpadding="3" align="center" width="70%">
+            <tbody><tr>
+              <td width="50%"><p align="center"><strong>Ticket type</strong></p></td>
+              <td><p align="center"><strong>Ticket cost</strong></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p>Adult’s ticket</p></td>
+              <td style="padding-left:7px;"><p><strong>(11)</strong> <input type="text" class="ex-input" style="width:120px" id="ex1" required=""> pounds 
+                 <span id="s1"> </span></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p>Child’s ticket</p>
+                <p>(for children between 5 and 15 years)</p></td>
+              <td style="padding-left:7px;"><p><strong>(12)</strong> <input type="text" class="ex-input" style="width:120px" id="ex2" required=""> pounds 
+                 <span id="s2"> </span></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p>*Children under <strong>(13)</strong> <input type="text" class="ex-input" style="width:120px" id="ex3" required=""> years <span id="s3"> </span></p></td>
+              <td style="padding-left:7px;"><p>free</p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p>Reduced tariff</p>
+                <p>(for full-time students and disabled visitors) </p></td>
+              <td style="padding-left:7px;"><p><strong>(14)</strong> <input type="text" class="ex-input" style="width:120px" id="ex4" required=""> pounds 
+                 <span id="s4"> </span></p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p><strong>(15)</strong> <input type="text" class="ex-input" style="width:120px" id="ex5" required=""> <span id="s5"> </span></p>
+                <p>(can be used by up to 2 adults and 3 children)</p></td>
+              <td style="padding-left:7px;"><p>55 pounds</p></td>
+            </tr>
+            <tr>
+              <td style="padding-left:7px;"><p>Annual membership</p></td>
+              <td style="padding-left:7px;"><p><strong>(16)</strong> <input type="text" class="ex-input" style="width:120px" id="ex6" required=""> pounds 
+                 <span id="s6"> </span></p></td>
+            </tr>
+          </tbody></table>
+          <br><br>
+          <p><strong>Questions 17-20</strong></p>
+<p>Complete the information about ordering tickets below. Write <strong>NO MORE THAN TWO WORDS</strong> for each answer.</p>
+          <ul>
+            <li>The easiest way, is to buy your tickets <strong>(17)</strong> <input type="text" class="ex-input" style="width:150px" id="ex7" required=""> . <span id="s7"> </span>
+          
+          <p>Make sure that you receive a <strong>(18)</strong> <input type="text" class="ex-input" style="width:150px" id="ex8" required=""> of your booking! <span id="s8"> </span></p></li>
+          
+            <li><p>The second way is to book your tickets <strong>(19)</strong> <input type="text" class="ex-input" style="width:150px" id="ex9" required=""> . <span id="s9"> </span></p></li>
+            <li><p>If you don’t want to plan your visit in advance, you can simply purchase the tickets <strong>(20)</strong> <input type="text" class="ex-input" style="width:150px" id="ex10" required=""> in ticket kiosks. <span id="s10"> </span></p></li>
+          </ul>
+          </div>
+            <p><br>
+		</p>
+          <div id="result" align="center"> </div>
+
+<button id="b2" type="button" onclick="toggle()"> 
+<img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers</button>
+
+<div id="answers" style="display:none;" class="hint">  
+  <p><strong>ANSWERS</strong></p>
+<p>Each question correctly answered scores 1 mark. <strong>Correct</strong> spelling is needed in all answers. </p>
+  <p><strong>Section 2</strong></p>
+  <ol start="11">
+    <li>24 / twenty-four</li>
+    <li>18 / eighteen</li>
+    <li>5 / five</li>
+    <li>19 / nineteen</li>
+    <li>Family ticket</li>
+    <li>107</li>
+    <li>online</li>
+    <li>confirmation email / confirmation e-mail</li>
+    <li>by telephone</li>
+    <li>in person</li>
+  </ol>
+  <ol>
+   
+  </ol>
+</div> <br> <br>
+
+<div align="center">
+ &emsp;
+
+<button class="ex-but" type="button" onclick="check()">Check</button> &emsp;
+
+ 
+</div>
+<br>
+
+
+
+
+
+			<script>
+			function check()
+			{
+				var score;
+				 score=0;
+				
+				var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10;
+				
+				ex1=document.getElementById("ex1").value;
+				if ((ex1.trim().toLowerCase()!="24") && (ex1.trim().toLowerCase()!="twenty-four"))
+				{ document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				ex2=document.getElementById("ex2").value;
+				if ((ex2.trim().toLowerCase()!="18")&&(ex2.trim().toLowerCase()!="eighteen"))
+				{ document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex3=document.getElementById("ex3").value;
+				if ((ex3.trim().toLowerCase()!="5")&&(ex3.trim().toLowerCase()!="five"))
+				{ document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+		
+				ex4=document.getElementById("ex4").value;
+				if ((ex4.trim().toLowerCase()!="19")&&(ex4.trim().toLowerCase()!="nineteen"))
+				{ document.getElementById("s4").innerHTML='<img height=4px src="../images/cross.png" />';}
+				else {document.getElementById("s4").innerHTML='<img height=4px src="../images/ok.png" />'; score++;}
+				
+				
+				ex5=document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase()!="family ticket")
+				{ document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex6=document.getElementById("ex6").value;
+				if (ex6.trim().toLowerCase()!="107")
+				{ document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex7=document.getElementById("ex7").value;
+				if (ex7.trim().toLowerCase()!="online")
+				{ document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex8=document.getElementById("ex8").value;
+				if ((ex8.trim().toLowerCase()!="confirmation email")&&(ex8.trim().toLowerCase()!="confirmation e-mail"))
+				{ document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex9=document.getElementById("ex9").value;
+				if ((ex9.trim().toLowerCase()!="by telephone")&&((ex9.trim().toLowerCase()!="by phone")))
+				{ document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+				ex10=document.getElementById("ex10").value;
+				if (ex10.trim().toLowerCase()!="in person")
+				{ document.getElementById("s10").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else {document.getElementById("s10").innerHTML='<img height=20px src="../images/ok.png" />'; score++;}
+				
+				
+	
+				
+				document.getElementById("result").innerHTML=
+				"<div class='result'>Your result for Section 2 is "+score+"/10 </div>";
+			}
+			
+		
+			
+			function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   }
+			</script>
+
+             
+       
+        
+     
+        </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+</head>
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio controls="" controlslist="nodownload">
+      <source src="source.mp3" type="audio/mp3" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+
+  <div>
+    <h2>Questions 1-6</h2>
+    <p align="left"><em>Label the diagram below.</em></p>
+<p align="left"><img src="credit.jpg" alt="" width="566" height="237"></p>
+<p align="left"><em>Write <span style="color: #ff0000;"><strong>ONE OR TWO WORDS</strong></span> for each answer.</em></p>
+<p align="left"><b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"></p>
+<p align="left"><b>2 </b><input type="text" required="" id="q2" onkeyup="gtb(this)"></p>
+<p align="left"><b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)"></p>
+<p align="left"><b>4 </b><input type="text" required="" id="q4" onkeyup="gtb(this)"></p>
+<p align="left"><b>5 </b><input type="text" required="" id="q5" onkeyup="gtb(this)"></p>
+<p align="left"><b>6 </b><input type="text" required="" id="q6" onkeyup="gtb(this)"></p>
+</div>
+
+
+
+</div>
+
+<div class="exam-section panel text-center">
+  <p></p>
+  <h4>---End of the Test---</h4>
+  <p></p>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: A debit card
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 6</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody><tr>
+                    <td style="width: 10%"><b>1.</b> picture</td>
+                    <td style="width: 10%"><b>4.</b> bank logo</td>
+        </tr>
+        <tr>
+                    <td style="width: 10%"><b>2.</b> magnetic strip</td>
+                    <td style="width: 10%"><b>5.</b> date</td>
+        </tr>
+        <tr>
+                    <td style="width: 10%"><b>3.</b> signature</td>
+                    <td style="width: 10%"><b>6.</b> chip</td>
+        </tr>
+
+</tbody></table>
+    </div>
+  </div>
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+</div>
+
+
+
+
+<script>
+  function submit() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    var count = 0;
+    var arrA = [
+      'picture',
+      'magnetic strip',
+      'signature',
+      'bank logo',
+      'date',
+      'chip'
+    ];
+    for (var i = 1; i <= 6; i++) {
+      var role = arrA[i - 1].toUpperCase()
+      var content = document.getElementById("q" + i).value;
+      if (role.trim() == content.trim().toUpperCase()) {
+        count += 1;
+      }
+    }
+    if (x.style.display == "none") {
+      x.style.display = "block";
+      document.getElementById("scoreValue").innerHTML = count;
+      y.style.display = "block";
+      z.style.display = "none";
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById("test");
+    var y = document.getElementById("buttonHidden");
+    var z = document.getElementById("buttonShow");
+    x.style.display = "none";
+    y.style.display = "none";
+    z.style.display = "block";
+  }
+  function gtb(){}
+</script>

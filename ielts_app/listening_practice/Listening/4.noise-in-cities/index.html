@@ -1,0 +1,174 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-10</h2>
+        <p><em>Complete the notes below.</em></p>
+        <p><em>Write <span style="color: #ff0000;"><strong>ONE WORD ONLY</strong></span> for each answer.</em></p>
+        <div style="padding: 10px; border: 1px solid black;">&nbsp;
+          <h3>Noise in Cities</h3>
+          <p>Past research focused on noise level (measured in decibels) and people’s responses.</p>
+          <p><strong>Noise ‘maps’</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;show that the highest noise levels are usually found on roads</p>
+          <p>• &nbsp; &nbsp;do not show other sources of noise, e.g. when windows are open or people’s neighbours are in
+            their <b>1 </b><input type="text" required="" id="q1" onkeyup="gtb(this)"> </p>
+          <p>• &nbsp;&nbsp;&nbsp;ignore variations in people’s perceptions of noise</p>
+          <p>• &nbsp;&nbsp;&nbsp;have made people realize that the noise is a <b>2 </b><input type="text" required=""
+              id="q2" onkeyup="gtb(this)">&nbsp;issue that must be dealt with</p>
+          <p><strong>Problems caused by noise</strong></p>
+          <p>• &nbsp;&nbsp;&nbsp;sleep disturbance</p>
+          <p>• &nbsp;&nbsp;&nbsp;increase in amount of stress</p>
+          <p>• &nbsp; &nbsp;effect on the <b>3 </b><input type="text" required="" id="q3" onkeyup="gtb(this)">&nbsp;of
+            schoolchildren</p>
+          <p><strong>Different types of noise</strong></p>
+          <p>Some noises can be considered pleasant e.g. the sound of a <b>4 </b><input type="text" required="" id="q4"
+              onkeyup="gtb(this)">&nbsp;in a town</p>
+          <p>To investigate this, researchers may use methods from <b>5 </b><input type="text" required="" id="q5"
+              onkeyup="gtb(this)">&nbsp;sciences e.g. questionnaires</p>
+          <p><strong>What people want</strong></p>
+          <p>Plenty of activity in urban environments which are <b>6 </b><input type="text" required="" id="q6"
+              onkeyup="gtb(this)">, but also allow people to relax</p>
+          <p>But architects and town planners</p>
+          <p>• &nbsp;&nbsp;&nbsp;do not get much <b>7 </b><input type="text" required="" id="q7"
+              onkeyup="gtb(this)">&nbsp;in acoustics</p>
+          <p>• &nbsp;&nbsp;&nbsp;regard sound as the responsibility of engineers</p>
+          <p><strong>Understanding sound as an art form</strong></p>
+          <p>We need to know</p>
+          <p>• &nbsp;&nbsp;&nbsp;how sound relates to <b>8 </b><input type="text" required="" id="q8"
+              onkeyup="gtb(this)"> </p>
+          <p>• &nbsp; &nbsp;what can be learnt from psychology about the effects of sound</p>
+          <p>• &nbsp;&nbsp;&nbsp;whether physics can help us understand the <b>9 </b><input type="text" required=""
+              id="q9" onkeyup="gtb(this)">&nbsp;of sound</p>
+          <p>Virtual reality programs</p>
+          <p>• &nbsp; &nbsp;advantage: predict the effect of buildings</p>
+          <p>• &nbsp;&nbsp;&nbsp;current disadvantage: they are <b>10 </b><input type="text" required="" id="q10"
+              onkeyup="gtb(this)"> </p>
+        </div>
+        <h3 style="text-align: center;">&nbsp;</h3>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Noise in Cities
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> garden(s)</td>
+            <td style="width: 10%"><b>6.</b> lively</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> political</td>
+            <td style="width: 10%"><b>7.</b> training</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> work/study</td>
+            <td style="width: 10%"><b>8.</b> culture</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> fountain</td>
+            <td style="width: 10%"><b>9.</b> nature</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> social</td>
+            <td style="width: 10%"><b>10.</b> silent</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      ['garden', 'gardens'],
+      ['political'],
+      ['work', 'study'],
+      ['fountain'],
+      ['social'],
+      ['lively'],
+      ['training'],
+      ['culture'],
+      ['nature'],
+      ['silent']
+    ];
+
+    for (var i = 1; i <= 10; i++) {
+      var content = document.getElementById('q' + i).value;
+       for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+        break;
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function gtb() {
+
+  }
+</script>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+        
+        <p style="font-weight:bold;"> Difficulty level: medium </p> 
+        
+        
+        <p>Listen to the recording and complete gaps in the text below. </p>
+
+		<center><audio controls="" controlslist="nodownload">
+                <source src="../audio/ex5.mp3" type="audio/mp3">
+                Your browser doesn't support audio teg!
+        	</audio></center>
+            
+            
+        <br>
+        <h3>“Expressions using the word <em>sun</em>”</h3>
+        
+        
+        
+        <form>
+         <p>I'm Anna Matteo with expressions using the word "sun."</p>
+        <p>The first expression is about everything, everything under the sun. If you
+          <input type="text" class="ex-input" maxlength="17" id="ex1" required=""> <span id="s1"> </span>a store that sold many different
+          <input type="text" class="ex-input" maxlength="17" id="ex2" required=""> <span id="s2"> </span>, your advertisements could say you sell <strong>everything under the sun</strong>. This would not be
+          <input type="text" class="ex-input" maxlength="17" id="ex3" required=""> 
+          <span id="s3"> </span>  true, of course. But what would advertising be without some creative descriptions? </p>
+        <p>Here is
+
+          <input type="text" class="ex-input" maxlength="17" id="ex4" required=""> <span id="s4"> </span>example: Let’s say you are talking with a friend you have not seen for a long time. The two of you could have a lot of
+          <input type="text" class="ex-input" maxlength="17" id="ex5" required=""> 
+          <span id="s5"> </span>  to do. So, you talk about <strong>everything under the sun</strong>.</p>
+        <p> <strong>Under the sun</strong> is an old expression – at least 3,000 years old. It means everywhere the sun
+<input type="text" class="ex-input" maxlength="17" id="ex6" required="">
+. 
+          <span id="s6"> </span> King Solomon of Israel used it in the Bible. He   
+          <input type="text" class="ex-input" maxlength="17" id="ex7" required=""> 
+          <span id="s7"> </span>that nothing under the sun is new. What has been will be again, he said, and what has been done will be done
+          <input type="text" class="ex-input" maxlength="17" id="ex8" required="">
+          .</p>
+        <p><span id="s8"> </span>If there is nothing new under the sun, there is nothing new anywhere. New or old, few things can be
+          <input type="text" class="ex-input" maxlength="17" id="ex9" required=""> 
+          <span id="s9"> </span>in the bright light of the sun.</p>
+        
+        
+        <p id="result" class="exercises"> </p>
+        
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
+        <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
+        <button type="button" onclick="noanswers()">Hine answers</button>
+        <!--<input type="submit"  onclick="check()" />-->
+        </form>
+        
+          
+          <script>
+		  		function answers() {
+
+				document.getElementById("ex1").value="own";
+				document.getElementById("ex2").value="items";
+				document.getElementById("ex3").value="exactly";
+				document.getElementById("ex4").value="another";
+				document.getElementById("ex5").value="catching up";
+				document.getElementById("ex6").value="shines";
+				document.getElementById("ex7").value="wrote";
+				document.getElementById("ex8").value="again";
+				document.getElementById("ex9").value="hidden";
+			
+				
+				document.getElementById("s1").innerHTML='';
+				document.getElementById("s2").innerHTML='';
+				document.getElementById("s3").innerHTML='';
+				document.getElementById("s4").innerHTML='';
+				document.getElementById("s5").innerHTML='';
+				document.getElementById("s6").innerHTML='';
+				document.getElementById("s7").innerHTML='';
+				document.getElementById("s8").innerHTML='';
+				document.getElementById("s9").innerHTML='';
+				}
+				
+				function noanswers() {
+				
+				document.getElementById("ex1").value="";
+				document.getElementById("ex2").value="";
+				document.getElementById("ex3").value="";
+				document.getElementById("ex4").value="";
+				document.getElementById("ex5").value="";
+				document.getElementById("ex6").value="";
+				document.getElementById("ex7").value="";
+				document.getElementById("ex8").value="";
+				document.getElementById("ex9").value="";
+				
+				document.getElementById("s1").innerHTML='';
+				document.getElementById("s2").innerHTML='';
+				document.getElementById("s3").innerHTML='';
+				document.getElementById("s4").innerHTML='';
+				document.getElementById("s5").innerHTML='';
+				document.getElementById("s6").innerHTML='';
+				document.getElementById("s7").innerHTML='';
+				document.getElementById("s8").innerHTML='';
+				document.getElementById("s9").innerHTML='';
+				}
+
+				 
+				
+				function check() {
+				var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, result;
+				result=true;
+				ex1=document.getElementById("ex1").value;
+				if (ex1.trim().toLowerCase()!="own")
+				{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex2=document.getElementById("ex2").value;
+				if (ex2.trim().toLowerCase()!="items")
+				{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				
+				ex3=document.getElementById("ex3").value;
+				if (ex3.trim().toLowerCase()!="exactly")
+				{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				
+				ex4=document.getElementById("ex4").value;
+				if (ex4.trim().toLowerCase()!="another")
+				{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex5=document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase()!="catching up")
+				{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex6=document.getElementById("ex6").value;
+				if (ex6.trim().toLowerCase()!="shines")
+				{ result=false; document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex7=document.getElementById("ex7").value;
+				if (ex7.trim().toLowerCase()!="wrote")
+				{ result=false; document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex8=document.getElementById("ex8").value;
+				if (ex8.trim().toLowerCase()!="again")
+				{ result=false; document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				ex9=document.getElementById("ex9").value;
+				if (ex9.trim().toLowerCase()!="hidden")
+				{ result=false; document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
+				else document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />';
+				
+				
+				
+				if (result==false) document.getElementById("result").innerHTML="There are some mistakes..."
+				else document.getElementById("result").innerHTML=
+				'<span style="color:green; "> Correct! </span>';
+				}
+          </script>
+          
+          
+
+            
+           <br>     
+        
+     
+        </div>
+</body>
+</html>

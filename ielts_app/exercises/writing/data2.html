@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+        
+
+
+
+
+<p class="exercises"> Correct the mistakes: </p>
+<form>
+<ol>
+<li> <p> Do you have a dog? Yes, I have.</p>
+<p> Do you have a dog? Yes, I <input type="text" class="ex-input" maxlength="17" id="ex1" required="">
+. <span id="s1"> </span> </p> </li>
+<br>
+
+<li> <p> I love my city, because it is too beautiful.</p>
+<p> I love my city, because it is <input type="text" class="ex-input" maxlength="17" id="ex2" required="">
+beautiful. <span id="s2"> </span> </p> </li>
+<br>
+
+<li> <p> What you can do in such situation?</p>
+<p> What <input type="text" class="ex-input" maxlength="17" id="ex3" required="">
+in such situation? <span id="s3" style="color:red;"> </span> </p> </li>
+<br>
+
+<li> <p> There isn't a lot of people here.</p>
+<p> There <input type="text" class="ex-input" maxlength="17" id="ex4" required="">
+a lot of people here. <span id="s4"> </span> </p> </li>
+<br>
+
+<li> <p> Do you like to go somewhere tomorrow?</p>
+<p>  <input type="text" class="ex-input" maxlength="17" id="ex5" required="">
+you like to go somewhere tomorrow? <span id="s5"> </span> </p> </li>
+<br>
+
+<li> <p> I am thinking of to go home, because I am very exhausted. </p>
+<p> I am thinking of <input type="text" class="ex-input" maxlength="17" id="ex6" required="">
+home, because I am very exhausted. <span id="s6"> </span> </p> </li>
+<br>
+
+<li> <p> This jacket is more cheap than the other one. </p>
+<p> This jacket is <input type="text" class="ex-input" maxlength="17" id="ex7" required="">
+than the other one. <span id="s7"> </span> </p> </li>
+<br>
+
+<li> <p> I love that show, because is funny! </p>
+<p> I love that show, because <input type="text" class="ex-input" maxlength="17" id="ex8" required="">
+funny! <span id="s8"> </span> </p> </li>
+<br>
+
+<li> <p> Before make a dinner, you should practice a lot. </p>
+<p> Before <input type="text" class="ex-input" maxlength="17" id="ex9" required="">
+a dinner, you should practice a lot. <span id="s9"> </span> </p> </li>
+<br>
+
+<li> <p> My parents always told me a bedtime history, when I was little. </p>
+<p> My parents always told me a bedtime <input type="text" class="ex-input" maxlength="17" id="ex10" required="">, when I was little. <span id="s10"> </span> </p> </li>
+<br>
+
+</ol>
+<p id="result" class="exercises"> </p>
+<button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+<button type="button" onclick="answers()">Show answers</button>
+<button type="button" onclick="noanswers()">Hide answers</button>
+
+</form>
+
+
+<script>
+function answers() {
+
+document.getElementById("ex1").value="do";
+document.getElementById("ex2").value="very" && "really";
+document.getElementById("ex3").value="can you do";
+document.getElementById("ex4").value="aren't" && "are not";
+document.getElementById("ex5").value="Would";
+document.getElementById("ex6").value="going";
+document.getElementById("ex7").value="cheaper";
+document.getElementById("ex8").value="it is" && "it's";
+document.getElementById("ex9").value="making";
+document.getElementById("ex10").value="story";
+
+document.getElementById("s1").innerHTML='';
+document.getElementById("s2").innerHTML='';
+document.getElementById("s3").innerHTML='';
+document.getElementById("s4").innerHTML='';
+document.getElementById("s5").innerHTML='';
+document.getElementById("s6").innerHTML='';
+document.getElementById("s7").innerHTML='';
+document.getElementById("s8").innerHTML='';
+document.getElementById("s9").innerHTML='';
+document.getElementById("s10").innerHTML='';
+}
+
+function noanswers() {
+
+document.getElementById("ex1").value="";
+document.getElementById("ex2").value="";
+document.getElementById("ex3").value="";
+document.getElementById("ex4").value="";
+document.getElementById("ex5").value="";
+document.getElementById("ex6").value="";
+document.getElementById("ex7").value="";
+document.getElementById("ex8").value="";
+document.getElementById("ex9").value="";
+document.getElementById("ex10").value="";
+
+document.getElementById("s1").innerHTML='';
+document.getElementById("s2").innerHTML='';
+document.getElementById("s3").innerHTML='';
+document.getElementById("s4").innerHTML='';
+document.getElementById("s5").innerHTML='';
+document.getElementById("s6").innerHTML='';
+document.getElementById("s7").innerHTML='';
+document.getElementById("s8").innerHTML='';
+document.getElementById("s9").innerHTML='';
+document.getElementById("s10").innerHTML='';
+}
+
+function check() {
+var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, result;
+result=true;
+ex1=document.getElementById("ex1").value;
+if (ex1.trim().toLowerCase()!="do")
+{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex2=document.getElementById("ex2").value;
+if ((ex2.trim().toLowerCase()!="very") && (ex2.trim().toLowerCase()!="really"))
+{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex3=document.getElementById("ex3").value;
+if (ex3.trim().toLowerCase()!="can you do")
+{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex4=document.getElementById("ex4").value;
+if ((ex4.trim().toLowerCase()!="aren't") && (ex4.trim().toLowerCase()!="are not"))
+{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex5=document.getElementById("ex5").value;
+if (ex5.trim()!="Would")
+{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex6=document.getElementById("ex6").value;
+if (ex6.trim().toLowerCase()!="going")
+{ result=false; document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex7=document.getElementById("ex7").value;
+if (ex7.trim().toLowerCase()!="cheaper")
+{ result=false; document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />';
+
+ex8=document.getElementById("ex8").value;
+if ((ex8.trim().toLowerCase()!="it is") && (ex8.trim().toLowerCase()!="it's"))
+{ result=false; document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex9=document.getElementById("ex9").value;
+if (ex9.trim().toLowerCase()!="making")
+{ result=false; document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+ex10=document.getElementById("ex10").value;
+if (ex10.trim().toLowerCase()!="story")
+{ result=false; document.getElementById("s10").innerHTML='<img height=20px src="../images/cross.png" />';}
+else document.getElementById("s10").innerHTML='<img height=20px src="../images/ok.png" />';
+
+
+if (result==false) document.getElementById("result").innerHTML="There are some mistakes..."
+else document.getElementById("result").innerHTML=
+'<span style="color:green; "> Correct! </span>';
+}
+</script>
+
+
+
+
+
+
+ 
+ 
+
+
+</div>
+</body>
+</html>

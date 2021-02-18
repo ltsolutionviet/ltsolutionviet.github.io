@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <h2>Exercise 1</h2>
+    <p>Read the text and answer the questions below.</p>
+    <div class="exam-text">
+        <p align="center" style="font-weight:bold;"> 3D heart printed using multiple imaging
+            techniques</p>
+        <p>&emsp; Congenital heart experts from Spectrum Health Helen DeVos Children's Hospital have
+            successfully integrated two common imaging techniques to produce a three-dimensional
+            anatomic model of a patient's heart.</p>
+        <p>&emsp; The 3D model printing of patients' hearts has become more common in recent years
+            as part of an emerging, experimental field devoted to enhanced visualization of
+            individual cardiac structures and characteristics. But this is the first time the
+            integration of computed tomography (CT) and three-dimensional transesophageal
+            echocardiography (3DTEE) has successfully been used for printing a hybrid 3D model of a
+            patient's heart. A proof-of-concept study authored by the Spectrum Health experts also
+            opens the way for these techniques to be used in combination with a third tool -
+            magnetic resonance imaging (MRI).</p>
+
+        <p>&emsp; "Hybrid 3D printing integrates the best aspects of two or more imaging modalities,
+            which can potentially enhance diagnosis, as well as interventional and surgical
+            planning," said Jordan Gosnell, Helen DeVos Children's Hospital cardiac sonographer, and
+            lead author of the study. "Previous methods of 3D printing utilize only one imaging
+            modality, which may not be as accurate as merging two or more datasets."</p>
+
+        <p>&emsp; The team used specialized software to register images from the two imaging
+            modalities to selectively integrate datasets to produce an accurate anatomic model of
+            the heart. The result creates more detailed and anatomically accurate 3D renderings and
+            printed models, which may enable physicians to better diagnose and treat heart
+            disease.</p>
+    </div>
+
+    <br>
+
+
+    <br>
+    <p>Complete the sentences below. </p>
+
+    <p> Write <strong>NO MORE THAN THREE WORDS</strong> from the passage for each answer.</p>
+    <br>
+    <form>
+
+        <ol>
+            <li> A three-dimensional <input type="text" class="ex-input" style="width:210px"
+                                            id="ex1" required=""> of a patient's heart was created
+                by integrating two imaging techniques.
+                <span id="s1"> </span>
+
+                <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint1" style="display:none;"><p class="hint"> It is written in the first
+                paragraph that experts "integrated two common imaging techniques to produce a
+                three-dimensional <em>anatomic model</em> of a patient's heart". </p></div>
+            <br>
+
+
+            <li> Spectrum Health scientists have found a way to combine and use three techniques:
+                computed tomography, three-dimensional transesophageal echocardiography and
+                <input type="text" class="ex-input" style="width:210px" id="ex2" required="">.
+                <span id="s2"> </span>
+
+                <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint2" style="display:none;"><p class="hint">The second paragraph tells us
+                about CT and 3DTEE, and then says that "study authored by the Spectrum Health
+                experts also opens the way for these techniques to be used in combination with a
+                third tool - <em>magnetic resonance imaging</em>". </p></div>
+            <br>
+
+
+            <li> The new method of 3D printing is more efficient than previous methods because it
+                merges two and more
+                <input type="text" class="ex-input" style="width:210px" id="ex3" required="">.
+                <span id="s3"> </span>
+
+                <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint3" style="display:none;"><p class="hint">The third paragraph describes
+                advantages of a new method, ending with a sentence: "Previous methods of 3D printing
+                utilize only one imaging modality, which may not be as accurate as merging two or
+                more <em>datasets</em>." </p></div>
+            <br>
+
+
+            <li> With more accurate 3D renderings and
+                <input type="text" class="ex-input" style="width:210px" id="ex4" required="">,
+                physicians will be able to better diagnose and treat heart disease.
+                <span id="s4"> </span>
+
+                <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show
+                    hint
+                </button>
+            </li>
+
+            <div id="hint4" style="display:none;"><p class="hint"> It is written in the last
+                paragraph: "The result creates more detailed and anatomically accurate 3D renderings
+                and <em>printed models</em>, which may enable physicians to better diagnose and
+                treat heart disease." </p></div>
+            <br>
+
+        </ol>
+
+        <p id="result" class="exercises"></p>
+
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+
+        <!--<input type="submit"  onclick="check()" />-->
+    </form>
+    <br>
+
+
+    <script>
+		  		function toggle(id) { 
+					if (document.getElementById(id).style.display=='none')		
+							 {
+								 document.getElementById(id).style.display='block';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Hide hint";
+							 }
+					else
+							{
+								 document.getElementById(id).style.display='none';
+								 var b="button"+id;
+								 document.getElementById(b).innerHTML="Show hint";
+							 }		 
+				 }
+				 
+				
+				function check() {
+				var ex, ex1, score, total; score=0; total=0;
+				ex=['anatomic model', 'magnetic resonance imaging', 'datasets', 'printed models'];
+				
+				for (var i=1; i<5; i++) {
+					ex1=document.getElementById("ex"+i).value; total++;
+					if (ex1.trim().toLowerCase()!=ex[i-1])
+					document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
+					else {score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;"/>  ';}
+				
+				}
+				
+				score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+				}
+
+    </script>
+
+
+</div>
+</body>
+</html>

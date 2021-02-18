@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+    <div id="content2">
+
+
+        <div class="theory-heading" id="b2">Theory <img height="25px" src="../images/minus.png"
+                                                        style="vertical-align: middle"></div>
+        <div class="theory" id="hint">
+            <p>Verbs <em>can, could, may, might, will, would, must, shall, should, ought to </em>are
+                called <strong>modal verbs</strong>.</p>
+            <p>They are different from normal verbs: </p>
+            <p><strong>1. </strong>We do not add '<em>s</em>' to them in yhe third person
+                singular.<em> (</em><em>She can do it. He might join us today)</em></p>
+            <p><strong>2. </strong>We make questions with them by using inversion. <em>(He could do
+                there. Could he go there?)</em></p>
+            <p><strong>3. </strong>Modal verbs are always followed by the infinitive of another verb
+                without '<em>to</em>'. </p>
+            <p></p>
+            <p><strong>Modal verbs </strong>can be used to: </p>
+            <p><strong>a) </strong>Talk about something we're sure/unsure of. <em>(It
+                <strong>can't</strong> be this expensive! It <strong>must</strong> be very cold
+                outside today)</em></p>
+            <p><strong>b) </strong>Talk about our abilities or skills. <em>(I <strong>can't</strong>
+                swim. She <strong>can</strong> play basketball very well)</em></p>
+            <p><strong>c) </strong>Give advice or say if something is necessary/unnecessary. <em>(We
+                <strong>must</strong> eat healthy food. He <strong>should</strong> stop
+                smoking)</em></p>
+            <p><strong>d) </strong>Ask for the permission. <em>(<strong>May</strong> I borrow your
+                pen, please?)</em></p>
+            <p><strong>e) </strong>Talk about habits or thing we usually do/did. <em>(When we were
+                kids, we <strong>would</strong> always play football during summer)</em></p>
+        </div>
+
+
+    </div>
+    <br>
+    <h3>Practice. Complete sentences using a correct modal verb: </h3>
+    <form>
+        <ol>
+            <li>My mom told me that I
+                <input type="text" class="ex-input" style="width:80px" id="ex1"> <span
+                        id="s1"></span> visit my friends more often.
+            </li>
+            <li>
+                I need your workbook. <input type="text" class="ex-input" style="width:80px"
+                                             id="ex2"> <span id="s2"></span> you give it to me for a
+                minute?
+            </li>
+            <li>You <input type="text" class="ex-input" style="width:80px" id="ex3"> <span
+                    id="s3"></span> have done it. I've told you several times that it's not a good
+                decision.
+            </li>
+            <li>Her flight took her 17 hours. She
+                <input type="text" class="ex-input" style="width:80px" id="ex4">
+                <span id="s4"></span> be tired now.
+            </li>
+            <li>I
+                <input type="text" class="ex-input" style="width:80px" id="ex5">
+                <span id="s5"></span> speak Italian because I learnt it in school?
+            </li>
+            <li>You <input type="text" class="ex-input" style="width:80px" id="ex6"> <span
+                    id="s6"></span> take your umbrella with you. It will probably rain today.
+            </li>
+            <li>Call the ambulance! He
+                <input type="text" class="ex-input" style="width:80px" id="ex7">
+                <span id="s7"></span>die, if he won't be treated by the doctors as soon as possible.
+            </li>
+            <li>I lost my bag. I
+                <input type="text" class="ex-input" style="width:80px" id="ex8">
+                <span id="s8"></span> have left it in the cafe yesterday. There is no other
+                explanation.
+            </li>
+            <li>I <input type="text" class="ex-input" style="width:80px" id="ex9"> <span
+                    id="s9"></span> believe she did this to you!
+            </li>
+            <li>Drivers <input type="text" class="ex-input" style="width:80px" id="ex10"> <span
+                    id="s10"></span> stop when the red lights flash.<br>
+            </li>
+        </ol>
+        <p id="result" class="exercises"></p>
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+        <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
+        <button type="button" onclick="noanswers()">Hide answers</button>
+        <br><br>
+    </form>
+
+
+    <script>
+		  		document.getElementById('b2').onclick = function() {
+				   var e = document.getElementById("hint");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML='Theory <img height="25px" src="../images/plus.png" style="vertical-align: middle"  />';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='Theory <img height="25px" src="../images/minus.png" style="vertical-align: middle"  />';
+					  e.style.display = 'block';
+				   }
+			   }
+				
+				
+				function answers() {
+				var ex=["should", "can", "shouldn't", "must", "can", "should", "could", "must", "can't", "must"];	
+				for (var i=1; i<11; i++)
+					{
+						document.getElementById("ex"+i).value=ex[i-1];
+						document.getElementById("s"+i).innerHTML='';
+					}
+					
+			
+				}	
+				
+				function noanswers() {
+					for (var i=1; i<11; i++)
+					{
+						document.getElementById("ex"+i).value="";
+						document.getElementById("s"+i).innerHTML='';
+					}
+			
+					
+			
+				}
+				
+				
+				function check() {
+					var ex, ex1, score=0, total=0;
+					  		// ex[0]  			1		ex[2]
+					ex=["should", "can", "shouldn't", "must", "can", "should", "could", "must", "can't", "must"];
+					
+					
+					for (var i=1; i<11; i++)
+					{
+						total++;
+						ex1=document.getElementById("ex"+i).value;
+						if (ex1.trim().toLowerCase()!=ex[i-1])
+					 	document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align: middle;"/>';
+						else {
+							document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align: middle;" />'; score++;}
+					}
+					
+					
+					
+					
+					
+					score=score/total*100;
+					if (!(score % 1 === 0)) score=score.toFixed(2);
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; "> Excellent! </span>Your score is '+score+'%';
+				}
+
+    </script>
+
+
+</div>
+</body>
+</html>

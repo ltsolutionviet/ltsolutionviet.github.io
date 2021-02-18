@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div id="content">
+
+
+    <p>This exercise will help you to improve your <strong>diagram completion skills</strong> to
+        make you more prepared for the <strong>IELTS Reading Test</strong> in general.</p>
+
+
+    <p><strong>Your answering strategy</strong>:</p>
+    <ol>
+        <li>Read the text, underlining the new terms and important names.</li>
+        <li>Look at the diagram and think which parts of it you can label.</li>
+        <li>Check your assumptions by looking back at underlined terms and label the parts you’re
+            sure of.
+        </li>
+    </ol>
+    <p>&nbsp;</p>
+    <h3>Practice</h3>
+
+    <p><strong>Read the text and label the diagram below.</strong></p>
+    <div class="exam-text">
+        <p align="center" style="font-weight:bold;"> Bicycle</p>
+        <p>&emsp; I learned how to ride a bike when I was very young but I never really knew much
+            about what each part of the bike was called. As I began to ask questions about bikes, I
+            realized I had no clue what the experts were saying. It was like a foreign languageTranslate to
+            me. So like any foreign languageTranslate you have to start with the basics.</p>
+
+        <p>&emsp; The most known part of a bicycle, a bicycle saddle, often called a seat, is one of
+            three contact points on an upright bicycle. It’s a place where you seat while riding a
+            bike. A bicycle saddle is commonly attached to the bicycle frame, the main component of
+            a bicycle, onto which wheels and other components are fitted. Cyclist often attach a
+            bottle of water to the underneath part of the frame, called a down tube. </p>
+
+        <p>&emsp; The second contact point of the bicycle is a pedal, the part of your bicycle that
+            you push with your foot to propel the bicycle. The pedal provides the connection between
+            the cyclist's foot or shoe and the crankarm. The crankarm turns the chain and propels
+            the bicycle's wheel. The dark round detail in the centre of the back wheel is called
+            cogset, it is used as speed transmission mechanism. </p>
+
+        <p>&emsp; The last contact point of the bicycle is bicycle handlebar, the steering mechanism
+            for bicycles. You put your hands on the bicycle handlebar and drive your bike by turning
+            it to different sides. The handlebars are attached to the stem, which goes down and
+            connects with a fork. The fork is a thin metal rod, which fore wheel is attached
+            to. </p>
+
+    </div>
+
+    <br> <br>
+    <p>Complete the diagram below. </p>
+    <p> Write <strong>NO MORE THAN TWO WORDS</strong> from the passage for each answer. Do not write
+        the articles.</p>
+    <br>
+    <img src="../images/bicycle-scheme.png" alt="IELTS reading diagram completion" width="60%"
+         style="float:left;" class="big-image">
+    <form>
+
+        <div style="display:inline-block; padding-left:10px;">
+            <ol>
+                <li><input type="text" class="ex-input" style="width:210px" id="ex1" required="">
+                    <span id="s1"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex2" required="">
+                    <span id="s2"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex3" required="">
+                    <span id="s3"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex4" required="">
+                    <span id="s4"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex5" required="">
+                    <span id="s5"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex6" required="">
+                    <span id="s6"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex7" required="">
+                    <span id="s7"> </span>
+                </li>
+                <br>
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex8" required="">
+                    <span id="s8"> </span>
+                </li>
+                <br>
+
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex9" required="">
+                    <span id="s9"> </span>
+                </li>
+                <br>
+
+
+                <li>
+                    <input type="text" class="ex-input" style="width:210px" id="ex10" required="">
+                    <span id="s10"> </span>
+                </li>
+            </ol>
+        </div>
+
+
+        <p id="result" class="exercises"></p>
+
+
+        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+        <button id="b2" type="button" onclick="toggle()">
+            <img height="25px" src="../images/show.png" style="vertical-align: middle">Show answers
+        </button>
+
+        <div id="answers" style="display:none;" class="hint">
+            <p><strong>ANSWERS</strong></p>
+
+            <ol start="1">
+                <li>Bicycle handlebar / handlebar</li>
+                <li>Bicycle saddle / saddle / seat</li>
+                <li>Pedal</li>
+                <li>Crankarm</li>
+                <li>Cogset</li>
+                <li>Stem</li>
+                <li>Fork</li>
+                <li>Bicycle frame / frame</li>
+                <li>Down tube</li>
+                <li>Chain</li>
+            </ol>
+
+        </div>
+        <br>
+
+        <!--<input type="submit"  onclick="check()" />-->
+    </form>
+
+
+    <script>
+		  		function toggle() {
+				   var e = document.getElementById("answers");
+				   if(e.style.display == 'block')
+				   {
+					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show answers';
+					  e.style.display = 'none';
+				   }
+				   else
+				   {
+					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide answers';
+					  e.style.display = 'block';
+				   }
+			   } 
+				 
+				
+				function check() {
+				var ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, score, total; score=0; total=10;
+				
+				
+				        ex1=document.getElementById("ex1").value;
+						if ((ex1.trim().toLowerCase()!="bicycle handlebar")&&(ex1.trim().toLowerCase()!="handlebar"))
+						{document.getElementById("s1").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s1").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex2=document.getElementById("ex2").value;
+						if ((ex2.trim().toLowerCase()!="bicycle saddle")&&(ex2.trim().toLowerCase()!="saddle")&&(ex2.trim().toLowerCase()!="seat"))
+						{document.getElementById("s2").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s2").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex3=document.getElementById("ex3").value;
+						if (ex3.trim().toLowerCase()!="pedal")
+						{ document.getElementById("s3").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s3").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex4=document.getElementById("ex4").value;
+						if (ex4.trim().toLowerCase()!="crankarm")
+						{  document.getElementById("s4").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s4").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex5=document.getElementById("ex5").value;
+						if (ex5.trim().toLowerCase()!="cogset")
+						{  document.getElementById("s5").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s5").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex6=document.getElementById("ex6").value;
+						if (ex6.trim().toLowerCase()!="stem")
+						{  document.getElementById("s6").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s6").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex7=document.getElementById("ex7").value;
+						if (ex7.trim().toLowerCase()!="fork")
+						{  document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s7").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex8=document.getElementById("ex8").value;
+						if ((ex8.trim().toLowerCase()!="bicycle frame")&&(ex8.trim().toLowerCase()!="frame"))
+						{  document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s8").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex9=document.getElementById("ex9").value;
+						if (ex9.trim().toLowerCase()!="down tube")
+						{  document.getElementById("s9").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s9").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+						
+						ex10=document.getElementById("ex10").value;
+						if (ex10.trim().toLowerCase()!="chain")
+						{  document.getElementById("s10").innerHTML='<img align="absmiddle" height=20px src="../images/cross.png" />';}
+						else {document.getElementById("s10").innerHTML='<img align="absmiddle" height=20px src="../images/ok.png" />';
+						score++;}
+					
+				
+				score=score/total*100;
+					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
+					else document.getElementById("result").innerHTML=
+					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+					
+					
+				}
+				
+					
+
+    </script>
+
+
+</div>
+</body>
+</html>

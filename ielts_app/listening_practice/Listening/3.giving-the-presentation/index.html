@@ -1,0 +1,384 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-5 </h2>
+        <p><em><span class="font65">Choose the correct letter, <strong>A, B</strong> or <strong>C</strong>.</span></em>
+        </p>
+        <p><span class="font65"><strong>1</strong> &nbsp;&nbsp;&nbsp;Before giving her presentation, Kate was worried
+            about&nbsp;</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>A</b> <input type="radio" name="q1" value="A"
+              onclick="grd(this)"> being asked difficult questions.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>B</b> <input type="radio" name="q1" value="B"
+              onclick="grd(this)"> using the projection equipment.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>C</b> <input type="radio" name="q1" value="C"
+              onclick="grd(this)"> explaining statistical results.</span></p>
+        <p><span class="font65"><strong>2</strong> &nbsp;&nbsp;&nbsp;During many presentations by students, Martin feels
+            that</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>A</b> <input type="radio" name="q2" value="A"
+              onclick="grd(this)"> the discussion of research methods is not detailed enough.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>B</b> <input type="radio" name="q2" value="B"
+              onclick="grd(this)"> lecturers do not show enough interest in their students' work.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>C</b> <input type="radio" name="q2" value="C"
+              onclick="grd(this)"> the student does not make enough eye contact with the audience.</span></p>
+        <p><span class="font65"><strong>3</strong> &nbsp;&nbsp;&nbsp;What is Kate’s opinion of the tutorials she
+            attends?</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>A</b> <input type="radio" name="q3" value="A"
+              onclick="grd(this)"> They involve too much preparation.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>B</b> <input type="radio" name="q3" value="B"
+              onclick="grd(this)"> They should be held more frequently.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>C</b> <input type="radio" name="q3" value="C"
+              onclick="grd(this)"> They do not have a clear focus.</span></p>
+        <p><span class="font65"><strong>4</strong> &nbsp;&nbsp;&nbsp;What does Martin intend to do next semester?</span>
+        </p>
+        <p style="padding-left: 30px;"><span class="font65"><b>A</b> <input type="radio" name="q4" value="A"
+              onclick="grd(this)"> make better use of the internet</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>B</b> <input type="radio" name="q4" value="B"
+              onclick="grd(this)"> improve his note-taking skills </span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>C</b> <input type="radio" name="q4" value="C"
+              onclick="grd(this)"> prioritise reading lists effectively</span></p>
+        <p><span class="font65"><strong>5</strong> &nbsp;&nbsp;&nbsp;What problem do Kate and Martin both have when
+            using the library?&nbsp;</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>A</b> <input type="radio" name="q5" value="A"
+              onclick="grd(this)"> The opening hours are too short.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>B</b> <input type="radio" name="q5" value="B"
+              onclick="grd(this)">&nbsp; There are too few desks to work at.</span></p>
+        <p style="padding-left: 30px;"><span class="font65"><b>C</b> <input type="radio" name="q5" value="C"
+              onclick="grd(this)">&nbsp; The catalogue is difficult to use.</span></p>
+        <p>&nbsp;------------------</p>
+        <h1><span class="font114" style="color: #0000ff;">Tip: Multiple-choice with single answer</span></h1>
+        <div style="padding: 10px; border: 1px solid black; background-color: #dddddd;">
+          <h2><span class="font114">Task guide</span></h2>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;This task requires you to choose the correct answer&nbsp;to
+              <strong>each question from three possible answers</strong>.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;There may be between one and ten questions.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;The questions <strong>follow the order</strong> of the
+              recording.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;Within each question, you may hear <strong>reference</strong>
+              to&nbsp;the three options in any order.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;If you realise you have missed a question, don’t try&nbsp;to
+              remember it, but move on, and make sure you&nbsp;do not miss the next question(s).</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;Multiple-choice questions vary considerably in&nbsp;terms of
+              <strong>complexity.</strong>&nbsp;In Section 1, they ask you to&nbsp;listen for relatively straightforward
+              facts, but in&nbsp;Section 3 and Section 4, the questions will test your&nbsp;understanding of opinions,
+              feelings, evidence,&nbsp;argument, and so on.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;Do not immediately choose an option simply&nbsp;because you hear
+              the <strong>same word or words</strong> on the&nbsp;recording. It is your understanding of the
+              meaning&nbsp;of the whole question that is tested here.</span></p>
+        </div>
+        <h5>&nbsp;</h5>
+        <h1><span class="font5" style="color: #0000ff;">Step-by-step guide</span></h1>
+        <div style="padding: 10px; border: 1px solid black;">
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;<strong>Step 1 - Think first</strong></span></p>
+          <p><span class="font5">It is very important that you read the question carefully.</span></p>
+          <p><span class="font5">The stems of some questions (here&nbsp;</span><span class="font5">Questions
+              1</span><span class="font5">&nbsp;and&nbsp;</span><span class="font5">2)</span><span
+              class="font5">&nbsp;are <strong>partial</strong> sentences, to be completed by the&nbsp;possible answers,
+              while the stems of others are&nbsp;<strong>complete</strong> questions (here&nbsp;</span><span
+              class="font5">Questions 3, 4</span><span class="font5">&nbsp;and&nbsp;</span><span class="font5">5)</span>
+          </p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;<strong>Step 2 - Watch out for possible dangers</strong></span></p>
+          <p><span class="font5">Look at&nbsp;</span><span class="font5">Question 1.</span><span class="font5">&nbsp;The
+              question consists of two parts: '<strong>Before giving her presentation</strong>' and '<strong>Kate
+                was&nbsp;worried about</strong>'. This is what you must listen for.</span></p>
+          <p><span class="font5">These are some <strong><span style="color: #ff0000;">dangers</span></strong> in
+              choosing an answer:</span></p>
+          <ul>
+            <li><span class="font5">You hear Kate say what worried her during or after the presentation, <span
+                  style="color: #ff0000;">not</span>&nbsp;</span><span class="font5">before&nbsp;</span><span
+                class="font5">her presentation, and choose&nbsp;the wrong answer.</span></li>
+            <li><span class="font5">You hear Kate say what she was looking forward to, <span
+                  style="color: #ff0000;">not</span> what she was&nbsp;</span><span class="font5">worried
+                about&nbsp;</span><span class="font5">before the&nbsp;presentation, and choose the wrong answer.</span>
+            </li>
+            <li><span class="font5">You hear another speaker, <span style="color: #ff0000;">not</span>&nbsp;</span><span
+                class="font5">Kate,&nbsp;</span><span class="font5">say what he or she was worried about before his or
+                her presentation, and&nbsp;choose the wrong answer.</span></li>
+          </ul>
+          <p><span class="font5">►<strong> &nbsp;&nbsp;&nbsp;Step 3 - Consider the possibilities</strong></span></p>
+          <p><span class="font5">Look at the tapescript for&nbsp;</span>Question 1&nbsp;<span class="font5">and answer
+              the questions below about options <strong>A, B</strong> and <strong>C</strong>.</span></p>
+          <p><strong><span class="font5">Tapescript</span></strong></p>
+          <p><em><span class="font5">I was ever <strong><span style="text-decoration: underline;">so
+                    nervous</span></strong> beforehand. It's silly, because&nbsp;I do know my stuff quite well. I must
+                know those&nbsp;</span></em><span class="font5"><strong>statistics</strong></span><em><span
+                class="font5"> inside out, but when you have to get each&nbsp;table of results to come up in the right
+                order, <span style="text-decoration: underline;">it can&nbsp;make you nervous</span>. It was my first
+                time using the&nbsp;<strong>computerised</strong> <strong>projector</strong>, and I was sure I was going
+                to&nbsp;get the <span style="text-decoration: underline;">controls wrong</span>, or something. And of
+                course,&nbsp;that's not a good situation, if you know you've <span
+                  style="text-decoration: underline;">got to&nbsp;listen to <strong>questions</strong> carefully and be
+                  ready to answer&nbsp;quickly</span>.</span></em></p>
+          <p><strong><span class="font5">Option A</span></strong></p>
+          <p><span class="font5">1 &nbsp;&nbsp;&nbsp;Did Kate expect to be <strong>asked
+                questions</strong>?............</span></p>
+          <p><span class="font5">2 &nbsp;&nbsp;&nbsp;Does she talk about questions being <strong>difficult</strong>?
+              ........</span></p>
+          <p><span class="font5">3 &nbsp;&nbsp;&nbsp;Is option A the correct answer?............</span></p>
+          <p><strong><span class="font5">Option B</span></strong></p>
+          <p><span class="font5">1 &nbsp;&nbsp;&nbsp;Does she talk about using <strong>projection
+                equipment</strong>?</span></p>
+          <p><span class="font5">2</span><span class="font5">&nbsp;&nbsp;&nbsp;&nbsp;Does she talk about
+              <strong>problems</strong> in connection with&nbsp;</span><span class="font5">projection
+              equipment?............</span></p>
+          <p><span class="font5">3 &nbsp;&nbsp;&nbsp;Is option B the correct answer?............</span></p>
+          <p><strong><span class="font5">Option C</span></strong></p>
+          <p><span class="font5">1</span><span class="font5">&nbsp;&nbsp;&nbsp;&nbsp;Does she talk about
+              <strong>statistical results</strong>?............</span></p>
+          <p><span class="font5">2</span><span class="font5">&nbsp;&nbsp;&nbsp;&nbsp;Does she say that explaining
+              statistical results was <strong>s</strong></span><span class="font5"><strong>omething</strong> she was
+              worried about?............</span></p>
+          <p><span class="font5">3 &nbsp;&nbsp;&nbsp;Is option C the correct answer?............</span></p>
+          <p><span class="font5">► <strong>Step 4 - Listen and do the task</strong></span></p>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 6-10</h2>
+        <p><span class="font65">Who will do the following tasks?</span></p>
+        <div style="padding: 10px; border: 1px solid black; background-color: #dddddd;">
+          <p><span class="font65"><strong>A</strong> Martin </span></p>
+          <p><span class="font65"><strong>B</strong> Kate</span></p>
+          <p><span class="font65"><strong>C</strong> both Martin and Kate</span></p>
+        </div>
+        <p><em><span class="font65">Write&nbsp;</span><span class="font65">the correct letter, <strong>A, B</strong> or
+              <strong>C</strong> next to questions <strong>6-10</strong>.</span></em></p>
+        <p><span class="font65"><b>6 </b><select id="q6" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>&nbsp; &nbsp; compose questionnaire&nbsp; &nbsp;&nbsp;</span></p>
+        <p><span class="font65"><b>7 </b><select id="q7" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select> &nbsp;&nbsp;&nbsp;select people to interview&nbsp; &nbsp;</span></p>
+        <p><span class="font65"><b>8 </b><select id="q8" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select> &nbsp;&nbsp;&nbsp;conduct interviews&nbsp; &nbsp;</span></p>
+        <p><span class="font65"><b>9 </b><select id="q9" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select> &nbsp;&nbsp;&nbsp;analyse statistics&nbsp; &nbsp;&nbsp;</span></p>
+        <p><span class="font65"><b>10 </b><select id="q10" onchange="gdd(this)">
+              <option value=""> </option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select> &nbsp;&nbsp;&nbsp;prepare visuals for presentation&nbsp; &nbsp;</span></p>
+        <p><span class="font65">----------------------</span></p>
+        <h1><span style="color: #0000ff;"><span class="font65">Tips:&nbsp;</span><span
+              class="font114">Classification</span></span></h1>
+        <div style="padding: 10px; border: 1px solid black; background-color: #dddddd;">
+          <h2><span class="font114">Task guide</span></h2>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;This task requires you to answer <strong>a series of
+                questions</strong> with the same choice of&nbsp;answers in each case.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;Although the possible answers are the same for each question, the
+              questions <strong>do&nbsp;not depend</strong> on each other. You can get one question wrong, but the next
+              one&nbsp;right.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;Do not try to '<strong>break the code</strong>': it is <strong>not
+                possible to predict</strong> how many answers will&nbsp;be the same, or to find a pattern of any
+              kind.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;In some cases, option C may be the combination of options A and B.
+              In other&nbsp;cases, the possible answers may consist of three distinct possibilities -
+              three&nbsp;different people, places, periods of time, and so on.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;The questions <strong>follow the order</strong> of the
+              recording.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;If you miss one question, leave it and go on to the next
+              one.</span></p>
+        </div>
+        <h6>&nbsp;</h6>
+        <h1><span style="color: #0000ff;">Step-by-step guide</span></h1>
+        <div style="padding: 10px; border: 1px solid black;">
+          <p><span class="font5">► &nbsp;&nbsp;<strong>&nbsp;Step 1 - Think first</strong></span></p>
+          <p><span class="font5">What you hear on the recording may be <strong>different words</strong> from the
+              questions, but with the same meaning.</span></p>
+          <p><span class="font5">For '<strong>compose a questionnaire</strong>' in&nbsp;</span><span
+              class="font5">Question <strong>6</strong>,</span><span class="font5">&nbsp;you might hear '<strong>write a
+                questionnaire</strong>', '<strong>create a questionnaire</strong>', '<strong>produce questions
+                for&nbsp;a questionnaire</strong>', '<strong>put a questionnaire together</strong>', and so on.</span>
+          </p>
+          <p><span class="font5">Look at&nbsp;</span><span class="font5">Questions 7-10.</span><span
+              class="font5">&nbsp;Think of what you might hear on the tape and write your ideas:</span></p>
+          <p style="padding-left: 30px;"><span class="font5">7
+              ..........................................................................................</span></p>
+          <p style="padding-left: 30px;"><span class="font5">8
+              ..........................................................................................</span></p>
+          <p style="padding-left: 30px;"><span class="font5">9
+              ..........................................................................................</span></p>
+          <p style="padding-left: 30px;"><span class="font5">10
+              ..........................................................................................</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;<strong>Step 2 - Check what you will hear</strong></span></p>
+          <p><span class="font5">Look at the tapescript for&nbsp;</span><span class="font5">Question 6.</span></p>
+          <p><strong><span class="font5">Tapescript</span></strong></p>
+          <p><em><span class="font5">Kate:&nbsp;</span><span class="font5">Yes. Well, we're going to need the
+                questionnaire before we can do much else, aren't we? Do you want&nbsp;to <strong>handle</strong>
+                that?</span></em></p>
+          <p><em><span class="font5">Martin:&nbsp;</span><span class="font5">I'd assumed <span
+                  style="text-decoration: underline;">we'd do it together</span>?</span></em></p>
+          <p><em><span class="font5">Kate:&nbsp;</span><span class="font5">You have more experience than me. Maybe you
+                could think up the main questions, you know, a first&nbsp;version of the whole thing, and then I could
+                read it&nbsp;through.</span></em></p>
+          <p><em><span class="font5">Martin:&nbsp;</span><span class="font5">And make suggestions? <span
+                  style="text-decoration: underline;">Well, OK</span>.</span></em></p>
+          <p><span class="font5">Kate first suggests that Martin '<strong>handles</strong>' the questionnaire. If you
+              choose option A (Martin) at this point, you are answering the&nbsp;question <strong>too soon</strong>. At
+              this point, it has not been confirmed who will&nbsp;do the task of composing the questionnaire.</span></p>
+          <p><span class="font5">Next, Martin suggests that they <strong>do the task together</strong>. This indicates
+              that both Martin and Kate (option C) is the answer. However, you&nbsp;cannot be sure, because Kate has not
+              agreed to this yet.</span></p>
+          <p><span class="font5">Then Kate <strong>accepts</strong> Martin's suggestion and clarifies how they will both
+              do the task. But you still cannot be sure, because Martin has not&nbsp;agreed to this.</span></p>
+          <p><span class="font5">Finally, Martin confirms his agreement ('Well, OK.'), and you can now safely choose
+              option <strong>C</strong> as the correct answer.</span></p>
+          <p><span class="font5">► &nbsp;&nbsp;&nbsp;<strong>Step 3 - Listen and do the task</strong></span></p>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Giving the presentation
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> B</td>
+            <td style="width: 10%"><b>6.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> C</td>
+            <td style="width: 10%"><b>7.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> C</td>
+            <td style="width: 10%"><b>8.</b> B</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> A</td>
+            <td style="width: 10%"><b>9.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> A</td>
+            <td style="width: 10%"><b>10.</b> A</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'B',
+      'C',
+      'C',
+      'A',
+      'A',
+      'C',
+      'C',
+      'B',
+      'C',
+      'A'
+    ];
+    var numSe = 6;
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      if (i >= numSe) {
+        var selectedVal = document.getElementById(id);
+        var checkedValueSe = selectedVal.options[selectedVal.selectedIndex].value;
+        if (resultBoard[i - 1] == checkedValueSe) {
+          count += 1;
+        }
+      } else {
+        var value = '';
+        var radios = document.getElementsByName(id);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            value = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == value) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function grd() {};
+
+  function gdd() {};
+</script>

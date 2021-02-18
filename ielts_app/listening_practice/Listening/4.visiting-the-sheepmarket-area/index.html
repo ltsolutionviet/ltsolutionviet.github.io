@@ -1,0 +1,292 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <link href="../style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<!-- audio or video -->
+<div class="exam-section panel">
+  <h3>Play audio:</h3>
+  <center>
+    <audio id="myAudio" controls="" controlslist="nodownload">
+      <source src="videoplayback.mp4" type="audio/mp4" />
+      Your browser doesn't support audio teg!
+    </audio>
+  </center>
+
+  <div class="exam-content">
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 1-4</h2>
+        <p><em>Choose the correct letter, <span style="color: #ff0000;"><strong>A, B</strong></span> or <span
+              style="color: #ff0000;"><strong>C</strong></span>.</em></p>
+        <h3>&nbsp;</h3>
+        <h3>Visiting the Sheepmarket area</h3>
+        <p><strong>1 &nbsp;&nbsp;&nbsp;</strong>Which is the most rapidly-growing group of residents in the Sheepmarket
+          area?</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q1" value="A" onclick="grd(this)"> young
+          professional people</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q1" value="B" onclick="grd(this)"> students
+          from the university</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q1" value="C" onclick="grd(this)"> employees
+          in the local market</p>
+        <p>&nbsp;</p>
+        <p><strong>2 &nbsp;&nbsp;&nbsp;</strong>The speaker recommends the side streets in the Sheepmarket for their</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q2" value="A" onclick="grd(this)">
+          international restaurants.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q2" value="B" onclick="grd(this)"> historical
+          buildings.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q2" value="C" onclick="grd(this)"> arts and
+          crafts.</p>
+        <p>&nbsp;</p>
+        <p><strong>3 &nbsp;&nbsp;&nbsp;</strong>Clothes designed by entrants for the Young Fashion competition must</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q3" value="A" onclick="grd(this)"> be modelled
+          by the designers themselves.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q3" value="B" onclick="grd(this)"> be inspired
+          by aspects of contemporary culture.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q3" value="C" onclick="grd(this)"> be made
+          from locally produced materials.</p>
+        <p>&nbsp;</p>
+        <p><strong>4 &nbsp;&nbsp;&nbsp;</strong>Car parking is free in some car parks if you</p>
+        <p style="padding-left: 30px;"><b>A</b> <input type="radio" name="q4" value="A" onclick="grd(this)"> stay for
+          less than an hour.</p>
+        <p style="padding-left: 30px;"><b>B</b> <input type="radio" name="q4" value="B" onclick="grd(this)"> buy
+          something in the shops.</p>
+        <p style="padding-left: 30px;"><b>C</b> <input type="radio" name="q4" value="C" onclick="grd(this)"> park in the
+          evenings or at weekends.</p>
+      </div>
+    </div>
+    <div class="exam-section panel">
+      <div>
+        <h2>Questions 5-10</h2>
+        <p><em>Label the map below.</em></p>
+        <p><em>Write the correct letter, <span style="color: #ff0000;"><strong>A—l</strong></span>, next to Questions
+            <strong>5-10</strong>.</em></p>
+        <p><img src="map.jpg" alt="" width="433" height="328"></p>
+        <table cellpadding="5">
+          <tbody>
+            <tr>
+              <td><strong>5</strong></td>
+              <td>The Reynolds House</td>
+              <td><b> </b><select id="q5" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><strong>6</strong></td>
+              <td>The Thumb&nbsp;</td>
+              <td><b> </b><select id="q6" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><strong>7</strong></td>
+              <td>The Museum&nbsp;</td>
+              <td><b> </b><select id="q7" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><strong>8</strong></td>
+              <td>The Contemporary Art Gallery&nbsp;</td>
+              <td><b> </b><select id="q8" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><strong>9</strong></td>
+              <td>The Warner Gallery&nbsp;</td>
+              <td><b> </b><select id="q9" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td><strong>10</strong></td>
+              <td>Nucleus&nbsp;</td>
+              <td><b> </b><select id="q10" onchange="gdd(this)">
+                  <option value=""> </option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                  <option value="E">E</option>
+                  <option value="F">F</option>
+                  <option value="G">G</option>
+                  <option value="H">H</option>
+                  <option value="I">I</option>
+                </select></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end audio or video -->
+<!-- content -->
+<div class="exam-section panel text-center">
+  <h4>---End of the Test---</h4>
+  <p>Please Submit to view your score, solution and explanations.</p>
+
+  <!-- Mark -->
+  <div id="test" style="display: none">
+    <div class="stats-right">
+      <h3 class="text-center" style="color: #aaaaaa">
+        Solution for: Visiting the Sheepmarket area
+      </h3>
+      <div class="upper-stats">
+        <h1>
+          Your Band Score: <b><b id="scoreValue"></b> / 10</b>
+        </h1>
+      </div>
+      <h3>Answer Table</h3>
+      <table class="table table-bordered table-condensed text-left" style="width: 100%">
+        <tbody>
+          <tr>
+            <td style="width: 10%"><b>1.</b> A</td>
+            <td style="width: 10%"><b>6.</b> C</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>2.</b> C</td>
+            <td style="width: 10%"><b>7.</b> F</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>3.</b> B</td>
+            <td style="width: 10%"><b>8.</b> G</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>4.</b> B</td>
+            <td style="width: 10%"><b>9.</b> I</td>
+          </tr>
+          <tr>
+            <td style="width: 10%"><b>5.</b> H</td>
+            <td style="width: 10%"><b>10.</b> B</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- End mark -->
+
+  <!-- Result -->
+  <p id="buttonShow">
+    <a onclick="submit()" class="btn btn-success" data-toggle="modal" data-target="#confirmSubmit"><i
+        class="fa fa-paper-plane fa-lg" aria-hidden="true"></i>&nbsp;Submit</a>
+  </p>
+  <p id="buttonHidden" style="display: none">
+    <a onclick="hiddenForm()" class="btn btn-success"><i class="fa fa-paper-plane fa-lg"
+        aria-hidden="true"></i>&nbsp;Hidden</a>
+  </p>
+  <!-- end Result -->
+</div>
+<!-- end content -->
+<script>
+  var audi = document.getElementById('myAudio');
+
+  function submit() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    var count = 0;
+    var resultBoard = [
+      'A',
+      'C',
+      'B',
+      'B',
+      'H',
+      'C',
+      'F',
+      'G',
+      'I',
+      'B'
+    ];
+    var numSe = 5;
+    for (var i = 1; i <= 10; i++) {
+      var id = 'q' + i;
+      if (i >= numSe) {
+        var selectedVal = document.getElementById(id);
+        var checkedValueSe = selectedVal.options[selectedVal.selectedIndex].value;
+        if (resultBoard[i - 1] == checkedValueSe) {
+          count += 1;
+        }
+      } else {
+        var value = '';
+        var radios = document.getElementsByName(id);
+        for (var j = 0; j < radios.length; j++) {
+          if (radios[j].checked) {
+            value = radios[j].value;
+            break;
+          }
+        }
+        if (resultBoard[i - 1] == value) {
+          count += 1;
+        }
+      }
+    }
+    if (x.style.display === 'none') {
+      x.style.display = 'block';
+      document.getElementById('scoreValue').innerHTML = count;
+      y.style.display = 'block';
+      z.style.display = 'none';
+    }
+  }
+
+  function hiddenForm() {
+    var x = document.getElementById('test');
+    var y = document.getElementById('buttonHidden');
+    var z = document.getElementById('buttonShow');
+    x.style.display = 'none';
+    y.style.display = 'none';
+    z.style.display = 'block';
+  }
+
+  function grd() {};
+
+  function gdd() {};
+</script>
