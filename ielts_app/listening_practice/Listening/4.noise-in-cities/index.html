@@ -146,10 +146,17 @@
 
     for (var i = 1; i <= 10; i++) {
       var content = document.getElementById('q' + i).value;
-       for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
-        if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
-        break;
-      }
+           if (i == 1 || i  == 3) {
+                for (valChe of resultBoard[i - 1]) {
+                  if (valChe.trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+                } 
+            }  else {
+              for (var j = 0; j < resultBoard[i - 1].length; j++ ) {
+                if (resultBoard[i - 1][j].trim().toUpperCase() == content.trim().toUpperCase()) count += 1;
+                break;
+              }
+            }
+       
     }
     if (x.style.display === 'none') {
       x.style.display = 'block';
