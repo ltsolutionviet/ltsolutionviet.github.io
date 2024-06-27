@@ -345,10 +345,6 @@ input.ex-input{
   background: rgb(64,199,129);
   box-shadow: 0 -3px rgb(53,167,110) inset;
   transition: 0.1s;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
 }
 
 .ex-but:hover{
