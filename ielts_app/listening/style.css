@@ -4,8 +4,8 @@
 html {
     position: relative;
     min-height: 100%;
-    max-width:98%;
-    overflow-x: hidden;
+	max-width:98%;
+	overflow-x: hidden;
 }
 
 html,body{
@@ -19,8 +19,9 @@ html,body{
 }
 body 
 {
-    font-family: MyFont;
+	font-family: MyFont;
     font-size: medium;
+    /*text-align: justify;*/
 }
 
 
@@ -35,14 +36,14 @@ border-collapse: collapse;
 
 
 h1 {
-	font-size:22px;
+	font-size:x-large;
 	padding-bottom:3px;
 	line-height:1.5em;
 	padding-top:3px;
 }
 
 #content {
-	font-size:18px;
+	font-size:15px;
 	background:#FFF;
 	min-height:18em;
 	line-height:170%;
@@ -78,10 +79,11 @@ h1 {
 	border:solid;}
 
 #content .exam-text {
-	font-size:17px;
+	font-size:18px;
 	padding:8px 8px 8px 8px;
+	margin-left:16px;
 	font-family:Arial, Helvetica, sans-serif;
-	width:98%;
+	width:90%;
 	border:solid;
 }
 
@@ -214,7 +216,7 @@ button[onclick="answers()"], button[onclick="noanswers()"] {
 }
 
 input {
- font-size: 12px;
+	font-size: 11px;
   font-family: inherit;
   color: inherit;
   -webkit-box-sizing: border-box;
@@ -224,7 +226,7 @@ input {
 
 .news-letter-input {
   width: 100%;
-  height: 22px;
+  height: 28px;
   margin-bottom: 14px;
   padding: 0 12px 2px;
   font-size: 10px;
@@ -310,7 +312,7 @@ input {
 
 table {
 	line-height:100%;
-	width: 100% !important;
+	width: 90%;
 }
 
 .useful-links{
@@ -334,7 +336,7 @@ input.ex-input{
    height: 32px; /* высота на свое усмотрение*/
    width: 120px; /* ширина на свое усмотрение*/
    color: #009; /*цвет шрифта в обычном состоянии*/
-   font-size: 15px; /* Размер шрифта*/
+   font-size: 16px; /* Размер шрифта*/
 }
 
 .ex-but, .ex-but:active {
@@ -351,6 +353,9 @@ input.ex-input{
   background: rgb(64,199,129);
   box-shadow: 0 -3px rgb(53,167,110) inset;
   transition: 0.1s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -435,7 +440,7 @@ input.ex-input{
 
 .type{
 	padding-top:0;
-	font-size:13px;
+	font-size:10px;
 	font-weight:bold;
 }
 
@@ -708,6 +713,6 @@ ul { padding-left: 1.2em; }
     line-height: 130%;
 }
 
-input[type=text]{border:1px solid #ccc;border-radius:4px; width:160px;  height: 32px; padding: 5px;margin: 3px;}
-input[type=text]:valid{background-color:#90ee90;font-size: 18px;}
+input[type=text]{border:1px solid #ccc;border-radius:4px; width:160px;padding: 5px;margin: 3px;}
+input[type=text]:valid{background-color:#90ee90;font-size: 15px;}
 input[type=text]:invalid{background-color:#ffe4e1}
