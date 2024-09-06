@@ -105,7 +105,7 @@ select {
     cursor: pointer;
     display: inline-block;
     position: relative;
-    font: 17px ;
+    font-size: 17px ;
     color: #F44336;
     border: 1px solid #ccc;
     height: 35px !important;
