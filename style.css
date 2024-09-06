@@ -196,12 +196,12 @@ select {
 input[type="radio"] {
     -ms-transform: scale(1.1); /* IE 9 */
     transform: scale(1.1);
-    min-height:20px;min-width:20px;
+    min-height:24px;min-width:24px;
 }
 
 input[type="checkbox"] {
     -ms-transform: scale(1.1); /* IE 9 */
     transform: scale(1.1);
-    min-height:20px;min-width:20px;
+    min-height:24px;min-width:24px;
 }
 </style>
