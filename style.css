@@ -24,6 +24,15 @@ h2, h3, h4 {
     margin-bottom: 18px;
     color: #4cae4c;
 }
+h1, h2{
+    font-size: 20px;
+}
+
+h3, h4{
+    font-size: 18px;
+}
+
+
 .explain {
     background-color: #ffe315;
     color: #222;
