@@ -7,13 +7,13 @@
 img.img-responsive{display: inline;height: auto;width: 100%; max-width: 100% !important;}
 img{display: inline;height: auto;width: 100%; max-width: 100% !important;}
 body {
-    font-size: 18px;
+    font-size: 17px;
     color: #333;
     margin: 16px;
     background-color: #fff;
 }
 p{
-  font-size: 18px;
+  font-size: 17px;
 }
 .text-center {
     text-align: center;
