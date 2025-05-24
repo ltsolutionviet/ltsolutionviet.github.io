@@ -23,7 +23,7 @@
                     . <span id="s2"> </span></p></li>
             <br>
 
-            <li><p> They have been together for 7 years. </p>
+            <li><p> They have been together during 7 years. </p>
                 <p> They have been together <input type="text" class="ex-input" maxlength="17"
                                                    id="ex3" required="">
                     7 years. <span id="s3" style="color:red;"> </span></p></li>
@@ -82,7 +82,7 @@ function answers() {
 
 document.getElementById("ex1").value="I've";
 document.getElementById("ex2").value="yourself";
-document.getElementById("ex3").value="during";
+document.getElementById("ex3").value="for";
 document.getElementById("ex4").value="I have worked";
 document.getElementById("ex5").value="big enough";
 document.getElementById("ex6").value="won't be";
@@ -143,7 +143,7 @@ else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok
 
 
 ex3=document.getElementById("ex3").value;
-if (ex3.trim().toLowerCase()!="during")
+if (ex3.trim().toLowerCase()!="for")
 { result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
 else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
 
