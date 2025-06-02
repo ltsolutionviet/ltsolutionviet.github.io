@@ -15,6 +15,13 @@ html,body{
   padding:0;
 }
 
+audio {
+    width: 100%;
+    margin: 0px;
+    border-radius: 24px;
+    outline: none;
+}
+
 body {
     font-size: medium;
 }
