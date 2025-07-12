@@ -4,13 +4,12 @@
 
 <style type="text/css">
 
-img.img-responsive,
-img {
-    display: inline;
-    height: auto;
-    width: 100%;
-    max-width: 100% !important;
-}
+  img.img-responsive, img {
+                        display: block !important;
+                        width: 100% !important;
+                        height: auto !important;
+                        max-width: 100% !important;
+                      }
 body {
     font-size: 17px;
     color: #333;
