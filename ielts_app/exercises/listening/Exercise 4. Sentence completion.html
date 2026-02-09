@@ -1,173 +1,216 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <link rel="stylesheet" type="text/css" href="../style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
-        
-        
-        <p style="font-weight:bold;"> Difficulty level: hard </p> 
-        
-        
-        <p>Listen to the recording and complete gaps in the text below. </p>
+	<div id="content">
 
-		<center><audio controls="" controlslist="nodownload">
-                <source src="../audio/ex4.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-        	</audio></center>
-            
-            
-        <br>
-        <h3>“Homo naledi”</h3>
-        
-        
-           
-        <form>
-        <p> A group of scientists announced Thursday what they say is the <input type="text" class="ex-input" maxlength="17" id="ex1" required=""> <span id="s1"> </span>of remains from an early <input type="text" class="ex-input" maxlength="17" id="ex2" required=""> <span id="s2"> </span> of human beings. 
-        
-        Bones from the <input type="text" class="ex-input" maxlength="17" id="ex3" required=""> <span id="s3"> </span> were found two years ago inside a cave at a United Nations World Heritage Site, near Johannesburg, South Africa. The South African <input type="text" class="ex-input" maxlength="17" id="ex4a" required=""> <span id="s4a"> </span> has named the area the <input type="text" class="ex-input" maxlength="17" id="ex4" required=""> <span id="s4"> </span> of Humankind because of its rich collection of ancient human-like remains.</p>
 
-        <p>The scientists are calling the new species, ‘Homo naledi’. The word naledi 
-        <input type="text" class="ex-input" maxlength="17" id="ex5" required=""> <span id="s5"> </span> “star” in South Africa’s Sesotho languageTranslate. The scientists reported that about 1,500 bones have been <input type="text" class="ex-input" maxlength="17" id="ex6" required=""> <span id="s6"> </span> from the cave. They said the bones come from at least 15 <input type="text" class="ex-input" maxlength="17" id="ex7" required=""> <span id="s7"> </span>. The team reported its findings in the journal eLIFE.</p>
-        
-        <p>Lead scientist Lee Berger works at the University of Witwatersrand. He said the discovery “was right under our nose in the most 
-        <input type="text" class="ex-input" maxlength="17" id="ex8" required=""> <span id="s8"> </span> valley of the continent of Africa.” Mr. Berger
-        <input type="text" class="ex-input" maxlength="17" id="ex9" required=""> <span id="s9"> </span> to reporters Thursday in Johannesburg.</p>
-        
-        
-        <p id="result" class="exercises"> </p>
-        
-        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
-        <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
-        <button type="button" onclick="noanswers()">Hide answers</button>
-        
-        </form>
-        
-          
-          <script>
-		  		function answers() {
+		<p style="font-weight:bold;"> Difficulty level: hard </p>
 
-				document.getElementById("ex1").value="discovery";
-				document.getElementById("ex2").value="ancestor";
-				document.getElementById("ex3").value="species";
-				document.getElementById("ex4").value="cradle";
-				document.getElementById("ex4a").value="government";
-				document.getElementById("ex5").value="means";
-				document.getElementById("ex6").value="recovered";
-				document.getElementById("ex7").value="individuals";
-				document.getElementById("ex8").value="explored";
-				document.getElementById("ex9").value="spoke";
-			
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s4a").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				document.getElementById("s6").innerHTML='';
-				document.getElementById("s7").innerHTML='';
-				document.getElementById("s8").innerHTML='';
-				document.getElementById("s9").innerHTML='';
-				}
-				
-				function noanswers() {
-				
-				document.getElementById("ex1").value="";
-				document.getElementById("ex2").value="";
-				document.getElementById("ex3").value="";
-				document.getElementById("ex4").value="";
-				document.getElementById("ex4a").value='';
-				document.getElementById("ex5").value="";
-				document.getElementById("ex6").value="";
-				document.getElementById("ex7").value="";
-				document.getElementById("ex8").value="";
-				document.getElementById("ex9").value="";
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s4a").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				document.getElementById("s6").innerHTML='';
-				document.getElementById("s7").innerHTML='';
-				document.getElementById("s8").innerHTML='';
-				document.getElementById("s9").innerHTML='';
-				}
 
-				 
-				
-				function check() {
+		<p>Listen to the recording and complete gaps in the text below. </p>
+
+		<div class="audio-player">
+			<audio id="audio" preload="metadata">
+				<source src="../audio/ex4.mp3" type="audio/mp3">
+				Your browser doesn't support audio!
+			</audio>
+
+			<div class="audio-controls">
+				<button class="play-btn" id="playBtn" aria-label="Play">
+					<svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M8 5v14l11-7z" />
+					</svg>
+					<svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+						<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+					</svg>
+				</button>
+
+				<div class="time-display">
+					<span id="currentTime">0:00</span>
+				</div>
+
+				<div class="progress-container">
+					<div class="progress-bar" id="progressBar">
+						<div class="progress-fill" id="progressFill"></div>
+						<div class="progress-handle" id="progressHandle"></div>
+					</div>
+				</div>
+
+				<div class="time-display">
+					<span id="duration">0:00</span>
+				</div>
+			</div>
+		</div>
+
+
+		<br>
+		<h3>“Homo naledi”</h3>
+
+
+
+		<form>
+			<p> A group of scientists announced Thursday what they say is the <input type="text" class="ex-input"
+					maxlength="17" id="ex1" required=""> <span id="s1"> </span>of remains from an early <input
+					type="text" class="ex-input" maxlength="17" id="ex2" required=""> <span id="s2"> </span> of human
+				beings.
+
+				Bones from the <input type="text" class="ex-input" maxlength="17" id="ex3" required=""> <span id="s3">
+				</span> were found two years ago inside a cave at a United Nations World Heritage Site, near
+				Johannesburg, South Africa. The South African <input type="text" class="ex-input" maxlength="17"
+					id="ex4a" required=""> <span id="s4a"> </span> has named the area the <input type="text"
+					class="ex-input" maxlength="17" id="ex4" required=""> <span id="s4"> </span> of Humankind because of
+				its rich collection of ancient human-like remains.</p>
+
+			<p>The scientists are calling the new species, ‘Homo naledi’. The word naledi
+				<input type="text" class="ex-input" maxlength="17" id="ex5" required=""> <span id="s5"> </span> “star”
+				in South Africa’s Sesotho languageTranslate. The scientists reported that about 1,500 bones have been
+				<input type="text" class="ex-input" maxlength="17" id="ex6" required=""> <span id="s6"> </span> from the
+				cave. They said the bones come from at least 15 <input type="text" class="ex-input" maxlength="17"
+					id="ex7" required=""> <span id="s7"> </span>. The team reported its findings in the journal eLIFE.
+			</p>
+
+			<p>Lead scientist Lee Berger works at the University of Witwatersrand. He said the discovery “was right
+				under our nose in the most
+				<input type="text" class="ex-input" maxlength="17" id="ex8" required=""> <span id="s8"> </span> valley
+				of the continent of Africa.” Mr. Berger
+				<input type="text" class="ex-input" maxlength="17" id="ex9" required=""> <span id="s9"> </span> to
+				reporters Thursday in Johannesburg.
+			</p>
+
+
+			<p id="result" class="exercises"> </p>
+
+			<button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+			<button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
+			<button type="button" onclick="noanswers()">Hide answers</button>
+
+		</form>
+
+
+		<script>
+			function answers() {
+
+				document.getElementById("ex1").value = "discovery";
+				document.getElementById("ex2").value = "ancestor";
+				document.getElementById("ex3").value = "species";
+				document.getElementById("ex4").value = "cradle";
+				document.getElementById("ex4a").value = "government";
+				document.getElementById("ex5").value = "means";
+				document.getElementById("ex6").value = "recovered";
+				document.getElementById("ex7").value = "individuals";
+				document.getElementById("ex8").value = "explored";
+				document.getElementById("ex9").value = "spoke";
+
+
+				document.getElementById("s1").innerHTML = '';
+				document.getElementById("s2").innerHTML = '';
+				document.getElementById("s3").innerHTML = '';
+				document.getElementById("s4").innerHTML = '';
+				document.getElementById("s4a").innerHTML = '';
+				document.getElementById("s5").innerHTML = '';
+				document.getElementById("s6").innerHTML = '';
+				document.getElementById("s7").innerHTML = '';
+				document.getElementById("s8").innerHTML = '';
+				document.getElementById("s9").innerHTML = '';
+			}
+
+			function noanswers() {
+
+				document.getElementById("ex1").value = "";
+				document.getElementById("ex2").value = "";
+				document.getElementById("ex3").value = "";
+				document.getElementById("ex4").value = "";
+				document.getElementById("ex4a").value = '';
+				document.getElementById("ex5").value = "";
+				document.getElementById("ex6").value = "";
+				document.getElementById("ex7").value = "";
+				document.getElementById("ex8").value = "";
+				document.getElementById("ex9").value = "";
+
+				document.getElementById("s1").innerHTML = '';
+				document.getElementById("s2").innerHTML = '';
+				document.getElementById("s3").innerHTML = '';
+				document.getElementById("s4a").innerHTML = '';
+				document.getElementById("s4").innerHTML = '';
+				document.getElementById("s5").innerHTML = '';
+				document.getElementById("s6").innerHTML = '';
+				document.getElementById("s7").innerHTML = '';
+				document.getElementById("s8").innerHTML = '';
+				document.getElementById("s9").innerHTML = '';
+			}
+
+
+
+			function check() {
 				var ex1, ex2, ex3, ex4, ex4a, ex5, ex6, ex7, ex8, result;
-				result=true;
-				ex1=document.getElementById("ex1").value;
-				if (ex1.trim().toLowerCase()!="discovery")
-				{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex2=document.getElementById("ex2").value;
-				if (ex2.trim().toLowerCase()!="ancestor")
-				{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				
-				ex3=document.getElementById("ex3").value;
-				if (ex3.trim().toLowerCase()!="species")
-				{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex4a=document.getElementById("ex4a").value;
-				if (ex4a.trim().toLowerCase()!="government")
-				{ result=false; document.getElementById("s4a").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s4a").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex4=document.getElementById("ex4").value;
-				if (ex4.trim().toLowerCase()!="cradle")
-				{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex5=document.getElementById("ex5").value;
-				if (ex5.trim().toLowerCase()!="means")
-				{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex6=document.getElementById("ex6").value;
-				if (ex6.trim().toLowerCase()!="recovered")
-				{ result=false; document.getElementById("s6").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s6").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex7=document.getElementById("ex7").value;
-				if (ex7.trim().toLowerCase()!="individuals")
-				{ result=false; document.getElementById("s7").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s7").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex8=document.getElementById("ex8").value;
-				if (ex8.trim().toLowerCase()!="explored")
-				{ result=false; document.getElementById("s8").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s8").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex9=document.getElementById("ex9").value;
-				if (ex9.trim().toLowerCase()!="spoke")
-				{ result=false; document.getElementById("s9").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s9").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				
-				
-				if (result==false) document.getElementById("result").innerHTML="There are some mistakes..."
-				else document.getElementById("result").innerHTML=
-				'<span style="color:green; "> Correct! </span>';
-				}
-          </script>
-          
-          
+				result = true;
+				ex1 = document.getElementById("ex1").value;
+				if (ex1.trim().toLowerCase() != "discovery") { result = false; document.getElementById("s1").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s1").innerHTML = '<img height=20px src="../images/ok.png" />';
 
-            
-                
-        
-     
-     
-        </div>
+				ex2 = document.getElementById("ex2").value;
+				if (ex2.trim().toLowerCase() != "ancestor") { result = false; document.getElementById("s2").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s2").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+
+				ex3 = document.getElementById("ex3").value;
+				if (ex3.trim().toLowerCase() != "species") { result = false; document.getElementById("s3").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s3").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex4a = document.getElementById("ex4a").value;
+				if (ex4a.trim().toLowerCase() != "government") { result = false; document.getElementById("s4a").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s4a").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex4 = document.getElementById("ex4").value;
+				if (ex4.trim().toLowerCase() != "cradle") { result = false; document.getElementById("s4").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s4").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex5 = document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase() != "means") { result = false; document.getElementById("s5").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s5").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex6 = document.getElementById("ex6").value;
+				if (ex6.trim().toLowerCase() != "recovered") { result = false; document.getElementById("s6").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s6").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex7 = document.getElementById("ex7").value;
+				if (ex7.trim().toLowerCase() != "individuals") { result = false; document.getElementById("s7").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s7").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex8 = document.getElementById("ex8").value;
+				if (ex8.trim().toLowerCase() != "explored") { result = false; document.getElementById("s8").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s8").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex9 = document.getElementById("ex9").value;
+				if (ex9.trim().toLowerCase() != "spoke") { result = false; document.getElementById("s9").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s9").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+
+
+				if (result == false) document.getElementById("result").innerHTML = "There are some mistakes..."
+				else document.getElementById("result").innerHTML =
+					'<span style="color:green; "> All answers are correct! 🎉</span>';
+			}
+		</script>
+
+
+
+
+
+
+
+
+		<!-- Common JavaScript for exercises -->
+		<script src="../common.js"></script>
+	</div>
 </body>
+
 </html>

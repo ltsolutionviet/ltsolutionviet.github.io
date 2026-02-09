@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -23,10 +26,39 @@
     <p>Then, you will be asked to show some <strong>identification</strong> and the examiner will also <strong>ask you your name</strong> and what you prefer to be called (i.e. your first name or nick name).</p>
     <p>Let's listen to a recording of the introduction of IELTS Speaking test.</p>
     <br>
-    <audio controls="">
-        <source src="audio/1.wav" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio>
+    
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/1.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
 
     <br>
     <button id="buttonhint1" onclick="toggle('hint1')"><img height="25px" src="../images/hide.png" style="vertical-align: middle">Hide transcript</button>
@@ -84,10 +116,39 @@
     <br>
     <p>Now listen to some <strong>examples of IELTS Speaking interview questions</strong>:</p>
     <br>
-    <audio controls="">
-        <source src="audio/4.m4a" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio>
+    
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/4.m4a" type="audio/mp4">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
 
     <br>
     <button id="buttonhint2" onclick="toggle('hint2')"><img height="25px" src="../images/hide.png" style="vertical-align: middle">Hide transcript</button>
@@ -104,10 +165,39 @@
     </div><br>
 
     <br>
-    <audio controls="">
-        <source src="audio/3.m4a" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio>
+    
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/3.m4a" type="audio/mp4">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
 
     <br>
     <button id="buttonhint3" onclick="toggle('hint3')"><img height="25px" src="../images/hide.png" style="vertical-align: middle">Hide transcript</button>
@@ -151,5 +241,7 @@
 			   }
 		
 		</script>
+    <!-- Common JavaScript for exercises -->
+    <script src="../common.js"></script>
 </body>
 </html>

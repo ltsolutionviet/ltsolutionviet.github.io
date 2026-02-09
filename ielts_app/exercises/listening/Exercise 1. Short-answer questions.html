@@ -1,169 +1,223 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
-</head>
-<body>
-<div id="content">
-        
-        
-        <p style="font-weight:bold;"> Difficulty level: medium </p> 
-        
-        
-        <p>This type of exercises aims at improving your <strong>listening skills for short-answer questions</strong>. It requires you to be patient and attentive in order to answer all the questions correctly. </p><p>Note that:</p><ul><li>On the real test, you will hear the recording only once.</li>
-        <li>Short-answer questions are very common on IELTS Listening.</li></ul><p></p>
-        <p>Listen to the recording and try to answer all the given questions:</p><br>
-		<center><audio controls="" controlslist="nodownload">
-                <source src="../audio/hair.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-        	</audio></center>
-            
-            
-         <br> 
-        <h3>“Hair of the dog”</h3>
-        <form>
-       
-        <p>Answer the questions below. </p>
 
-		<p> Write <strong>ONLY ONE WORD</strong><strong> </strong>from the dialogue for each answer.</p>
-        <br>
-        
-        
-        <ol>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+  <div id="content">
+
+
+    <p style="font-weight:bold;"> Difficulty level: medium </p>
+
+
+    <p>This type of exercises aims at improving your <strong>listening skills for short-answer questions</strong>. It
+      requires you to be patient and attentive in order to answer all the questions correctly. </p>
+    <p>Note that:</p>
+    <ul>
+      <li>On the real test, you will hear the recording only once.</li>
+      <li>Short-answer questions are very common on IELTS Listening.</li>
+    </ul>
+    <p></p>
+    <p>Listen to the recording and try to answer all the given questions:</p><br>
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/hair.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <h3>“Hair of the dog”</h3>
+    <form>
+
+      <p>Answer the questions below. </p>
+
+      <p> Write <strong>ONLY ONE WORD</strong><strong> </strong>from the dialogue for each answer.</p>
+      <br>
+
+
+      <ol>
         <li> Who is Fido?
           <input type="text" class="ex-input" style="width:110px" id="ex1" required=""> <span id="s1"> </span>
-          <br>  <br> 
-        </li><li> A bottle of what did Finn buy?
+          <br> <br>
+        </li>
+        <li> A bottle of what did Finn buy?
           <input type="text" class="ex-input" style="width:110px" id="ex2" required="">
-          <span id="s2"> </span> 
-           <br>  <br> 
-        </li><li> What should the hair of the dog cure?
+          <span id="s2"> </span>
+          <br> <br>
+        </li>
+        <li> What should the hair of the dog cure?
           <input type="text" class="ex-input" style="width:110px" id="ex3" required="">
-          <span id="s3"> </span>  <br>  <br> 
-        </li><li> Hair of the dog was believed to be a remedy for what disease, according to the medieval belief?
-          <input type="text" class="ex-input" style="width:110px" id="ex4" required="required">      <span id="s4"> </span>     <br>  <br> 
-        </li><li> Who's going to drink just coffee today?
+          <span id="s3"> </span> <br> <br>
+        </li>
+        <li> Hair of the dog was believed to be a remedy for what disease, according to the medieval belief?
+          <input type="text" class="ex-input" style="width:110px" id="ex4" required="required"> <span id="s4"> </span>
+          <br> <br>
+        </li>
+        <li> Who's going to drink just coffee today?
           <input type="text" class="ex-input" style="width:110px" id="ex5" required="">
-         <span id="s5"> </span> 
-        </li></ol>
-        
-        <p id="result" class="exercises"> </p><br>
-        
-        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
-         <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
-        <button type="button" onclick="noanswers()">Hide answers</button>&nbsp; &nbsp;
-        <button id="b2" type="button" onclick="toggle()"> 
-<img height="25px" src="../images/show.png" style="vertical-align: middle">Show transcript</button>
+          <span id="s5"> </span>
+        </li>
+      </ol>
 
-<div id="answers" style="display:none;" class="hint">
-<p><strong>Feifei</strong>: Hi Rob. Nice to see you here! I love this coffee shop by the park. And because it's outside, I can bring Fido with me.</p>
-<p><strong>Rob</strong>: Hello Feifei. Don't bark so loud, Fido… Oh dear… My head hurts so much… </p>
-<p><strong>Feifei</strong>: Oh, I didn't want to say it but… well, you don't look well, Rob! </p>
-<p><strong>Rob</strong>: I've got a hangover. I went to the pub yesterday to watch the football...</p>
-<p><strong>Feifei</strong>: …and you had too much to drink?</p>
-<p><strong>Rob</strong>: Yes. Let's see: I had a beer after the first goal, and then two more… before Finn bought a bottle of whisky… and he told us to have just a small glass…</p>
-<p><strong>Feifei</strong>: Or half a bottle! After all this alcohol, there's nothing better than a good strong coffee! Oh, there's Finn. Hi Finn!</p>
-<p><strong>Rob</strong>:&nbsp;Hi Finn.</p>
-<p><strong>Finn</strong>: Fido – good boy! Hi Feifei! Hi Rob! Great match yesterday, eh?! I'd love a beer. Fancy one? Hair of the dog, you know?</p>
-<p><strong>Rob</strong>:&nbsp;Yeah, OK, go on then. The best thing for this hangover is the hair of the dog.</p>
-<p><strong>Feifei</strong>: The hair of the dog? Is it what you use here in Britain to cure a hangover?!</p>
-<p><strong>Rob</strong>:&nbsp;It's just what we say. Isn't it, Fido?</p>
-<p><strong>Feifei</strong>: Well, luckily I do have a pair of scissors in my bag. Come on, Fido. I'm just going to cut a little bit of your lovely long hair.</p>
-<p><strong>Rob</strong>: Feifei, no need to cut Fido's hair! In English, when we say 'the hair of the dog', we mean a small alcoholic drink which you have to cure a hangover. It's just an expression. Finn just offered me a beer.</p>
-<p><strong>Feifei</strong>: Oh, what an odd expression!</p>
-<p><strong>Rob</strong>: Well, apparently it comes from the phrase 'the hair of the dog that bit me'. It's a reference to a medieval belief that when someone was bitten by a dog with the disease rabies, they could be cured by putting the same dog's hair onto the infected wound. Let's hear examples of how to use this expression in today's The English We Speak.</p>
-<p>&nbsp; <br>
-  <u>Examples</u> </p>
-<p><em>The doctor told Jane to take a couple of painkillers and to drink plenty of water. He said that would be much better than the hair of the dog! </em><br>
-  <em>Alan felt better after drinking a Bloody Mary in the morning. His mate said the best cure for a hangover is the hair of the dog. </em></p>
-<p><strong>Feifei</strong>: So this is a very old expression. Although I think the best cure for a hangover is not to drink too much in the first place.</p>
-<p><strong>Finn</strong>: I drink to that! Cheers!</p>
-<p><strong>Rob</strong>: Cheers! No more drinking for me for a while. Thank you for your concern, Feifei. And your hair is all yours, Fido.</p>
-<p><strong>Rob</strong>: For me… it's just coffee today! Bye!</p>
-<p><strong>Finn</strong>:&nbsp;And I drink to that too. Cheers!</p>
-</div>
+      <p id="result" class="exercises"> </p><br>
 
-        </form><br>
-        
-          
-<script>
-		  
-		   function answers() {
+      <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+      <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
+      <button type="button" onclick="noanswers()">Hide answers</button>&nbsp; &nbsp;
+      <button id="b2" type="button" onclick="toggle()">
+        <img height="25px" src="../images/show.png" style="vertical-align: middle">Show transcript</button>
 
-				document.getElementById("ex1").value="dog";
-				document.getElementById("ex2").value="whisky";
-				document.getElementById("ex3").value="hangover";
-				document.getElementById("ex4").value="rabies";
-				document.getElementById("ex5").value="rob";
-			
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				}
-				
-				function noanswers() {
-				
-				document.getElementById("ex1").value="";
-				document.getElementById("ex2").value="";
-				document.getElementById("ex3").value="";
-				document.getElementById("ex4").value="";
-				document.getElementById("ex5").value="";
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				}
-				 
-				 
-				 
-				 
-				
-				function check() {
-				var ex1, ex, score, total;
-				score=0; total=0; ex=['dog', 'whisky', 'hangover', 'rabies', 'rob'];
-				
-				for (var i=1; i<6;i ++) {
-					total++;
-					ex1=document.getElementById("ex"+i).value;
-					if (ex1.trim().toLowerCase()!=ex[i-1])
-					document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
-					else { score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />';}
-				}
-				
-					score=score/total*100;
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
-				}
-				function toggle() {
-				   var e = document.getElementById("answers");
-				   if(e.style.display == 'block')
-				   {
-					  document.getElementById("b2").innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
-					  e.style.display = 'none';
-				   }
-				   else
-				   {
-					  document.getElementById("b2").innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
-					  e.style.display = 'block';
-				   } 
-				   }
-          </script>
-          
-          
+      <div id="answers" style="display:none;" class="hint">
+        <p><strong>Feifei</strong>: Hi Rob. Nice to see you here! I love this coffee shop by the park. And because it's
+          outside, I can bring Fido with me.</p>
+        <p><strong>Rob</strong>: Hello Feifei. Don't bark so loud, Fido… Oh dear… My head hurts so much… </p>
+        <p><strong>Feifei</strong>: Oh, I didn't want to say it but… well, you don't look well, Rob! </p>
+        <p><strong>Rob</strong>: I've got a hangover. I went to the pub yesterday to watch the football...</p>
+        <p><strong>Feifei</strong>: …and you had too much to drink?</p>
+        <p><strong>Rob</strong>: Yes. Let's see: I had a beer after the first goal, and then two more… before Finn
+          bought a bottle of whisky… and he told us to have just a small glass…</p>
+        <p><strong>Feifei</strong>: Or half a bottle! After all this alcohol, there's nothing better than a good strong
+          coffee! Oh, there's Finn. Hi Finn!</p>
+        <p><strong>Rob</strong>:&nbsp;Hi Finn.</p>
+        <p><strong>Finn</strong>: Fido – good boy! Hi Feifei! Hi Rob! Great match yesterday, eh?! I'd love a beer. Fancy
+          one? Hair of the dog, you know?</p>
+        <p><strong>Rob</strong>:&nbsp;Yeah, OK, go on then. The best thing for this hangover is the hair of the dog.</p>
+        <p><strong>Feifei</strong>: The hair of the dog? Is it what you use here in Britain to cure a hangover?!</p>
+        <p><strong>Rob</strong>:&nbsp;It's just what we say. Isn't it, Fido?</p>
+        <p><strong>Feifei</strong>: Well, luckily I do have a pair of scissors in my bag. Come on, Fido. I'm just going
+          to cut a little bit of your lovely long hair.</p>
+        <p><strong>Rob</strong>: Feifei, no need to cut Fido's hair! In English, when we say 'the hair of the dog', we
+          mean a small alcoholic drink which you have to cure a hangover. It's just an expression. Finn just offered me
+          a beer.</p>
+        <p><strong>Feifei</strong>: Oh, what an odd expression!</p>
+        <p><strong>Rob</strong>: Well, apparently it comes from the phrase 'the hair of the dog that bit me'. It's a
+          reference to a medieval belief that when someone was bitten by a dog with the disease rabies, they could be
+          cured by putting the same dog's hair onto the infected wound. Let's hear examples of how to use this
+          expression in today's The English We Speak.</p>
+        <p>&nbsp; <br>
+          <u>Examples</u>
+        </p>
+        <p><em>The doctor told Jane to take a couple of painkillers and to drink plenty of water. He said that would be
+            much better than the hair of the dog! </em><br>
+          <em>Alan felt better after drinking a Bloody Mary in the morning. His mate said the best cure for a hangover
+            is the hair of the dog. </em>
+        </p>
+        <p><strong>Feifei</strong>: So this is a very old expression. Although I think the best cure for a hangover is
+          not to drink too much in the first place.</p>
+        <p><strong>Finn</strong>: I drink to that! Cheers!</p>
+        <p><strong>Rob</strong>: Cheers! No more drinking for me for a while. Thank you for your concern, Feifei. And
+          your hair is all yours, Fido.</p>
+        <p><strong>Rob</strong>: For me… it's just coffee today! Bye!</p>
+        <p><strong>Finn</strong>:&nbsp;And I drink to that too. Cheers!</p>
+      </div>
+
+    </form><br>
+
+
+    <script>
+
+      function answers() {
+
+        document.getElementById("ex1").value = "dog";
+        document.getElementById("ex2").value = "whisky";
+        document.getElementById("ex3").value = "hangover";
+        document.getElementById("ex4").value = "rabies";
+        document.getElementById("ex5").value = "rob";
+
+
+        document.getElementById("s1").innerHTML = '';
+        document.getElementById("s2").innerHTML = '';
+        document.getElementById("s3").innerHTML = '';
+        document.getElementById("s4").innerHTML = '';
+        document.getElementById("s5").innerHTML = '';
+      }
+
+      function noanswers() {
+
+        document.getElementById("ex1").value = "";
+        document.getElementById("ex2").value = "";
+        document.getElementById("ex3").value = "";
+        document.getElementById("ex4").value = "";
+        document.getElementById("ex5").value = "";
+
+        document.getElementById("s1").innerHTML = '';
+        document.getElementById("s2").innerHTML = '';
+        document.getElementById("s3").innerHTML = '';
+        document.getElementById("s4").innerHTML = '';
+        document.getElementById("s5").innerHTML = '';
+      }
 
 
 
 
-            
-                 
-        
-     
-        </div>
+
+      function check() {
+        var ex1, ex, score, total;
+        score = 0; total = 0; ex = ['dog', 'whisky', 'hangover', 'rabies', 'rob'];
+
+        for (var i = 1; i < 6; i++) {
+          total++;
+          ex1 = document.getElementById("ex" + i).value;
+          if (ex1.trim().toLowerCase() != ex[i - 1])
+            document.getElementById("s" + i).innerHTML = '<img height=20px src="../images/cross.png" style="vertical-align:middle;" />';
+          else { score++; document.getElementById("s" + i).innerHTML = '<img height=20px src="../images/ok.png" style="vertical-align:middle;" />'; }
+        }
+
+        if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+        else document.getElementById("result").innerHTML =
+          '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+
+
+      }
+      function toggle() {
+        var e = document.getElementById("answers");
+        if (e.style.display == 'block') {
+          document.getElementById("b2").innerHTML = ' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
+          e.style.display = 'none';
+        }
+        else {
+          document.getElementById("b2").innerHTML = '<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
+          e.style.display = 'block';
+        }
+      }
+    </script>
+
+    <!-- Common JavaScript for exercises -->
+    <script src="../common.js"></script>
+  </div>
 </body>
+
 </html>

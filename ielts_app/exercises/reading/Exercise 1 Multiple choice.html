@@ -1,198 +1,211 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
+    <div id="content">
 
 
-    <h2>Exercise 1</h2>
-    <p>Read the text and answer the questions below.</p>
-    <div class="exam-text">
-        <p align="center" style="font-weight:bold;"> Is violence innate? </p>
-        <p>&emsp; In 1983, archaeologists in southern Germany discovered a mass grave containing 34
-            skeletons. They included 9 adult males, 7 adult females and 16 children.</p>
-        <p>&emsp; All of the skeletons showed signs of fatal trauma, including head wounds. None of
-            them showed any signs of defensive wounds, suggesting they were killed whilst running
-            away.</p>
-        <p>&emsp; The "Talheim Death Pit" dates from the Stone Age, around 7,000 years ago. It
-            offers some of the oldest evidence of organised group violence between two communities:
-            that is, of war.</p>
-        <p>&emsp; Clearly, humans have been fighting wars for thousands of years, and we may not be
-            the only ones. There is growing evidence that several other species also engage in
-            warfare, including our closest relatives the chimpanzees.</p>
-        <p>&emsp; That suggests we have inherited our predilection for warfare from our ape-like
-            ancestors. But not everyone agrees that warfare is inbuilt.</p>
+        <h2>Exercise 1</h2>
+        <p>Read the text and answer the questions below.</p>
+        <div class="exam-text">
+            <p align="center" style="font-weight:bold;"> Is violence innate? </p>
+            <p>&emsp; In 1983, archaeologists in southern Germany discovered a mass grave containing 34
+                skeletons. They included 9 adult males, 7 adult females and 16 children.</p>
+            <p>&emsp; All of the skeletons showed signs of fatal trauma, including head wounds. None of
+                them showed any signs of defensive wounds, suggesting they were killed whilst running
+                away.</p>
+            <p>&emsp; The "Talheim Death Pit" dates from the Stone Age, around 7,000 years ago. It
+                offers some of the oldest evidence of organised group violence between two communities:
+                that is, of war.</p>
+            <p>&emsp; Clearly, humans have been fighting wars for thousands of years, and we may not be
+                the only ones. There is growing evidence that several other species also engage in
+                warfare, including our closest relatives the chimpanzees.</p>
+            <p>&emsp; That suggests we have inherited our predilection for warfare from our ape-like
+                ancestors. But not everyone agrees that warfare is inbuilt.</p>
+        </div>
+
+        <br>
+
+
+        <br>
+        <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>,<strong> C</strong> or
+            <strong>D</strong>.
+        </p>
+
+        <form>
+            <ol>
+                <li> What did archaeologists in southern Germany discover?
+                    <span id="s1"> </span>
+                    <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
+                        hint
+                    </button>
+
+                    <div id="hint1" style="display:none;">
+                        <p class="hint"> Answer A is incorrect because
+                            archaeologists discovered remains of people, answer C is incorrect because
+                            nothing was said about early civilization, answer D is incorrect because it
+                            doesn't mention that discovered people were dead.<br></p>
+                    </div>
+                    <ol type="A">
+                        <li><input type="radio" name="q1"> Remains of 34 dead animals</li>
+                        <li><input type="radio" name="q1" id="a1"> Graveyard containing 34 skeletons
+                        </li>
+                        <li><input type="radio" name="q1"> Relics of early civilization</li>
+                        <li><input type="radio" name="q1"> 9 adult males, 7 adult females and 16
+                            children
+                        </li>
+                    </ol>
+                </li>
+                <br>
+
+
+                <br>
+                <li> Why did scientists suggested that those people were killed whilst running away?
+                    <span id="s2"> </span>
+                    <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show
+                        hint
+                    </button>
+
+                    <div id="hint2" style="display:none;">
+                        <p class="hint"> It is written in the second
+                            paragraph: "None of them showed any signs of defensive wounds, suggesting they
+                            were killed whilst running away." <br></p>
+                    </div>
+                    <ol type="A">
+                        <li><input type="radio" name="q2"> Their skeletons showed signs of fatal trauma
+                        </li>
+                        <li><input type="radio" name="q2"> There were 16 children</li>
+                        <li><input type="radio" name="q2"> During that period organised group violence
+                            was very frequent
+                        </li>
+                        <li><input type="radio" name="q2" id="a2"> Their skeletons didn't show any signs
+                            of defensive wounds
+                        </li>
+                    </ol>
+                </li>
+                <br>
+
+                <br>
+                <li> Why do human beings fight, according to the article?
+                    <span id="s3"> </span>
+                    <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show
+                        hint
+                    </button>
+
+                    <div id="hint3" style="display:none;">
+                        <p class="hint"> Althought answers A and B
+                            give true information, they are not the reasons why human beings fight. Answer D
+                            gives false information (fighting is never mentioned as instinct). Answer C is
+                            correct (it is written directly in the last paragraph). <br></p>
+                    </div>
+
+                    <ol type="A">
+                        <li><input type="radio" name="q3"> Because they have been fighting wars for
+                            thousands of years
+                        </li>
+                        <li><input type="radio" name="q3"> Because chimpanzees, who are humans' closest
+                            relatives, engage in warfare
+                        </li>
+                        <li><input type="radio" name="q3" id="a3"> Because humans inherited predilection
+                            for warfare from their ape-like ancestors
+                        </li>
+                        <li><input type="radio" name="q3"> Because fighting is their inbuilt instinct
+                        </li>
+                    </ol>
+                </li>
+                <br>
+
+                <br>
+                <li> Which of the following phrases best describes the main aim of the Reading Passage?
+                    <span id="s4"> </span>
+                    <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show
+                        hint
+                    </button>
+                    <div id="hint4" style="display:none;">
+                        <p class="hint"> The Reading Passage didn't
+                            give any information about fighting among different species. Though
+                            achaeologists were mentioned, nothing was written about archaeology. Humans'
+                            violence was not suggested to be interpreted, author only gave one reason of
+                            practising warfare. In the beginning of the text some relics of humans' warfare
+                            were intoduced, and the last sentence in this passage: "But not everyone agrees
+                            that warfare is inbuilt" gives start for further discussion whether violence is
+                            innate or not. <br></p>
+                    </div>
+
+                    <ol type="A">
+                        <li><input type="radio" name="q4"> To describe fighting among different species
+                        </li>
+                        <li><input type="radio" name="q4"> To intoduce principles of contemporary
+                            archaeology and its application
+                        </li>
+                        <li><input type="radio" name="q4" id="a4"> To introduce some relics of humans'
+                            warfare for further discussion whether violence is innate or not
+                        </li>
+                        <li><input type="radio" name="q4"> To suggest ways of interperting humans'
+                            violence
+                        </li>
+                    </ol>
+                </li>
+                <br>
+
+            </ol>
+
+            <p id="result" class="exercises"></p>
+
+            <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+
+            <!--<input type="submit"  onclick="check()" />-->
+        </form>
+        <br>
+
+
+        <script>
+            function toggle(id) {
+                if (document.getElementById(id).style.display == 'none') {
+                    document.getElementById(id).style.display = 'block';
+                    var b = "button" + id;
+                    document.getElementById(b).innerHTML = "Hide hint";
+                }
+                else {
+                    document.getElementById(id).style.display = 'none';
+                    var b = "button" + id;
+                    document.getElementById(b).innerHTML = "Show hint";
+                }
+            }
+
+
+            function check() {
+                var text, text2, score, total;
+                total = 0; score = 0;
+
+                for (var i = 1; i < 5; i++) {
+                    total++;
+                    text = "a" + i; text2 = "s" + i;
+                    if (document.getElementById(text).checked == true) {
+                        document.getElementById(text2).innerHTML = '<img height=20px src="../images/ok.png"  style="vertical-align:middle;" />';
+                        score++;
+                    }
+                    else document.getElementById(text2).innerHTML = '<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
+                }
+
+                if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+        else document.getElementById("result").innerHTML =
+          '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+            }
+
+        </script>
+
+        <!-- Common JavaScript for exercises -->
+        <script src="../common.js"></script>
     </div>
-
-    <br>
-
-
-    <br>
-    <p>Choose the correct letter, <strong>A</strong>, <strong>B</strong>,<strong> C</strong> or
-        <strong>D</strong>.</p>
-
-    <form>
-        <ol>
-            <li> What did archaeologists in southern Germany discover?
-                <span id="s1"> </span>
-                <button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
-                    hint
-                </button>
-
-                <div id="hint1" style="display:none;"><p class="hint"> Answer A is incorrect because
-                    archaeologists discovered remains of people, answer C is incorrect because
-                    nothing was said about early civilization, answer D is incorrect because it
-                    doesn't mention that discovered people were dead.<br></p></div>
-                <ol type="A">
-                    <li><input type="radio" name="q1"> Remains of 34 dead animals</li>
-                    <li><input type="radio" name="q1" id="a1"> Graveyard containing 34 skeletons
-                    </li>
-                    <li><input type="radio" name="q1"> Relics of early civilization</li>
-                    <li><input type="radio" name="q1"> 9 adult males, 7 adult females and 16
-                        children
-                    </li>
-                </ol>
-            </li>
-            <br>
-
-
-            <br>
-            <li> Why did scientists suggested that those people were killed whilst running away?
-                <span id="s2"> </span>
-                <button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show
-                    hint
-                </button>
-
-                <div id="hint2" style="display:none;"><p class="hint"> It is written in the second
-                    paragraph: "None of them showed any signs of defensive wounds, suggesting they
-                    were killed whilst running away." <br></p></div>
-                <ol type="A">
-                    <li><input type="radio" name="q2"> Their skeletons showed signs of fatal trauma
-                    </li>
-                    <li><input type="radio" name="q2"> There were 16 children</li>
-                    <li><input type="radio" name="q2"> During that period organised group violence
-                        was very frequent
-                    </li>
-                    <li><input type="radio" name="q2" id="a2"> Their skeletons didn't show any signs
-                        of defensive wounds
-                    </li>
-                </ol>
-            </li>
-            <br>
-
-            <br>
-            <li> Why do human beings fight, according to the article?
-                <span id="s3"> </span>
-                <button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show
-                    hint
-                </button>
-
-                <div id="hint3" style="display:none;"><p class="hint"> Althought answers A and B
-                    give true information, they are not the reasons why human beings fight. Answer D
-                    gives false information (fighting is never mentioned as instinct). Answer C is
-                    correct (it is written directly in the last paragraph). <br></p></div>
-
-                <ol type="A">
-                    <li><input type="radio" name="q3"> Because they have been fighting wars for
-                        thousands of years
-                    </li>
-                    <li><input type="radio" name="q3"> Because chimpanzees, who are humans' closest
-                        relatives, engage in warfare
-                    </li>
-                    <li><input type="radio" name="q3" id="a3"> Because humans inherited predilection
-                        for warfare from their ape-like ancestors
-                    </li>
-                    <li><input type="radio" name="q3"> Because fighting is their inbuilt instinct
-                    </li>
-                </ol>
-            </li>
-            <br>
-
-            <br>
-            <li> Which of the following phrases best describes the main aim of the Reading Passage?
-                <span id="s4"> </span>
-                <button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show
-                    hint
-                </button>
-                <div id="hint4" style="display:none;"><p class="hint"> The Reading Passage didn't
-                    give any information about fighting among different species. Though
-                    achaeologists were mentioned, nothing was written about archaeology. Humans'
-                    violence was not suggested to be interpreted, author only gave one reason of
-                    practising warfare. In the beginning of the text some relics of humans' warfare
-                    were intoduced, and the last sentence in this passage: "But not everyone agrees
-                    that warfare is inbuilt" gives start for further discussion whether violence is
-                    innate or not. <br></p></div>
-
-                <ol type="A">
-                    <li><input type="radio" name="q4"> To describe fighting among different species
-                    </li>
-                    <li><input type="radio" name="q4"> To intoduce principles of contemporary
-                        archaeology and its application
-                    </li>
-                    <li><input type="radio" name="q4" id="a4"> To introduce some relics of humans'
-                        warfare for further discussion whether violence is innate or not
-                    </li>
-                    <li><input type="radio" name="q4"> To suggest ways of interperting humans'
-                        violence
-                    </li>
-                </ol>
-            </li>
-            <br>
-
-        </ol>
-
-        <p id="result" class="exercises"></p>
-
-        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
-
-
-        <!--<input type="submit"  onclick="check()" />-->
-    </form>
-    <br>
-
-
-    <script>
-		  		function toggle(id) { 
-					if (document.getElementById(id).style.display=='none')		
-							 {
-								 document.getElementById(id).style.display='block';
-								 var b="button"+id;
-								 document.getElementById(b).innerHTML="Hide hint";
-							 }
-					else
-							{
-								 document.getElementById(id).style.display='none';
-								 var b="button"+id;
-								 document.getElementById(b).innerHTML="Show hint";
-							 }		 
-				 }
-				 
-				
-				function check() {
-					var text, text2, score, total;
-					total=0; score=0;
-					
-					for (var i=1; i<5; i++) 
-					{
-						total++;
-						text="a"+i; text2="s"+i;
-					if (document.getElementById(text).checked == true)	{
-				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  style="vertical-align:middle;" />';
-				score++;}
-					else document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
-					}
-
-					score=score/total*100;
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
-				}
-
-    </script>
-
-
-</div>
 </body>
+
 </html>

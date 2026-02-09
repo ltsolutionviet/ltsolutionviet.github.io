@@ -1,83 +1,167 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
+  <div id="content">
 
 
     <p>This exercise will help you to get a better understanding of how to give a <strong>relevant
         answer</strong> in <strong>IELTS Speaking test</strong>. To complete the exercise, listen to
-        each of the audio recordings below and think of <em>what the question asks you to do</em>.
+      each of the audio recordings below and think of <em>what the question asks you to do</em>.
     </p>
 
     <p>We have done an example for you:</p><br>
     <p><u><strong>Example</strong></u>: what does this question ask you to do? <span id="s8"></span><br>
     </p>
-     <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec16.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint8" onclick="toggle('hint8')"><img height="25px"
-                                                                src="../images/hide.png"
-                                                                style="vertical-align: middle">Hide
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec16.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint8" onclick="toggle('hint8')"><img height="25px" src="../images/hide.png"
+        style="vertical-align: middle">Hide
+      transcript
+    </button>
     <div id="hint8" style="display:block;" class="hint">Do you think that the city where you live is
-        a dangerous place?
+      a dangerous place?
     </div>
     &emsp;&emsp; <input type="checkbox" name="q0ok" checked="checked" disabled="disabled"> <strong>give
-    a reason</strong>
+      a reason</strong>
     <br> &emsp;&emsp; <input type="checkbox" name="q0ok" checked="checked" disabled="disabled">
     <strong>give an opinion </strong>
     <br> &emsp;&emsp; <input type="checkbox" name="q0wrong" disabled="disabled"> compare or contrast
     <br> &emsp;&emsp; <input type="checkbox" name="q0wrong" disabled="disabled"> suggest <p></p>
 
     <p>This question starts with a phase '<em>do you think</em>', indicating that you're expected to
-        <em>give your opinion</em>. But to answer this question properly, you should <strong>give an
-            opinion</strong> and also support it with a <strong>reason</strong>. It is not obvious,
-        but <em>giving reason for your opinion is always a good practice</em>.</p>
+      <em>give your opinion</em>. But to answer this question properly, you should <strong>give an
+        opinion</strong> and also support it with a <strong>reason</strong>. It is not obvious,
+      but <em>giving reason for your opinion is always a good practice</em>.
+    </p>
 
     <br>
     <h3>Try out these questions:</h3>
     <em>(you can give more than 1 answer)</em>
     <p>1. This question asks you to ... <span id="s1"></span><br>
     </p>
-     <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec9.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint1" onclick="toggle('hint1')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec9.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint1" onclick="toggle('hint1')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
     <div id="hint1" style="display:none;" class="hint">What does your job involve?
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q1ok" id="1a"> describe
+    <br> <br> &emsp;&emsp; <input type="checkbox" name="q1ok" id="1a"> describe
     <br> &emsp;&emsp; <input type="checkbox" name="q1ok" id="1b"> explain
     <br> &emsp;&emsp; <input type="checkbox" name="q1wrong"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q1wrong"> suggest <p></p>
     <br>
 
     <p>2. To give a relevant answer, you have to ... <span id="s2"></span><br>
-        </p>
-        <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec10.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint2" onclick="toggle('hint2')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    </p>
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec10.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint2" onclick="toggle('hint2')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
     <div id="hint2" style="display:none;" class="hint">What kinds of films do you like the best?
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q2wrong"> compare or contrast
+    <br><br>&emsp;&emsp; <input type="checkbox" name="q2wrong"> compare or contrast
     <br> &emsp;&emsp; <input type="checkbox" name="q2ok" id="2a"> give a reason
     <br> &emsp;&emsp; <input type="checkbox" name="q2ok" id="2b"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q2wrong"> suggest <p></p>
@@ -85,21 +169,47 @@
 
 
     <p>3. What does this question ask you to do? <span id="s3"></span><br>
-       
+
     </p>
-     <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec11.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint3" onclick="toggle('hint3')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec11.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint3" onclick="toggle('hint3')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
     <div id="hint3" style="display:none;" class="hint">Why do you like your work?
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q3wrong"> describe
+    <br><br>&emsp;&emsp; <input type="checkbox" name="q3wrong"> describe
     <br> &emsp;&emsp; <input type="checkbox" name="q3wrong"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q3ok" id="3a"> give a reason
     <br> &emsp;&emsp; <input type="checkbox" name="q3wrong"> suggest <p></p>
@@ -107,21 +217,47 @@
 
 
     <p>4. This question asks you to ... <span id="s4"></span><br>
-        <audio controls="" controlslist="nodownload">
-            <source src="audio/rec12.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio>
-        <button id="buttonhint4" onclick="toggle('hint4')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec12.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint4" onclick="toggle('hint4')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
     </p>
     <div id="hint4" style="display:none;" class="hint">Do you like to study alone or with your
-        friends?
+      friends?
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q4wrong"> describe
+    <br><br>&emsp;&emsp; <input type="checkbox" name="q4wrong"> describe
     <br> &emsp;&emsp; <input type="checkbox" name="q4ok" id="4a"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q4ok" id="4b"> give a reason
     <br> &emsp;&emsp; <input type="checkbox" name="q4wrong"> suggest <p></p>
@@ -130,20 +266,46 @@
 
     <p>5. In this question you have to ... <span id="s5"></span><br>
     </p>
-           <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec13.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint5" onclick="toggle('hint5')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec13.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
-    <div id="hint5" style="display:none;" class="hint">What places should a tourist visit in your
-        homecountry?
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q5wrong"> describe
+    <button id="buttonhint5" onclick="toggle('hint5')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
+    <div id="hint5" style="display:none;" class="hint">What places should a tourist visit in your
+      homecountry?
+    </div>
+    <br><br> &emsp;&emsp; <input type="checkbox" name="q5wrong"> describe
     <br> &emsp;&emsp; <input type="checkbox" name="q5ok" id="5a"> give a reason
     <br> &emsp;&emsp; <input type="checkbox" name="q5wrong"> compare or contrast
     <br> &emsp;&emsp; <input type="checkbox" name="q5ok" id="5b"> suggest <p></p>
@@ -152,22 +314,48 @@
 
 
     <p>6. This question asks you to ... <span id="s6"></span><br>
-   
+
     </p>
-         <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec14.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint6" onclick="toggle('hint6')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec14.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
-    <div id="hint6" style="display:none;" class="hint">What are some differences between this city
-        and your hometown?
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q6wrong"> give a preference
+    <button id="buttonhint6" onclick="toggle('hint6')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
+    <div id="hint6" style="display:none;" class="hint">What are some differences between this city
+      and your hometown?
+    </div>
+    <br><br> &emsp;&emsp; <input type="checkbox" name="q6wrong"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q6wrong"> give an opinion
     <br> &emsp;&emsp; <input type="checkbox" name="q6ok" id="6a"> compare or contrast
     <br> &emsp;&emsp; <input type="checkbox" name="q6wrong"> suggest <p></p>
@@ -175,21 +363,47 @@
 
 
     <p>7. This question asks you to ... <span id="s7"></span><br>
-    
+
     </p>
-        <center><audio controls="" controlslist="nodownload">
-            <source src="audio/rec15.wav"
-                    type="audio/mp3">
-            Your browser doesn't support audio teg!
-        </audio></center>
-        <button id="buttonhint7" onclick="toggle('hint7')"><img height="25px"
-                                                                src="../images/show.png"
-                                                                style="vertical-align: middle">Show
-            transcript
+    <div class="audio-player">
+      <audio preload="metadata">
+        <source src="audio/rec15.wav" type="audio/wav">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
         </button>
+
+        <div class="time-display">
+          <span class="current-time">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-handle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span class="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+    <button id="buttonhint7" onclick="toggle('hint7')"><img height="25px" src="../images/show.png"
+        style="vertical-align: middle">Show
+      transcript
+    </button>
     <div id="hint7" style="display:none;" class="hint">How did you learn English in your country?
     </div>
-    &emsp;&emsp; <input type="checkbox" name="q7wrong"> give a preference
+    <br><br>&emsp;&emsp; <input type="checkbox" name="q7wrong"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q7wrong"> give an opinion
     <br> &emsp;&emsp; <input type="checkbox" name="q7wrong"> give a preference
     <br> &emsp;&emsp; <input type="checkbox" name="q7ok"> describe <p></p>
@@ -203,82 +417,71 @@
     <br>
 
 
-</div>
-<script>
-        function answers()
-		{
-			var j, x, i, total=7;
-			for (j = 1; j < total+1; j++)
-			{
-			    x = document.getElementsByName("q"+j+"ok");
-				for (i = 0; i < x.length; i++)
-				{
-						x[i].checked = true;
-				}
-			}
-		}
+  </div>
+  <script>
+    function answers() {
+      var j, x, i, total = 7;
+      for (j = 1; j < total + 1; j++) {
+        x = document.getElementsByName("q" + j + "ok");
+        for (i = 0; i < x.length; i++) {
+          x[i].checked = true;
+        }
+      }
+    }
 
 
 
-		function noanswers()
-		{
-			var j, x, i,  total=7;
-			for (j = 1; j < total+1; j++)
-			{
-			    x = document.getElementsByName("q"+j+"ok");
-				for (i = 0; i < x.length; i++)
-				{
-						x[i].checked = false;
-				}
-			}
-		}
+    function noanswers() {
+      var j, x, i, total = 7;
+      for (j = 1; j < total + 1; j++) {
+        x = document.getElementsByName("q" + j + "ok");
+        for (i = 0; i < x.length; i++) {
+          x[i].checked = false;
+        }
+      }
+    }
 
 
-        function check()
-		{
-			var j, x, i, correctAnswer, score=0, total=7;
-			for (j = 1; j < total+1; j++)
-			{
-				correctAnswer = true;
-			    x = document.getElementsByName("q"+j+"ok");
-				for (i = 0; i < x.length; i++)
-				{
-						if (x[i].checked != true) correctAnswer=false;
-				}
+    function check() {
+      var j, x, i, correctAnswer, score = 0, total = 7;
+      for (j = 1; j < total + 1; j++) {
+        correctAnswer = true;
+        x = document.getElementsByName("q" + j + "ok");
+        for (i = 0; i < x.length; i++) {
+          if (x[i].checked != true) correctAnswer = false;
+        }
 
 
-				x = document.getElementsByName("q"+j+"wrong");
-				for (i = 0; i < x.length; i++)
-				{
-					if (x[i].checked == true) correctAnswer=false;
-				}
+        x = document.getElementsByName("q" + j + "wrong");
+        for (i = 0; i < x.length; i++) {
+          if (x[i].checked == true) correctAnswer = false;
+        }
 
-				if (correctAnswer==true) {document.getElementById("s"+j).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/ok.png"  />'; score++;}
-				else document.getElementById("s"+j).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/cross.png"  />';
+        if (correctAnswer == true) { document.getElementById("s" + j).innerHTML = '<img style="vertical-align:middle;" height=20px src="../images/ok.png"  />'; score++; }
+        else document.getElementById("s" + j).innerHTML = '<img style="vertical-align:middle;" height=20px src="../images/cross.png"  />';
 
-			}
+      }
 
-					score=score/total*100;
-					if (!(score % 1 === 0)) score=score.toFixed(2);
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
-		}
+      if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+        else document.getElementById("result").innerHTML =
+          '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+    }
 
-		function toggle(id) {
-				   var e = document.getElementById(id);
-				   if(e.style.display == 'block')
-				   {
-					  document.getElementById("button"+id).innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
-					  e.style.display = 'none';
-				   }
-				   else
-				   {
-					  document.getElementById("button"+id).innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
-					  e.style.display = 'block';
-				   }
-			   }
+    function toggle(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'block') {
+        document.getElementById("button" + id).innerHTML = ' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
+        e.style.display = 'none';
+      }
+      else {
+        document.getElementById("button" + id).innerHTML = '<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
+        e.style.display = 'block';
+      }
+    }
 
-		</script>
+  </script>
+  <!-- Common JavaScript for exercises -->
+  <script src="../common.js"></script>
 </body>
+
 </html>

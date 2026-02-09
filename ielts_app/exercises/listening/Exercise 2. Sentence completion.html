@@ -1,153 +1,195 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-        <link rel="stylesheet" type="text/css" href="../style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
-        
-        
-        <p style="font-weight:bold;"> Difficulty level: medium </p> 
-        
-        
-        <p>Listen to the recording and complete gaps in the text below. </p>
+	<div id="content">
 
-		<center><audio controls="" controlslist="nodownload">
-                <source src="../audio/greece.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-        	</audio></center>
-            
-        <h3>“Greece's plan to raise taxes”</h3>
-        
-        
-        
-        <form>
-        <p> Greece has approved a plan to raise taxes, cut spending and sell government-owned <input type="text" class="ex-input" maxlength="17" id="ex1" required=""> <span id="s1"> </span>. This clears the way for seventeen billion dollars in loans from the International Monetary Fund and the 
-        <input type="text" class="ex-input" maxlength="20" id="ex1b" required=""> <span id="s1b"> </span>. The <input type="text" class="ex-input" maxlength="17" id="ex2" required=""> <span id="s2"> </span>are a share of the one-hundred-fifty-six-billion-dollar rescue deal that Greece secured last year.</p>
-        
-        The money will help the government to operate and pay its <input type="text" class="ex-input" maxlength="17" id="ex3" required=""> <span id="s3"> </span>until the middle of September. But the austerity plan led to a 
-        <input type="text" class="ex-input" maxlength="24" id="ex3b" required=""> <span id="s3b"> </span> on Tuesday and Wednesday, along with violent demonstrations in Athens.<p></p>
 
-        <p>Several hundred protesters and police were injured. The Greek <input type="text" class="ex-input" maxlength="17" id="ex4a" required=""> <span id="s4a"> </span>approved the forty-billion-dollar plan on Wednesday and the details on Thursday. Prime Minister George Papandreou won more support than expected for his proposals. He <input type="text" class="ex-input" maxlength="17" id="ex4" required=""> <span id="s4"> </span> to parliament to do everything possible to avoid defaulting on the debts of the <input type="text" class="ex-input" maxlength="17" id="ex5" required=""> <span id="s5"> </span> of democracy.</p>
-        
-       
-        
-        
-        <p id="result" class="exercises"> </p>
-        
-        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
-        <button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
-        <button type="button" onclick="noanswers()">Hide answers</button>
-        <!--<input type="submit"  onclick="check()" />-->
-        </form>
-        
-          
-          <script>
-		  		function answers() {
+		<p style="font-weight:bold;"> Difficulty level: medium </p>
 
-				document.getElementById("ex1").value="assets";
-				document.getElementById("ex1b").value="European Union";
-				document.getElementById("ex2").value="loans";
-				document.getElementById("ex3").value="debts";
-				document.getElementById("ex3b").value="national strike";
-				document.getElementById("ex4").value="appealed";
-				document.getElementById("ex4a").value="parliament";
-				document.getElementById("ex5").value="birthplace";
-			
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s1b").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s3b").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s4a").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				}
-				
-				function noanswers() {
-				
-				document.getElementById("ex1").value="";
-				document.getElementById("ex1b").value="";
-				document.getElementById("ex2").value="";
-				document.getElementById("ex3").value="";
-				document.getElementById("ex3b").value="";
-				document.getElementById("ex4").value="";
-				document.getElementById("ex4a").value="";
-				document.getElementById("ex5").value="";
-				
-				document.getElementById("s1").innerHTML='';
-				document.getElementById("s1b").innerHTML='';
-				document.getElementById("s2").innerHTML='';
-				document.getElementById("s3").innerHTML='';
-				document.getElementById("s3b").innerHTML='';
-				document.getElementById("s4").innerHTML='';
-				document.getElementById("s4a").innerHTML='';
-				document.getElementById("s5").innerHTML='';
-				}
 
-				 
-				
-				function check() {
-				var ex1, ex1b, ex2, ex3,ex3b, ex4, ex4a, ex5, result;
-				result=true;
-				ex1=document.getElementById("ex1").value;
-				if (ex1.trim().toLowerCase()!="assets")
-				{ result=false; document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex1b=document.getElementById("ex1b").value;
-				if (ex1b.trim().toLowerCase()!="european union")
-				{ result=false; document.getElementById("s1b").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s1b").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex2=document.getElementById("ex2").value;
-				if (ex2.trim().toLowerCase()!="loans")
-				{ result=false; document.getElementById("s2").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s2").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				
-				ex3=document.getElementById("ex3").value;
-				if (ex3.trim().toLowerCase()!="debts")
-				{ result=false; document.getElementById("s3").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s3").innerHTML='<img height=20px src="../images/ok.png" />';
-				ex3b=document.getElementById("ex3b").value;
-				if (ex3b.trim().toLowerCase()!="national strike")
-				{ result=false; document.getElementById("s3b").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s3b").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				
-				ex4a=document.getElementById("ex4a").value;
-				if (ex4a.trim().toLowerCase()!="parliament")
-				{ result=false; document.getElementById("s4a").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s4a").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex4=document.getElementById("ex4").value;
-				if (ex4.trim().toLowerCase()!="appealed")
-				{ result=false; document.getElementById("s4").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s4").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				ex5=document.getElementById("ex5").value;
-				if (ex5.trim().toLowerCase()!="birthplace")
-				{ result=false; document.getElementById("s5").innerHTML='<img height=20px src="../images/cross.png" />';}
-				else document.getElementById("s5").innerHTML='<img height=20px src="../images/ok.png" />';
-				
-				
-				if (result==false) document.getElementById("result").innerHTML="There are some mistakes..."
-				else document.getElementById("result").innerHTML=
-				'<span style="color:green; "> Correct! </span>';
-				}
-          </script>
-          
-          
+		<p>Listen to the recording and complete gaps in the text below. </p>
 
-            
-             
-              
-        
-     
-        
-     
-        </div>
+		<div class="audio-player">
+			<audio id="audio" preload="metadata">
+				<source src="../audio/greece.mp3" type="audio/mp3">
+				Your browser doesn't support audio!
+			</audio>
+
+			<div class="audio-controls">
+				<button class="play-btn" id="playBtn" aria-label="Play">
+					<svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+						<path d="M8 5v14l11-7z" />
+					</svg>
+					<svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+						<path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+					</svg>
+				</button>
+
+				<div class="time-display">
+					<span id="currentTime">0:00</span>
+				</div>
+
+				<div class="progress-container">
+					<div class="progress-bar" id="progressBar">
+						<div class="progress-fill" id="progressFill"></div>
+						<div class="progress-handle" id="progressHandle"></div>
+					</div>
+				</div>
+
+				<div class="time-display">
+					<span id="duration">0:00</span>
+				</div>
+			</div>
+		</div>
+
+		<h3>“Greece's plan to raise taxes”</h3>
+
+
+
+		<form>
+			<p> Greece has approved a plan to raise taxes, cut spending and sell government-owned <input type="text"
+					class="ex-input" maxlength="17" id="ex1" required=""> <span id="s1"> </span>. This clears the way
+				for seventeen billion dollars in loans from the International Monetary Fund and the
+				<input type="text" class="ex-input" maxlength="20" id="ex1b" required=""> <span id="s1b"> </span>. The
+				<input type="text" class="ex-input" maxlength="17" id="ex2" required=""> <span id="s2"> </span>are a
+				share of the one-hundred-fifty-six-billion-dollar rescue deal that Greece secured last year.
+			</p>
+
+			The money will help the government to operate and pay its <input type="text" class="ex-input" maxlength="17"
+				id="ex3" required=""> <span id="s3"> </span>until the middle of September. But the austerity plan led to
+			a
+			<input type="text" class="ex-input" maxlength="24" id="ex3b" required=""> <span id="s3b"> </span> on Tuesday
+			and Wednesday, along with violent demonstrations in Athens.<p></p>
+
+			<p>Several hundred protesters and police were injured. The Greek <input type="text" class="ex-input"
+					maxlength="17" id="ex4a" required=""> <span id="s4a"> </span>approved the forty-billion-dollar plan
+				on Wednesday and the details on Thursday. Prime Minister George Papandreou won more support than
+				expected for his proposals. He <input type="text" class="ex-input" maxlength="17" id="ex4" required="">
+				<span id="s4"> </span> to parliament to do everything possible to avoid defaulting on the debts of the
+				<input type="text" class="ex-input" maxlength="17" id="ex5" required=""> <span id="s5"> </span> of
+				democracy.</p>
+
+
+
+
+			<p id="result" class="exercises"> </p>
+
+			<button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+			<button type="button" onclick="answers()">Show answers</button>&nbsp; &nbsp;
+			<button type="button" onclick="noanswers()">Hide answers</button>
+			<!--<input type="submit"  onclick="check()" />-->
+		</form>
+
+
+		<script>
+			function answers() {
+
+				document.getElementById("ex1").value = "assets";
+				document.getElementById("ex1b").value = "European Union";
+				document.getElementById("ex2").value = "loans";
+				document.getElementById("ex3").value = "debts";
+				document.getElementById("ex3b").value = "national strike";
+				document.getElementById("ex4").value = "appealed";
+				document.getElementById("ex4a").value = "parliament";
+				document.getElementById("ex5").value = "birthplace";
+
+
+				document.getElementById("s1").innerHTML = '';
+				document.getElementById("s1b").innerHTML = '';
+				document.getElementById("s2").innerHTML = '';
+				document.getElementById("s3").innerHTML = '';
+				document.getElementById("s3b").innerHTML = '';
+				document.getElementById("s4").innerHTML = '';
+				document.getElementById("s4a").innerHTML = '';
+				document.getElementById("s5").innerHTML = '';
+			}
+
+			function noanswers() {
+
+				document.getElementById("ex1").value = "";
+				document.getElementById("ex1b").value = "";
+				document.getElementById("ex2").value = "";
+				document.getElementById("ex3").value = "";
+				document.getElementById("ex3b").value = "";
+				document.getElementById("ex4").value = "";
+				document.getElementById("ex4a").value = "";
+				document.getElementById("ex5").value = "";
+
+				document.getElementById("s1").innerHTML = '';
+				document.getElementById("s1b").innerHTML = '';
+				document.getElementById("s2").innerHTML = '';
+				document.getElementById("s3").innerHTML = '';
+				document.getElementById("s3b").innerHTML = '';
+				document.getElementById("s4").innerHTML = '';
+				document.getElementById("s4a").innerHTML = '';
+				document.getElementById("s5").innerHTML = '';
+			}
+
+
+
+			function check() {
+				var ex1, ex1b, ex2, ex3, ex3b, ex4, ex4a, ex5, result;
+				result = true;
+				ex1 = document.getElementById("ex1").value;
+				if (ex1.trim().toLowerCase() != "assets") { result = false; document.getElementById("s1").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s1").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex1b = document.getElementById("ex1b").value;
+				if (ex1b.trim().toLowerCase() != "european union") { result = false; document.getElementById("s1b").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s1b").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex2 = document.getElementById("ex2").value;
+				if (ex2.trim().toLowerCase() != "loans") { result = false; document.getElementById("s2").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s2").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+
+				ex3 = document.getElementById("ex3").value;
+				if (ex3.trim().toLowerCase() != "debts") { result = false; document.getElementById("s3").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s3").innerHTML = '<img height=20px src="../images/ok.png" />';
+				ex3b = document.getElementById("ex3b").value;
+				if (ex3b.trim().toLowerCase() != "national strike") { result = false; document.getElementById("s3b").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s3b").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+
+				ex4a = document.getElementById("ex4a").value;
+				if (ex4a.trim().toLowerCase() != "parliament") { result = false; document.getElementById("s4a").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s4a").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex4 = document.getElementById("ex4").value;
+				if (ex4.trim().toLowerCase() != "appealed") { result = false; document.getElementById("s4").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s4").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+				ex5 = document.getElementById("ex5").value;
+				if (ex5.trim().toLowerCase() != "birthplace") { result = false; document.getElementById("s5").innerHTML = '<img height=20px src="../images/cross.png" />'; }
+				else document.getElementById("s5").innerHTML = '<img height=20px src="../images/ok.png" />';
+
+
+				if (result == false) document.getElementById("result").innerHTML = "There are some mistakes..."
+				else document.getElementById("result").innerHTML =
+					'<span style="color:green; "> All answers are correct! 🎉</span>';
+			}
+		</script>
+
+
+
+
+
+
+
+
+
+
+		<!-- Common JavaScript for exercises -->
+		<script src="../common.js"></script>
+	</div>
 </body>
+
 </html>

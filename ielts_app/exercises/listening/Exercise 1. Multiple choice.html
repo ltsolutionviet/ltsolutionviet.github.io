@@ -1,153 +1,212 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
-        
-        
-        <h2>Exercise 1</h2>
-        
-        
-        
-        <p>On this page you will find <strong>IELTS Listening exercise</strong> for <strong>multiple choice questions</strong>. By completing this exercise you will improve your IELTS Listening skills and develop specific techniques for answering multiple choice questions.</p>
-        <p>Multiple choice questions contain <em>3 answers</em> and <em>only one of them is correct</em>. Your task is to choose the correct answer. Multiple choice questions are common for parts 2, 3 and 4 of IELTS Listening test.  </p>
-        <p>To <u>succeed in IELTS Listening multiple choice questions</u> you should:
-        </p><ul><li>Be patient. You are likely to hear ALL the given answers, so choosing the one you hear the first is not a good strategy.</li>
-        <li>Be attentive - sometimes the speaker can correct himself or give new details.</li>
-        <li>Beware of order - the answers will not necessarily be in the same order as the speaker gives information.  </li>
-        </ul><p></p>
-        <br>
-        <p>Now listen to the recording and choose the correct letter, <strong>A</strong>, <strong>B</strong>, or<strong> C</strong>.</p>
-       
-        <center><audio controls="" controlslist="nodownload">
-                <source src="../audio/multiple-choice-1.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-        </audio></center>
-        
-        <form> <ol>
-         <li> The most widespread style of graffiti in Brazil is 
-         <span id="s1"> </span>  &emsp;<button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show hint</button>        
-        <div id="hint1" style="display:none;"> <p class="hint"> In the beginning the speaker talks about graffiti in Paris and Barcelona, saying that it is pro-equality, pro-human rights, anti-capitalism and anti-war. Then he says that in Brazil there are much of such kind of streat art and that it was legalized. But after that, he says that <u>it is not nearly as widespread as the other graffiti, dangerous and illegal</u>.<br> </p> </div>    
-         
-         <ol type="A">
-          	<li> <input type="radio" name="q1"> anti-capitalistic and anti-war </li>
-          	<li> <input type="radio" name="q1"> legalized</li>
+  <div id="content">
+
+    <h2>Exercise 1</h2>
+
+    <p>On this page you will find <strong>IELTS Listening exercise</strong> for <strong>multiple choice
+        questions</strong>. By completing this exercise you will improve your IELTS Listening skills and develop
+      specific techniques for answering multiple choice questions.</p>
+    <p>Multiple choice questions contain <em>3 answers</em> and <em>only one of them is correct</em>. Your task is to
+      choose the correct answer. Multiple choice questions are common for parts 2, 3 and 4 of IELTS Listening test. </p>
+    <p>To <u>succeed in IELTS Listening multiple choice questions</u> you should:
+    </p>
+    <ul>
+      <li>Be patient. You are likely to hear ALL the given answers, so choosing the one you hear the first is not a good
+        strategy.</li>
+      <li>Be attentive - sometimes the speaker can correct himself or give new details.</li>
+      <li>Beware of order - the answers will not necessarily be in the same order as the speaker gives information.
+      </li>
+    </ul>
+    <p></p>
+    <br>
+    <p>Now listen to the recording and choose the correct letter, <strong>A</strong>, <strong>B</strong>, or<strong>
+        C</strong>.</p>
+
+
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/multiple-choice-1.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
+
+    <form>
+      <ol>
+        <li> The most widespread style of graffiti in Brazil is
+          <span id="s1"> </span> &emsp;<button class="b2" id="buttonhint1" type="button" onclick="toggle('hint1')">Show
+            hint</button>
+          <div id="hint1" style="display:none;">
+            <p class="hint"> In the beginning the speaker talks about graffiti in Paris and Barcelona, saying that it is
+              pro-equality, pro-human rights, anti-capitalism and anti-war. Then he says that in Brazil there are much
+              of such kind of streat art and that it was legalized. But after that, he says that <u>it is not nearly as
+                widespread as the other graffiti, dangerous and illegal</u>.<br> </p>
+          </div>
+
+          <ol type="A">
+            <li> <input type="radio" name="q1"> anti-capitalistic and anti-war </li>
+            <li> <input type="radio" name="q1"> legalized</li>
             <li> <input type="radio" name="q1" id="a1"> dangerous and illegal </li>
-            </ol>
- 		</li> <br>
-        
-        
-        <br> 
+          </ol>
+        </li> <br>
+
+
+        <br>
         <li> The Brazilian graffiti is different from simply some scribbling on a wall because
-        <span id="s2"> </span>
-        &emsp;<button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show hint</button> 
-                 
-        <div id="hint2" style="display:none;"> <p class="hint"> The talking man describes why the graffiti is different from simple scribblings: "The letters had harmony or the lack of harmony, or they had a composition, or they had an attitude, or they looked almost like the skeletons of cartoons. <u>They took originality seriously</u>."<br> </p> </div> 
-         <ol type="A">
-          	<li> <input type="radio" name="q2"> it always lacks harmony </li>
-          	<li> <input type="radio" name="q2" id="a2"> it takes originality seriously </li>
+          <span id="s2"> </span>
+          &emsp;<button class="b2" id="buttonhint2" type="button" onclick="toggle('hint2')">Show hint</button>
+
+          <div id="hint2" style="display:none;">
+            <p class="hint"> The talking man describes why the graffiti is different from simple scribblings: "The
+              letters had harmony or the lack of harmony, or they had a composition, or they had an attitude, or they
+              looked almost like the skeletons of cartoons. <u>They took originality seriously</u>."<br> </p>
+          </div>
+          <ol type="A">
+            <li> <input type="radio" name="q2"> it always lacks harmony </li>
+            <li> <input type="radio" name="q2" id="a2"> it takes originality seriously </li>
             <li> <input type="radio" name="q2"> it portrays skeletons </li>
-           </ol>
- 		</li> <br>
-        
+          </ol>
+        </li> <br>
+
         <br>
         <li> The reporter in the centre of Sao Paulo mentions all of the following, EXCEPT
-        <span id="s3"> </span>
-        &emsp;<button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show hint</button> 
-                 
-        <div id="hint3" style="display:none;"> <p class="hint"> In the beginning of his talk, the reporter says: "It's <u>Thursday</u> evening and it's startign to get dark..." <br> </p> </div> 
-        
-         <ol type="A">
-          	<li> <input type="radio" name="q3" id="a3"> it's Tuesday evening </li>
-          	<li> <input type="radio" name="q3"> he's approaching a huge loud group of people </li>
+          <span id="s3"> </span>
+          &emsp;<button class="b2" id="buttonhint3" type="button" onclick="toggle('hint3')">Show hint</button>
+
+          <div id="hint3" style="display:none;">
+            <p class="hint"> In the beginning of his talk, the reporter says: "It's <u>Thursday</u> evening and it's
+              startign to get dark..." <br> </p>
+          </div>
+
+          <ol type="A">
+            <li> <input type="radio" name="q3" id="a3"> it's Tuesday evening </li>
+            <li> <input type="radio" name="q3"> he's approaching a huge loud group of people </li>
             <li> <input type="radio" name="q3"> there are some police cars at the end of the street </li>
-           </ol> <br>
-  
-        <br>
-        </li><li> The group of people (mentioned by the reporter) know what the graffiti on the buildings says because 
-        <span id="s4"> </span>
-        &emsp;<button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show hint</button>          
-        <div id="hint4" style="display:none;"> <p class="hint"> The reporter says that the buildings are covered with thick black writing. He adds that he has no idea what it says and that many of the locals don't know what it's ment to say either. Then the reporter says: "But this group of people here... They know exactly what it says... <u>Because they wrote most of it</u>."<br> </p> </div> 
-        
-         <ol type="A">
-          	<li> <input type="radio" name="q4"> they know the languageTranslate of the graffiti</li>
-          	<li> <input type="radio" name="q4" id="a4"> 
-          	they wrote most of it </li>
-            <li> <input type="radio" name="q4"> they have lived in this area for a long time </li> </ol>
- 		</li> <br>
-        
-        
-        
-        <li> The more risky the process of graffiti tagging is, the more its artist is 
-        <span id="s5"> </span>
-        &emsp;<button class="b2" id="buttonhint5" type="button" onclick="toggle('hint5')">Show hint</button>          
-        <div id="hint5" style="display:none;"> <p class="hint"> After the music ends, the woman says: "The thing about the tag is where you place it. <u>The more risk it poses to the artist's life the more street grade you get</u>".  <br> </p> </div> 
-        
-         <ol type="A">
-          	<li> <input type="radio" name="q5"> searched by the police</li>
-          	<li> <input type="radio" name="q5"> considered extravagant </li>
-            <li> <input type="radio" name="q5" id="a5"> respected among other graffiti taggers </li> 
-         </ol>
- 		</li> <br>
-        
-        </ol>
-        
-        <p id="result" class="exercises"> </p>
-        
-        <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp; 
-        
-        
-        <!--<input type="submit"  onclick="check()" />-->
-        </form><br>
-        
-          
-          <script>
-		  		function toggle(id) { 
-					if (document.getElementById(id).style.display=='none')		
-							 {
-								 document.getElementById(id).style.display='block';
-								 var b="button"+id;
-								 document.getElementById(b).innerHTML="Hide hint";
-							 }
-					else
-							{
-								 document.getElementById(id).style.display='none';
-								 var b="button"+id;
-								 document.getElementById(b).innerHTML="Show hint";
-							 }		 
-				 }
-				 
-				
-				function check() {
-					var text, text2, score, total;
-					total=0; score=0;
-					
-					for (var i=1; i<6; i++) 
-					{
-						total++;
-						text="a"+i; text2="s"+i;
-					if (document.getElementById(text).checked == true)	{
-				document.getElementById(text2).innerHTML='<img height=20px src="../images/ok.png"  style="vertical-align:middle;" />';
-				score++;}
-					else document.getElementById(text2).innerHTML='<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
-					}
+          </ol> <br>
 
-					score=score/total*100;
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
-				}
-          </script>
-          
-          
+          <br>
+        </li>
+        <li> The group of people (mentioned by the reporter) know what the graffiti on the buildings says because
+          <span id="s4"> </span>
+          &emsp;<button class="b2" id="buttonhint4" type="button" onclick="toggle('hint4')">Show hint</button>
+          <div id="hint4" style="display:none;">
+            <p class="hint"> The reporter says that the buildings are covered with thick black writing. He adds that he
+              has no idea what it says and that many of the locals don't know what it's ment to say either. Then the
+              reporter says: "But this group of people here... They know exactly what it says... <u>Because they wrote
+                most of it</u>."<br> </p>
+          </div>
 
-            
-    
-             
-        
-     
-        </div>
+          <ol type="A">
+            <li> <input type="radio" name="q4"> they know the languageTranslate of the graffiti</li>
+            <li> <input type="radio" name="q4" id="a4">
+              they wrote most of it </li>
+            <li> <input type="radio" name="q4"> they have lived in this area for a long time </li>
+          </ol>
+        </li> <br>
+
+
+
+        <li> The more risky the process of graffiti tagging is, the more its artist is
+          <span id="s5"> </span>
+          &emsp;<button class="b2" id="buttonhint5" type="button" onclick="toggle('hint5')">Show hint</button>
+          <div id="hint5" style="display:none;">
+            <p class="hint"> After the music ends, the woman says: "The thing about the tag is where you place it.
+              <u>The more risk it poses to the artist's life the more street grade you get</u>". <br>
+            </p>
+          </div>
+
+          <ol type="A">
+            <li> <input type="radio" name="q5"> searched by the police</li>
+            <li> <input type="radio" name="q5"> considered extravagant </li>
+            <li> <input type="radio" name="q5" id="a5"> respected among other graffiti taggers </li>
+          </ol>
+        </li> <br>
+
+      </ol>
+
+      <p id="result" class="exercises"> </p>
+
+      <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
+
+
+    </form><br>
+
+
+    <script>
+      function toggle(id) {
+        if (document.getElementById(id).style.display == 'none') {
+          document.getElementById(id).style.display = 'block';
+          var b = "button" + id;
+          document.getElementById(b).innerHTML = "Hide hint";
+        }
+        else {
+          document.getElementById(id).style.display = 'none';
+          var b = "button" + id;
+          document.getElementById(b).innerHTML = "Show hint";
+        }
+      }
+
+
+      function check() {
+        var text, text2, score, total;
+        total = 0; score = 0;
+
+        for (var i = 1; i < 6; i++) {
+          total++;
+          text = "a" + i; text2 = "s" + i;
+          if (document.getElementById(text).checked == true) {
+            document.getElementById(text2).innerHTML = '<img height=20px src="../images/ok.png"  style="vertical-align:middle;" />';
+            score++;
+          }
+          else document.getElementById(text2).innerHTML = '<img height=20px src="../images/cross.png"  style="vertical-align:middle;" />';
+        }
+
+        if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+        else document.getElementById("result").innerHTML =
+          '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+      }
+
+
+    </script>
+
+    <!-- Common JavaScript for exercises -->
+    <script src="../common.js"></script>
+  </div>
 </body>
+
 </html>

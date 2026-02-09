@@ -1,167 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
+  <div id="content">
 
 
     <p>In this lesson you will learn how to give <strong>relevant answers</strong> in <strong>IELTS
         Speaking test</strong>. As you know, during the Speaking test the examiner will assess your
-        ability to communicate fluently, effectively and coherently. To achieve a high score (band 6
-        and more), you should make sure that <em>your answers are relevant to the question</em>.
+      ability to communicate fluently, effectively and coherently. To achieve a high score (band 6
+      and more), you should make sure that <em>your answers are relevant to the question</em>.
     </p>
 
     <p>The questions in IELTS Speaking test (parts 1 and 3) may ask you to do one or more of the
-        following:</p>
+      following:</p>
     <ul type="disc">
-        <li>describe</li>
-        <li>explain</li>
-        <li>suggest</li>
-        <li>express a preference</li>
-        <li>give an opinion</li>
-        <li>compare and contrast</li>
-        <li>give a reason</li>
+      <li>describe</li>
+      <li>explain</li>
+      <li>suggest</li>
+      <li>express a preference</li>
+      <li>give an opinion</li>
+      <li>compare and contrast</li>
+      <li>give a reason</li>
     </ul>
     <ul type="disc">
     </ul>
     <br>
     <p>Let's look at the examples below to get an idea what <em><strong>relevant
-        answer</strong></em> means.</p>
+          answer</strong></em> means.</p>
     <p style="font-weight:bold;">Question 1</p>
-    <center><audio controls="" controlslist="nodownload">
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
         <source src="audio/5.wav" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio></center>
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
     <button id="buttonhint1" onclick="toggle('hint1')"><img height="25px" src="../images/show.png"
-                                                            style="vertical-align: middle">Show
-        transcript
+        style="vertical-align: middle">Show
+      transcript
     </button>
     <div id="hint1" style="display:none;" class="hint"><strong>Examiner</strong>: Let's talk about
-        your home town... Can you tell me something about your home town?
+      your home town... Can you tell me something about your home town?
     </div>
     <p>This question asks you to <u><strong>describe</strong></u> your home town.</p>
     <p>Example of <span style="font-weight:bold; color:green;">relevant answer</span>: </p>
     <p class="example">My hometown is a little village located in the Western part of India... It is
-        a very pleasant place with a lot of trees and nice climate. I really like it.</p>This answer
+      a very pleasant place with a lot of trees and nice climate. I really like it.</p>This answer
     is relevant because you <u>describe</u> your hometown in it - exactly what the question asked
     you to do.<p></p><br>
 
 
     <p>Example of <span style="font-weight:bold; color:red;">irrelevant answer</span>: </p>
     <p class="example">Hmm... I like my hometown primarily because it is a very pleasant place with
-        a lot of trees and nice climate.</p> This answer is irrelevant because it <u>explains</u>
+      a lot of trees and nice climate.</p> This answer is irrelevant because it <u>explains</u>
     why you like your hometown, rather than describes your hometown.<p></p><br>
 
     <p>Another example of <span style="font-weight:bold; color:red;">irrelevant answer</span>: </p>
     <p class="example">Currently I live in a big city, which is very different from my hometown...
-        Unlike the place where I live now, my hometown is a little village. </p> This answer is
+      Unlike the place where I live now, my hometown is a little village. </p> This answer is
     irrelevant because it <u>compares and contrasts</u> your current place of living with your
     hometown, rather than describes your hometown.<p></p>
     <br>
     <p style="font-weight:bold;">Question 2</p>
-     <center><audio controls="" controlslist="nodownload">
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
         <source src="audio/6.wav" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio> </center>
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
     <button id="buttonhint2" onclick="toggle('hint2')"><img height="25px" src="../images/show.png"
-                                                            style="vertical-align: middle">Show
-        transcript
+        style="vertical-align: middle">Show
+      transcript
     </button>
     <div id="hint2" style="display:none;" class="hint"><strong>Examiner</strong>: Is your town
-        different now to what it was like in the past?
+      different now to what it was like in the past?
     </div>
 
     <p>This question asks you to <u><strong>compare and contrast</strong></u> what your hometown is
-        like now to what it was like in the past.</p>
+      like now to what it was like in the past.</p>
     <p>Example of <span style="font-weight:bold; color:green;">relevant answer</span>: </p>
     <p class="example">Well... Nowadays my hometown is a little bit different from what it was in
-        the past. During the last decade a lot of facilities - like supermarkets and gyms - were
-        built... Moreover, I think it became more populated.</p>
+      the past. During the last decade a lot of facilities - like supermarkets and gyms - were
+      built... Moreover, I think it became more populated.</p>
     <p></p><br>
 
 
     <p>Example of <span style="font-weight:bold; color:red;">irrelevant answer</span>: </p>
     <p class="example">I prefer what my hometown was like in the past than what it is like now. I
-        don't like crowds and a lot of people, and nowadays my hometown is really
-        over-populated.</p> This answer is irrelevant because it <u>expresses a preference</u>
+      don't like crowds and a lot of people, and nowadays my hometown is really
+      over-populated.</p> This answer is irrelevant because it <u>expresses a preference</u>
     rather than compares and contrasts.<p></p><br>
 
 
     <p style="font-weight:bold;">Question 3</p>
-    <audio controls="" controlslist="nodownload">
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
         <source src="audio/7.wav" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio>
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
     <button id="buttonhint3" onclick="toggle('hint3')"><img height="25px" src="../images/show.png"
-                                                            style="vertical-align: middle">Show
-        transcript
+        style="vertical-align: middle">Show
+      transcript
     </button>
     <div id="hint3" style="display:none;" class="hint"><strong>Examiner</strong>: What would a
-        tourist like to do in your hometown?
+      tourist like to do in your hometown?
     </div>
 
     <p>This question asks you to <u><strong>suggest</strong></u> things that a tourist would like to
-        do in your hometown.</p>
+      do in your hometown.</p>
     <p>Example of <span style="font-weight:bold; color:green;">relevant answer</span>: </p>
     <p class="example">Hmm... Firstly, there are some historical places - like ancient temples -
-        that tourists would like to see in my hometown. They have been built in 10th century and are
-        surrounded by a large garden, so I believe it's an amazing place to visit. Also, I think
-        that tourists would find the local zoo very interesting too.</p>
+      that tourists would like to see in my hometown. They have been built in 10th century and are
+      surrounded by a large garden, so I believe it's an amazing place to visit. Also, I think
+      that tourists would find the local zoo very interesting too.</p>
     <p></p><br>
 
 
     <p>Example of <span style="font-weight:bold; color:red;">irrelevant answer</span>: </p>
     <p class="example">There are ancient temples, which are located in the Northern part of my
-        hometown; they have been built in 10th century! They are very old and reveal many historical
-        mysteries. They are surrounded by a large garden and are easily accessible by subway. </p>
+      hometown; they have been built in 10th century! They are very old and reveal many historical
+      mysteries. They are surrounded by a large garden and are easily accessible by subway. </p>
     This answer is irrelevant because it <u>describes</u> a tourist attraction rather than suggests
     visiting it.<p></p><br>
 
 
     <p style="font-weight:bold;">Question 4</p>
-     <center><audio controls="" controlslist="nodownload">
+    <div class="audio-player">
+      <audio id="audio" preload="metadata">
         <source src="audio/8.wav" type="audio/mp3">
-        Your browser doesn't support audio teg!
-    </audio> </center>
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div>
     <button id="buttonhint4" onclick="toggle('hint4')"><img height="25px" src="../images/show.png"
-                                                            style="vertical-align: middle">Show
-        transcript
+        style="vertical-align: middle">Show
+      transcript
     </button>
     <div id="hint4" style="display:none;" class="hint"><strong>Examiner</strong>: Which city do you
-        think is the most beautiful in your country?
+      think is the most beautiful in your country?
     </div>
     <p>This question asks you to <u><strong>give an opinion</strong></u>.</p>
     <p>Example of <span style="font-weight:bold; color:green;">relevant answer</span>: </p>
     <p class="example">I believe my hometown to be the most beautiful city in my country. Probably,
-        I like it so much because I was born there and spent first 19 years of my life in that
-        city.</p>
+      I like it so much because I was born there and spent first 19 years of my life in that
+      city.</p>
     <p></p><br>
 
 
     <p>Example of <span style="font-weight:bold; color:red;">irrelevant answer</span>: </p>
     <p class="example">I like my hometown because I was born there and it is very near and dear to
-        my heart. </p> This answer is irrelevant because it <u>explains</u> why you like a certain
+      my heart. </p> This answer is irrelevant because it <u>explains</u> why you like a certain
     city rather than gives an opinion.<p></p><br>
 
 
-</div>
-<script>
-		function toggle(id) {
-				   var e = document.getElementById(id);
-				   if(e.style.display == 'block')
-				   {
-					  document.getElementById("button"+id).innerHTML=' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
-					  e.style.display = 'none';
-				   }
-				   else
-				   {
-					  document.getElementById("button"+id).innerHTML='<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
-					  e.style.display = 'block';
-				   }
-			   }
+  </div>
+  <script>
+    function toggle(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'block') {
+        document.getElementById("button" + id).innerHTML = ' <img height="25px" src="../images/show.png" style="vertical-align: middle"  /> Show transcript';
+        e.style.display = 'none';
+      }
+      else {
+        document.getElementById("button" + id).innerHTML = '<img height="25px" src="../images/hide.png" style="vertical-align: middle"  /> Hide transcript';
+        e.style.display = 'block';
+      }
+    }
 
-		</script>
+  </script>
+  <!-- Common JavaScript for exercises -->
+  <script src="../common.js"></script>
 </body>
+
 </html>

@@ -1,111 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
-        
-        
-        
-             
-        
-        <p>In this lesson we'll learn how to tackle <strong>diagram completion questions</strong> on IELTS Reading. In this type of questions, <em>you’re given a descriptive text and a diagram or plan, which you have to label</em> according to the text. Your diagram may be a technical drawing, a description of something from the natural world, a process or a plan of something. 
-        </p><p>This is how the diagram completion question may look like on IELTS Reading test:</p>
-        
-        <div class="exam-extract"><p>Label the parts of a leaf on the diagram below. Choose <strong>ONE WORD</strong> from the Reading Passage for each answer. Write your answers in boxes 1-4 on your answer sheet.</p>
-        <img src="../images/diagram-leaf.png" width="60%" alt="IELTS Reading diagram completion - leaf diagram">
-        </div>
-        <br>
-        <p><strong>Answering strategy</strong>:</p>
-        <ul>
-          <li>Read the text, underlining the new terms and important names.</li>
-          <li>Look at the diagram and think which parts of it you can label.</li>
-          <li>Check your assumptions by looking back at underlined terms and label the parts you’re sure of.</li>
-          <li>If there are some unlabeled parts left, check the diagram for key words. Then, scan the text for the right answer.</li>
-        </ul>
-        <p>&nbsp;</p>
-        <p><strong>Tips</strong>:</p>
-        <ul>
-          <li>Always <u>underline</u> new terms in the text - 99% that they will be used in the questions.</li>
-          <li>The key words in the diagram may help you to complete it.</li>
-        </ul>
-        <p> <br>
-          <a name="example"></a>        
-        </p><p><strong>Example</strong>:</p>
-        <p>Label the parts of a leaf on the diagram below. Choose <strong>ONE WORD</strong> from the Reading Passage for each answer. Write your answers in boxes 1-4 on your answer sheet.</p>
-        <p>Remember this useful technique: underline new terms as you read. In this example, we've <u>underlined all the new terms</u> for you.</p>
-        <div class="exam-text"> 
-        <h3 align="center">Leaves' structure</h3><noindex>
-          <p>Plants play a very important role in our surroundings. Trees provide us with fresh air, shade in summers, food, and other benefits without which we cannot even think of living. </p>
-          <p>One of the most principal organs of a tree is a leaf. The leaves are the organs for <u>photosynthesis</u> - a process when carbon dioxide is turned into oxygen. The structures of leaves are adapted for efficient photosynthesis.</p>
-          <p>Most leaves are broad and so have a large surface area allowing them to absorb more light. Also, they are thin, which means a short distance for carbon dioxide to diffuse in and oxygen to diffuse out easily. The <u>blade</u> is the broad, flat part of the leaf. Photosynthesis occurs in the blade, which has many green food-making cells. </p>
-          <p>If you look closer at leaves, you will notice networks of thin threads. Those networks are called <u>veins</u>: they support the structure of the leaf and transport substances to and from the cells in the leaf. The main vein of a leaf, running down the centre of the leaf, is called <u>midrib</u>.</p>
-The area of some plants that connects the plant's stem and leaf is called the <u>petiole</u>. The petiole is the pipeline through which the products of photosynthesis are moved from individual leaves to the rest of a plant and through which necessary chemicals and nutrients from other parts of the plant are brought to individual leave. </noindex>
-          </div> 
-        <br>
-        <p>Now it's time to label the diagram:</p>
-        <img src="../images/diagram-leaf.png" class="big-image" width="45%" alt="IELTS Reading diagram completion - leaf diagram" style="float:left;">
-        <p>1. <input type="text" class="ex-input" style="width:130px" id="ex1" required=""> <span id="s1"> </span></p>
-        <p>2. <input type="text" class="ex-input" style="width:130px" id="ex2" required=""> <span id="s2"> </span></p>
-        <p>3. <input type="text" class="ex-input" style="width:130px" id="ex3" required=""> <span id="s3"> </span></p>
-        <p>4. <input type="text" class="ex-input" style="width:130px" id="ex4" required=""> <span id="s4"> </span></p>
-       <br>
-        <div id="result" align="center" style="font-weight:bold;"></div>
-          <br>
-<button class="ex-but" type="button" onclick="check()">Check</button>
-
-<div style="clear:both;"><br><h3>Answers and explanations</h3></div>
-          <ol>
-            <li>Arrow near the number 1 points to the little threads in the middle of the leaf.&nbsp; After you look at the underlined words, you’ll see what’s written in the fourth paragraph: 
-          <p class="text-extract">If you look closer at leaves, you will notice networks of thin threads. Those networks are called <strong>veins</strong>.</p>
-            So the correct answer is: <strong>veins</strong> or <strong>vein</strong>.</li>
-         
-            <br><li>The second arrow points to a large vein in the centre of the leaf. The last sentence of the fourth paragraph says: The main vein of a leaf, running down the centre of the leaf, is called midrib. So the correct answer is: <strong>midrib</strong>.</li>
-            <br><li>The bracket near number 3 captures the main part of the leaf. The third paragraph tells us that
-       <p class="text-extract">The <strong>blade</strong> is the broad, flat part of the leaf.</p>
-            Thus, the correct answer is <strong>blade</strong>.</li>
-          
-            <br><li>The fourth part you have to label is the part of the leaf that connects it to the plant’s stem. And once again, you scan the text for the underlined words and see this phrase in the last paragraph: <p class="text-extract">The area of some plants that connects the plant's stem and leaf is called the petiole.</p>
-          So the correct answer is <strong>petiole</strong>.</li>
-</ol>
-<br>
-          
+  <div id="content">
 
 
-        
-     
-             
-        
-     
-        </div>
-        <script>
-				 
-				 function check() {
-					 
-					 var ex=['midrib', 'blade', 'petiole'], ex1; 
-					 score=0; total=4;
-					 
-					 ex1=document.getElementById("ex1").value;
-						if ((ex1.trim().toLowerCase()!='vein')&&(ex1.trim().toLowerCase()!='veins'))
-						document.getElementById("s1").innerHTML='<img height=20px src="../images/cross.png" />';
-						else {document.getElementById("s1").innerHTML='<img height=20px src="../images/ok.png" />';
-						score++;}
-					 
-				for (var i=2; i<5; i++) 
-					{
-						ex1=document.getElementById("ex"+i).value;
-						if (ex1.trim().toLowerCase()!=ex[i-2])
-						document.getElementById("s"+i).innerHTML='<img height=20px src="../images/cross.png" />';
-						else {document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" />';
-						score++;}
-						 }
-				 
-				 
-				 score=score/total*100;
-					if (score<100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';}
-</script>
+
+
+
+    <p>In this lesson we'll learn how to tackle <strong>diagram completion questions</strong> on IELTS Reading. In this
+      type of questions, <em>you’re given a descriptive text and a diagram or plan, which you have to label</em>
+      according to the text. Your diagram may be a technical drawing, a description of something from the natural world,
+      a process or a plan of something.
+    </p>
+    <p>This is how the diagram completion question may look like on IELTS Reading test:</p>
+
+    <div class="exam-extract">
+      <p>Label the parts of a leaf on the diagram below. Choose <strong>ONE WORD</strong> from the Reading Passage for
+        each answer. Write your answers in boxes 1-4 on your answer sheet.</p>
+      <img src="../images/diagram-leaf.png" width="60%" alt="IELTS Reading diagram completion - leaf diagram">
+    </div>
+    <br>
+    <p><strong>Answering strategy</strong>:</p>
+    <ul>
+      <li>Read the text, underlining the new terms and important names.</li>
+      <li>Look at the diagram and think which parts of it you can label.</li>
+      <li>Check your assumptions by looking back at underlined terms and label the parts you’re sure of.</li>
+      <li>If there are some unlabeled parts left, check the diagram for key words. Then, scan the text for the right
+        answer.</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p><strong>Tips</strong>:</p>
+    <ul>
+      <li>Always <u>underline</u> new terms in the text - 99% that they will be used in the questions.</li>
+      <li>The key words in the diagram may help you to complete it.</li>
+    </ul>
+    <p> <br>
+      <a name="example"></a>
+    </p>
+    <p><strong>Example</strong>:</p>
+    <p>Label the parts of a leaf on the diagram below. Choose <strong>ONE WORD</strong> from the Reading Passage for
+      each answer. Write your answers in boxes 1-4 on your answer sheet.</p>
+    <p>Remember this useful technique: underline new terms as you read. In this example, we've <u>underlined all the new
+        terms</u> for you.</p>
+    <div class="exam-text">
+      <h3 align="center">Leaves' structure</h3>
+      <noindex>
+        <p>Plants play a very important role in our surroundings. Trees provide us with fresh air, shade in summers,
+          food, and other benefits without which we cannot even think of living. </p>
+        <p>One of the most principal organs of a tree is a leaf. The leaves are the organs for <u>photosynthesis</u> - a
+          process when carbon dioxide is turned into oxygen. The structures of leaves are adapted for efficient
+          photosynthesis.</p>
+        <p>Most leaves are broad and so have a large surface area allowing them to absorb more light. Also, they are
+          thin, which means a short distance for carbon dioxide to diffuse in and oxygen to diffuse out easily. The
+          <u>blade</u> is the broad, flat part of the leaf. Photosynthesis occurs in the blade, which has many green
+          food-making cells. </p>
+        <p>If you look closer at leaves, you will notice networks of thin threads. Those networks are called
+          <u>veins</u>: they support the structure of the leaf and transport substances to and from the cells in the
+          leaf. The main vein of a leaf, running down the centre of the leaf, is called <u>midrib</u>.</p>
+        The area of some plants that connects the plant's stem and leaf is called the <u>petiole</u>. The petiole is the
+        pipeline through which the products of photosynthesis are moved from individual leaves to the rest of a plant
+        and through which necessary chemicals and nutrients from other parts of the plant are brought to individual
+        leave.
+      </noindex>
+    </div>
+    <br>
+    <p>Now it's time to label the diagram:</p>
+    <img src="../images/diagram-leaf.png" class="big-image" width="45%"
+      alt="IELTS Reading diagram completion - leaf diagram" style="float:left;">
+    <p>1. <input type="text" class="ex-input" style="width:130px" id="ex1" required=""> <span id="s1"> </span></p>
+    <p>2. <input type="text" class="ex-input" style="width:130px" id="ex2" required=""> <span id="s2"> </span></p>
+    <p>3. <input type="text" class="ex-input" style="width:130px" id="ex3" required=""> <span id="s3"> </span></p>
+    <p>4. <input type="text" class="ex-input" style="width:130px" id="ex4" required=""> <span id="s4"> </span></p>
+    <br>
+    <div id="result" align="center" style="font-weight:bold;"></div>
+    <br>
+    <button class="ex-but" type="button" onclick="check()">Check</button>
+
+    <div style="clear:both;"><br>
+      <h3>Answers and explanations</h3>
+    </div>
+    <ol>
+      <li>Arrow near the number 1 points to the little threads in the middle of the leaf.&nbsp; After you look at the
+        underlined words, you’ll see what’s written in the fourth paragraph:
+        <p class="text-extract">If you look closer at leaves, you will notice networks of thin threads. Those networks
+          are called <strong>veins</strong>.</p>
+        So the correct answer is: <strong>veins</strong> or <strong>vein</strong>.
+      </li>
+
+      <br>
+      <li>The second arrow points to a large vein in the centre of the leaf. The last sentence of the fourth paragraph
+        says: The main vein of a leaf, running down the centre of the leaf, is called midrib. So the correct answer is:
+        <strong>midrib</strong>.</li>
+      <br>
+      <li>The bracket near number 3 captures the main part of the leaf. The third paragraph tells us that
+        <p class="text-extract">The <strong>blade</strong> is the broad, flat part of the leaf.</p>
+        Thus, the correct answer is <strong>blade</strong>.
+      </li>
+
+      <br>
+      <li>The fourth part you have to label is the part of the leaf that connects it to the plant’s stem. And once
+        again, you scan the text for the underlined words and see this phrase in the last paragraph: <p
+          class="text-extract">The area of some plants that connects the plant's stem and leaf is called the petiole.
+        </p>
+        So the correct answer is <strong>petiole</strong>.</li>
+    </ol>
+    <br>
+
+
+
+
+
+
+
+
+  </div>
+  <script>
+
+    function check() {
+
+      var ex = ['midrib', 'blade', 'petiole'], ex1;
+      score = 0; total = 4;
+
+      ex1 = document.getElementById("ex1").value;
+      if ((ex1.trim().toLowerCase() != 'vein') && (ex1.trim().toLowerCase() != 'veins'))
+        document.getElementById("s1").innerHTML = '<img height=20px src="../images/cross.png" />';
+      else {
+        document.getElementById("s1").innerHTML = '<img height=20px src="../images/ok.png" />';
+        score++;
+      }
+
+      for (var i = 2; i < 5; i++) {
+        ex1 = document.getElementById("ex" + i).value;
+        if (ex1.trim().toLowerCase() != ex[i - 2])
+          document.getElementById("s" + i).innerHTML = '<img height=20px src="../images/cross.png" />';
+        else {
+          document.getElementById("s" + i).innerHTML = '<img height=20px src="../images/ok.png" />';
+          score++;
+        }
+      }
+
+
+      if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+      else document.getElementById("result").innerHTML =
+        '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+    }
+  </script>
 </body>
+
 </html>

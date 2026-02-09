@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -176,15 +179,16 @@
 					else { score++; document.getElementById("s"+i).innerHTML='<img height=20px src="../images/ok.png" style="vertical-align:middle;" />';}
 				}
 				
-					score=score/total*100;
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
+					if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+        else document.getElementById("result").innerHTML =
+          '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
 				}
 
     </script>
 
 
+    <!-- Common JavaScript for exercises -->
+    <script src="../common.js"></script>
 </div>
 </body>
 </html>

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+
 <body>
-<div id="content">
+    <div id="content">
 
 
-    <p>This short test will help you remember the <em>purpose</em> of IELTS Speaking test, the <em>procedure</em>
-        on the day and the <em>structure</em> of the test. Choose the correct answer for each
-        question below.</p>
+        <p>This short test will help you remember the <em>purpose</em> of IELTS Speaking test, the <em>procedure</em>
+            on the day and the <em>structure</em> of the test. Choose the correct answer for each
+            question below.</p>
 
-    <form>
         <p>1. How many parts are there IELTS Speaking test? <span id="s1"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q1"> 2 parts</li>
             <li><input type="radio" name="q1" id="a1"> 3 parts</li>
             <li><input type="radio" name="q1"> 5 parts</li>
@@ -23,7 +27,7 @@
 
         <p>2. What is the purpose of the Speaking test? <span id="s2"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q2" id="a2"> To determine your level of English
                 communication
             </li>
@@ -36,7 +40,7 @@
 
         <p>3. Who is responsible for time management? <span id="s3"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q3"> The test-taker</li>
             <li><input type="radio" name="q3" id="a3"> The examiner</li>
             <li><input type="radio" name="q3"> Both</li>
@@ -45,7 +49,7 @@
 
         <p>4. Should you memorise the whole answers? <span id="s4"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q4"> Yes, I should memorise as much sample answers as I
                 can! This way I will feel confident
             </li>
@@ -60,7 +64,7 @@
 
         <p>5. Should you learn some phrases and topic vocabulary? <span id="s5"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q5" id="a5"> Yes, I should learn topic vocabulary to speak
                 more fluently and coherently
             </li>
@@ -75,7 +79,7 @@
 
         <p>6. In which part of the test do you speak on your own? <span id="s6"></span>
         </p>
-        <ol type="A">
+        <ol type="A" style="padding-left: 28px;">
             <li><input type="radio" name="q6"> In part 1</li>
             <li><input type="radio" name="q6" id="a6"> In part 2</li>
             <li><input type="radio" name="q6"> In part 3</li>
@@ -86,32 +90,30 @@
 
         <button class="ex-but" type="button" onclick="check()">Check</button> &nbsp; &nbsp;
 
-    </form>
 
-    <script>
-		  		
-				 
-				
-				function check() {
-					var score=0; total=6;
-					
-					for (var i=1; i<7; i++) 
-					{
-					if (document.getElementById("a"+i).checked == true)	
-				{document.getElementById("s"+i).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/ok.png"  />'; score++;}
-					else document.getElementById("s"+i).innerHTML='<img style="vertical-align:middle;" height=20px src="../images/cross.png"  />';
-					}
-
-					score=score/total*100;
-					if (!(score % 1 === 0)) score=score.toFixed(2);
-					if (score!=100) document.getElementById("result").innerHTML="Your score is "+score+"%";
-					else document.getElementById("result").innerHTML=
-					'<span style="color:green; ">Excellent! </span>Your score is '+score+'%';
-				}
-
-    </script>
+        <script>
 
 
-</div>
+
+            function check() {
+                var score = 0; total = 6;
+
+                for (var i = 1; i < 7; i++) {
+                    if (document.getElementById("a" + i).checked == true) { document.getElementById("s" + i).innerHTML = '<img style="vertical-align:middle;" height=20px src="../images/ok.png"  />'; score++; }
+                    else document.getElementById("s" + i).innerHTML = '<img style="vertical-align:middle;" height=20px src="../images/cross.png"  />';
+                }
+
+                if (score < total) document.getElementById("result").innerHTML = "Your score is " + score + "/" + total;
+                else document.getElementById("result").innerHTML =
+                    '<span style="color:green; ">Excellent! </span>Your score is ' + score + '/' + total;
+            }
+
+        </script>
+
+
+        <!-- Common JavaScript for exercises -->
+        <script src="../common.js"></script>
+    </div>
 </body>
+
 </html>

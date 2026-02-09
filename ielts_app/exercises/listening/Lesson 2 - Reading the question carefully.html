@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
@@ -13,10 +16,38 @@
        <br>
        <p><strong>Example 1.</strong> Write NO MORE THAN TWO WORDS for the answer.</p>
        <p>How much does Adult All-Day Pass cost? ..........</p><br>
-       <audio controls="" controlslist="nodownload">
-         <source src="../audio/lesson21.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-       </audio><br><br>
+           <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/lesson21.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div><br><br>
        <button id="b22" type="button" onclick="toggle(2)"> 
 <img height="25px" src="../images/hide.png" style="vertical-align: middle">Hide transcript</button>
        <div id="answers2" style="display:block;" class="transcript">  
@@ -34,9 +65,38 @@
        <p><strong>Example 2</strong>. Write NO MORE THAN ONE WORD for each answer.</p>
        <p>The man’s occupation is ........ .</p><br>
        
-       <audio controls="" controlslist="nodownload"><source src="../audio/lesson22.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-       </audio><br><br>
+           <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/lesson22.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div><br><br>
        <button id="b21" type="button" onclick="toggle(1)"> 
 <img height="25px" src="../images/hide.png" style="vertical-align: middle">Hide transcript</button>
        <div id="answers1" style="display:block;" class="transcript">  
@@ -51,10 +111,38 @@
        <p><strong>Exercise 1</strong>: write NO MORE THAN TWO WORDS for each answer.</p>
        
          
-         <audio controls="" controlslist="nodownload">
-         <source src="../audio/lesson23.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-       </audio><br><br>
+             <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/lesson23.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div><br><br>
        <p>How long has the woman been living in the town? <input type="text" class="ex-input" style="width:120px" id="ex1"> <span id="s1"></span></p>
        <p>What is going on in the park? <input type="text" class="ex-input" style="width:120px" id="ex2"> <span id="s2"></span></p>
          
@@ -74,10 +162,38 @@
          <br>
          
          <p><strong>Exercise 2</strong>: tick ALL the correct answers.</p>
-         <audio controls="" controlslist="nodownload">
-         <source src="../audio/lesson24.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-       </audio><br><br>
+             <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/lesson24.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div><br><br>
        
          <p>Which animals did Lucy adopt?</p>
 
@@ -103,10 +219,38 @@
 </p>
 <br><hr><br>
 <p><strong>Exercise 3</strong>: answer the questions below with NO MORE THAN TWO WORDS OR A NUMBER.</p>
-         <audio controls="" controlslist="nodownload">
-         <source src="../audio/lesson25.mp3" type="audio/mp3">
-                Your browser doesn't support audio teg!
-       </audio><br><br>
+             <div class="audio-player">
+      <audio id="audio" preload="metadata">
+        <source src="../audio/lesson25.mp3" type="audio/mp3">
+        Your browser doesn't support audio!
+      </audio>
+
+      <div class="audio-controls">
+        <button class="play-btn" id="playBtn" aria-label="Play">
+          <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display: none;">
+            <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+          </svg>
+        </button>
+
+        <div class="time-display">
+          <span id="currentTime">0:00</span>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+        </div>
+
+        <div class="time-display">
+          <span id="duration">0:00</span>
+        </div>
+      </div>
+    </div><br><br>
        
          <p>How old is Mr. Northwood? <input type="text" class="ex-input" style="width: 140px" id="ex3"> years old. <span id="s3"></span></p>
 
@@ -193,6 +337,8 @@
           </script>
           
         
-        </div>
+            <!-- Common JavaScript for exercises -->
+    <script src="../common.js"></script>
+</div>
 </body>
 </html>
